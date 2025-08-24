@@ -2,13 +2,12 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import { Clock, Users, MapPin, Star, CheckCircle } from 'lucide-react'
+import { Users, MapPin, Star, CheckCircle } from 'lucide-react'
 
 const packages = [
   {
     id: 1,
     name: 'Bhadrachalam to Papikondalu',
-    duration: '2 Days',
     capacity: '50 People',
     departure: 'Bhadrachalam',
     rating: 4.8,
@@ -26,7 +25,6 @@ const packages = [
   {
     id: 2,
     name: 'Bhadrachalam to Rajahmundry via Papikondalu',
-    duration: '3 Days 2 Nights',
     capacity: '100 People',
     departure: 'Bhadrachalam',
     rating: 4.9,
@@ -44,7 +42,6 @@ const packages = [
   {
     id: 3,
     name: 'Rajahmundry to Papikondalu',
-    duration: '8 Hours',
     capacity: '100 People',
     departure: 'Rajahmundry',
     rating: 4.9,
@@ -62,7 +59,6 @@ const packages = [
   {
     id: 4,
     name: 'Rajahmundry to Bhadrachalam via Papikondalu',
-    duration: '3 Days 2 Nights',
     capacity: '75 People',
     departure: 'Rajahmundry',
     rating: 4.7,
@@ -80,7 +76,6 @@ const packages = [
   {
     id: 5,
     name: 'Bhadrachalam to Sirivaka',
-    duration: '2 Days 1 Night',
     capacity: '30 People',
     departure: 'Bhadrachalam',
     rating: 4.6,
@@ -98,7 +93,6 @@ const packages = [
   {
     id: 6,
     name: 'Rajahmundry to Sirivaka',
-    duration: '2 Days 1 Night',
     capacity: '40 People',
     departure: 'Rajahmundry',
     rating: 4.5,
@@ -116,7 +110,6 @@ const packages = [
   {
     id: 7,
     name: 'Maredumalli Special Package',
-    duration: '1 Day',
     capacity: '25 People',
     departure: 'Rajahmundry',
     rating: 4.7,
@@ -134,7 +127,6 @@ const packages = [
   {
     id: 8,
     name: 'Parnasala Addon Package',
-    duration: '6 Hours',
     capacity: '50 People',
     departure: 'Bhadrachalam',
     rating: 4.4,
@@ -152,7 +144,6 @@ const packages = [
   {
     id: 9,
     name: 'Gudisa Package',
-    duration: '4 Hours',
     capacity: '20 People',
     departure: 'Rajahmundry',
     rating: 4.3,
@@ -226,10 +217,6 @@ export default function PackagesClient() {
 
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-gray-600">
-                      <Clock size={16} className="mr-2" />
-                      <span className="text-sm">{pkg.duration}</span>
-                    </div>
-                    <div className="flex items-center text-gray-600">
                       <Users size={16} className="mr-2" />
                       <span className="text-sm">Up to {pkg.capacity}</span>
                     </div>
@@ -272,11 +259,7 @@ export default function PackagesClient() {
                       </div>
                     </div>
                     
-                    <div className="text-center mb-4">
-                      <div className="text-lg font-bold text-primary-600">
-                        Contact for Pricing
-                      </div>
-                    </div>
+
 
                     <div className="flex gap-3">
                       <button className="flex-1 btn-primary">
