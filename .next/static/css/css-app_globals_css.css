@@ -1568,6 +1568,11 @@ video {
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
+.from-black\/20 {
+  --tw-gradient-from: rgb(0 0 0 / 0.2) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .from-black\/30 {
   --tw-gradient-from: rgb(0 0 0 / 0.3) var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
@@ -1611,11 +1616,6 @@ video {
 .from-secondary-400 {
   --tw-gradient-from: #fbbf24 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(251 191 36 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.from-black\/20 {
-  --tw-gradient-from: rgb(0 0 0 / 0.2) var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .via-black\/40 {
