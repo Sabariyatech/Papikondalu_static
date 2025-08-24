@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Loading() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-50 to-secondary-50">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-900 to-secondary-900">
       <div className="text-center">
         {/* Logo Animation */}
         <motion.div
@@ -26,7 +26,7 @@ export default function Loading() {
         <motion.h2
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="text-2xl font-semibold text-neutral-800 mb-4"
+          className="text-2xl font-semibold text-white mb-4"
         >
           Papikondalu Tourism
         </motion.h2>
@@ -50,7 +50,7 @@ export default function Loading() {
           ))}
         </div>
 
-        <p className="text-neutral-600 mt-6">Loading your adventure...</p>
+        <p className="text-white/80 mt-6">Loading your adventure...</p>
       </div>
     </div>
   )

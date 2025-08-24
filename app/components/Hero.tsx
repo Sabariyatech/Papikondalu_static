@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowRight, Star, Users, Calendar, Award, MapPin, Play } from 'lucide-react'
-import { useState } from 'react'
+import { useState, memo } from 'react'
 
 const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
@@ -21,11 +21,15 @@ const Hero = () => {
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0">
         <Image
-          src="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1920,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg"
-          alt="Papikondalu Hills"
+          src="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1920,h_1080,q_auto:best,f_auto,dpr_auto/v1755401093/papihills1_hmfpkr.jpg"
+          alt="Papikondalu Hills - Scenic Godavari River Boat Tours"
           fill
           className="object-cover scale-110"
           priority
+          sizes="100vw"
+          quality={85}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/20 to-secondary-900/20" />
@@ -169,4 +173,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default memo(Hero)
