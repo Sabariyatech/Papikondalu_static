@@ -2,69 +2,179 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Send } from 'lucide-react'
+import { Mail, Send, Gift, Bell, Sparkles, CheckCircle } from 'lucide-react'
 
 const Newsletter = () => {
   const [email, setEmail] = useState('')
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle newsletter signup
+    setIsLoading(true)
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
     setIsSubmitted(true)
     setEmail('')
-    setTimeout(() => setIsSubmitted(false), 3000)
+    setIsLoading(false)
+    setTimeout(() => setIsSubmitted(false), 5000)
   }
 
+  const benefits = [
+    { icon: Gift, text: 'Exclusive Offers & Discounts' },
+    { icon: Bell, text: 'Early Access to New Packages' },
+    { icon: Sparkles, text: 'Special Event Invitations' }
+  ]
+
   return (
-    <section className="py-16 bg-gradient-to-r from-primary-600 to-primary-700">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section className="section-padding bg-gradient-to-br from-primary-600 via-primary-700 to-secondary-600 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl" />
+        <div className="absolute bottom-10 right-10 w-40 h-40 bg-secondary-300 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
+      </div>
+
+      <div className="max-w-5xl mx-auto container-padding text-center relative">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
         >
-          <Mail className="mx-auto mb-6 text-white" size={48} />
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Stay Updated with Our Latest Tours
+          {/* Icon */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-md rounded-2xl mb-8"
+          >
+            <Mail className="text-white" size={40} />
+          </motion.div>
+
+          {/* Heading */}
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Stay Updated with Our
+            <span className="block text-secondary-300">Latest Adventures</span>
           </h2>
-          <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter and be the first to know about new packages, 
-            special offers, and exclusive deals.
+          
+          <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Join our exclusive community and be the first to discover new destinations, 
+            special offers, and insider travel tips from Papikondalu Tourism.
           </p>
 
+          {/* Benefits */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12"
+          >
+            {benefits.map((benefit, index) => {
+              const Icon = benefit.icon
+              return (
+                <motion.div
+                  key={benefit.text}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-center justify-center md:justify-start space-x-3 text-white/90"
+                >
+                  <div className="flex-shrink-0 w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+                    <Icon size={20} />
+                  </div>
+                  <span className="font-medium">{benefit.text}</span>
+                </motion.div>
+              )
+            })}
+          </motion.div>
+
+          {/* Form or Success Message */}
           {isSubmitted ? (
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="bg-green-500 text-white px-6 py-3 rounded-lg inline-block"
+              transition={{ duration: 0.5 }}
+              className="card-glass p-8 max-w-md mx-auto"
             >
-              Thank you for subscribing! We'll keep you updated.
+              <CheckCircle className="mx-auto mb-4 text-accent-400" size={48} />
+              <h3 className="text-xl font-semibold text-white mb-2">
+                Welcome Aboard!
+              </h3>
+              <p className="text-white/80">
+                Thank you for subscribing! Check your inbox for a special welcome offer.
+              </p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  required
-                  className="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-secondary-500 focus:outline-none"
-                />
-                <button
-                  type="submit"
-                  className="bg-secondary-500 hover:bg-secondary-600 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center"
-                >
-                  Subscribe
-                  <Send size={16} className="ml-2" />
-                </button>
+            <motion.form
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+              onSubmit={handleSubmit}
+              className="max-w-lg mx-auto"
+            >
+              <div className="card-glass p-6">
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex-1 relative">
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email address"
+                      required
+                      disabled={isLoading}
+                      className="w-full px-4 py-4 rounded-xl border-0 bg-white/90 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-secondary-400 focus:outline-none transition-all duration-300 text-neutral-800 placeholder-neutral-500"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    disabled={isLoading}
+                    className="btn-secondary px-8 py-4 whitespace-nowrap group disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {isLoading ? (
+                      <div className="flex items-center">
+                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                        Subscribing...
+                      </div>
+                    ) : (
+                      <>
+                        Subscribe Now
+                        <Send size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
+                      </>
+                    )}
+                  </button>
+                </div>
+                
+                <div className="flex items-center justify-center mt-6 space-x-6 text-sm text-white/70">
+                  <span className="flex items-center">
+                    <CheckCircle size={16} className="mr-2 text-accent-400" />
+                    No spam, ever
+                  </span>
+                  <span className="flex items-center">
+                    <CheckCircle size={16} className="mr-2 text-accent-400" />
+                    Unsubscribe anytime
+                  </span>
+                </div>
               </div>
-              <p className="text-primary-200 text-sm mt-4">
-                We respect your privacy. Unsubscribe at any time.
-              </p>
-            </form>
+            </motion.form>
           )}
+
+          {/* Trust Indicators */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            viewport={{ once: true }}
+            className="mt-12 text-white/60 text-sm"
+          >
+            <p>Join 10,000+ travelers who trust us for their adventures</p>
+          </motion.div>
         </motion.div>
       </div>
     </section>

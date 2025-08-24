@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { MapPin, Clock, Star } from 'lucide-react'
 
@@ -111,16 +112,17 @@ export default function AttractionsClient() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="card-elevated overflow-hidden group hover-glow"
               >
                 <div className="md:flex">
-                  <div className="md:w-1/2 relative h-64 md:h-auto">
+                  <div className="md:w-1/2 relative h-64 md:h-auto overflow-hidden">
                     <Image
                       src={attraction.image}
                       alt={attraction.name}
                       fill
-                      className="object-cover"
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
                   <div className="md:w-1/2 p-6">
                     <h3 className="text-2xl font-bold text-gray-900 mb-3">
@@ -155,9 +157,14 @@ export default function AttractionsClient() {
                       </div>
                     </div>
 
-                    <button className="w-full btn-primary">
-                      Include in Package
-                    </button>
+                    <div className="flex gap-3">
+                      <Link href={`/attractions/${attraction.id}`} className="flex-1 btn-primary text-center">
+                        See More
+                      </Link>
+                      <Link href="/contact" className="flex-1 btn-outline text-center">
+                        Contact Us
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </motion.div>

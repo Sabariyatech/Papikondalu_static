@@ -278,9 +278,14 @@ export default function PackagesClient() {
                       </div>
                     </div>
 
-                    <button className="w-full btn-primary">
-                      Book Now
-                    </button>
+                    <div className="flex gap-3">
+                      <button className="flex-1 btn-primary">
+                        See More
+                      </button>
+                      <button className="flex-1 btn-outline">
+                        Contact Us
+                      </button>
+                    </div>
                   </div>
                 </div>
               </motion.div>
