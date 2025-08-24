@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Clock, Users, MapPin, Star } from 'lucide-react'
+import { Clock, Users, MapPin, Star, ArrowRight, Calendar, Award, Heart } from 'lucide-react'
 
 const packages = [
   {
@@ -14,8 +14,12 @@ const packages = [
     departure: 'Bhadrachalam',
     rating: 4.8,
     reviews: 245,
+    price: 'From ₹2,500',
+    originalPrice: '₹3,000',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_400,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png',
-    highlights: ['Temple Visit', 'Scenic Boat Ride', 'Local Cuisine']
+    highlights: ['Temple Visit', 'Scenic Boat Ride', 'Local Cuisine'],
+    badge: 'Most Popular',
+    badgeColor: 'bg-secondary-500'
   },
   {
     id: 2,
@@ -25,8 +29,12 @@ const packages = [
     departure: 'Rajahmundry',
     rating: 4.9,
     reviews: 189,
+    price: 'From ₹1,800',
+    originalPrice: '₹2,200',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_400,q_auto,f_auto/v1756003757/rajamundry_v2aufm.jpg',
-    highlights: ['Full Day Tour', 'Photography', 'Refreshments']
+    highlights: ['Full Day Tour', 'Photography', 'Refreshments'],
+    badge: 'Best Value',
+    badgeColor: 'bg-accent-500'
   },
   {
     id: 3,
@@ -36,77 +44,110 @@ const packages = [
     departure: 'Bhadrachalam',
     rating: 4.7,
     reviews: 156,
+    price: 'From ₹4,200',
+    originalPrice: '₹5,000',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_400,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif',
-    highlights: ['Night Stay', 'Campfire', 'Nature Walk']
+    highlights: ['Night Stay', 'Campfire', 'Nature Walk'],
+    badge: 'Premium',
+    badgeColor: 'bg-primary-600'
   }
 ]
 
 const PackageShowcase = () => {
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-padding bg-white relative overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-primary-500 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary-500 rounded-full blur-3xl" />
+      </div>
+
+      <div className="max-w-7xl mx-auto container-padding relative">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Popular Tour Packages
+          <div className="inline-flex items-center bg-secondary-100 text-secondary-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <Calendar size={16} className="mr-2" />
+            Tour Packages
+          </div>
+          <h2 className="heading-lg mb-6">
+            Popular <span className="gradient-text">Tour Packages</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Choose from our carefully crafted tour packages for an unforgettable experience
+          <p className="text-body max-w-3xl mx-auto">
+            Choose from our carefully crafted tour packages designed to give you the most 
+            unforgettable experience of Papikondalu's natural beauty and cultural heritage
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {packages.map((pkg, index) => (
             <motion.div
               key={pkg.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="card overflow-hidden group"
+              viewport={{ once: true }}
+              className="card-elevated overflow-hidden group hover-glow relative"
             >
-              <div className="relative h-64 overflow-hidden">
+              {/* Badge */}
+              <div className="absolute top-4 left-4 z-10">
+                <span className={`${pkg.badgeColor} text-white px-3 py-1 rounded-full text-xs font-semibold shadow-lg`}>
+                  {pkg.badge}
+                </span>
+              </div>
+
+              {/* Heart Icon */}
+              <button className="absolute top-4 right-4 z-10 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors group/heart">
+                <Heart className="w-4 h-4 text-neutral-600 group-hover/heart:text-red-500 transition-colors" />
+              </button>
+
+              <div className="relative h-72 overflow-hidden">
                 <Image
                   src={pkg.image}
                   alt={pkg.name}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-lg px-2 py-1 flex items-center">
-                  <Star size={14} className="text-yellow-500 mr-1" />
-                  <span className="text-sm font-medium">{pkg.rating}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                
+                {/* Rating */}
+                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-1 flex items-center">
+                  <Star className="w-4 h-4 text-secondary-500 fill-current mr-1" />
+                  <span className="text-sm font-semibold text-neutral-800">{pkg.rating}</span>
+                  <span className="text-xs text-neutral-600 ml-1">({pkg.reviews})</span>
                 </div>
               </div>
               
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="heading-sm mb-4 group-hover:text-primary-600 transition-colors">
                   {pkg.name}
                 </h3>
                 
-                <div className="space-y-2 mb-4">
-                  <div className="flex items-center text-gray-600">
-                    <Clock size={16} className="mr-2" />
-                    <span className="text-sm">{pkg.duration}</span>
+                <div className="grid grid-cols-1 gap-3 mb-4">
+                  <div className="flex items-center text-neutral-600">
+                    <Clock size={16} className="mr-3 text-primary-500" />
+                    <span className="text-sm font-medium">{pkg.duration}</span>
                   </div>
-                  <div className="flex items-center text-gray-600">
-                    <Users size={16} className="mr-2" />
-                    <span className="text-sm">Up to {pkg.capacity}</span>
+                  <div className="flex items-center text-neutral-600">
+                    <Users size={16} className="mr-3 text-primary-500" />
+                    <span className="text-sm font-medium">Up to {pkg.capacity}</span>
                   </div>
-                  <div className="flex items-center text-gray-600">
-                    <MapPin size={16} className="mr-2" />
-                    <span className="text-sm">Departs from {pkg.departure}</span>
+                  <div className="flex items-center text-neutral-600">
+                    <MapPin size={16} className="mr-3 text-primary-500" />
+                    <span className="text-sm font-medium">Departs from {pkg.departure}</span>
                   </div>
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-6">
                   <div className="flex flex-wrap gap-2">
                     {pkg.highlights.map((highlight, idx) => (
                       <span
                         key={idx}
-                        className="bg-primary-50 text-primary-700 px-2 py-1 rounded-full text-xs"
+                        className="bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-xs font-medium border border-primary-100"
                       >
                         {highlight}
                       </span>
@@ -114,20 +155,23 @@ const PackageShowcase = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between">
-                  <div className="text-sm text-gray-500">
-                    {pkg.reviews} reviews
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-2xl font-bold text-neutral-900">{pkg.price}</span>
+                    <span className="text-sm text-neutral-500 line-through">{pkg.originalPrice}</span>
                   </div>
-                  <div className="text-lg font-semibold text-primary-600">
-                    Contact for Pricing
+                  <div className="flex items-center text-neutral-500">
+                    <Award size={14} className="mr-1" />
+                    <span className="text-xs">per person</span>
                   </div>
                 </div>
 
                 <Link 
                   href="/packages"
-                  className="w-full btn-primary mt-4 text-center block"
+                  className="btn-primary w-full group/btn"
                 >
-                  View Details
+                  Book Now
+                  <ArrowRight className="ml-2 transition-transform group-hover/btn:translate-x-1" size={16} />
                 </Link>
               </div>
             </motion.div>
@@ -135,14 +179,17 @@ const PackageShowcase = () => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mt-12"
+          viewport={{ once: true }}
+          className="text-center mt-16"
         >
-          <Link href="/packages" className="btn-secondary">
-            View All Packages
+          <Link href="/packages" className="btn-outline group text-lg px-8 py-4">
+            View All 9 Packages
+            <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" size={20} />
           </Link>
+          <p className="text-muted mt-4">Customizable packages available • Group discounts • 24/7 support</p>
         </motion.div>
       </div>
     </section>
