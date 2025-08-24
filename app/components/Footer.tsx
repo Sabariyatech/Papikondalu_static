@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, Youtube, ArrowUp, Award, Shield, Heart } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter, Youtube, ArrowUp, Award, Shield, Heart, Linkedin } from 'lucide-react'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -10,10 +10,9 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Youtube, href: '#', label: 'YouTube' }
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61579935625167', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/aswinigodavari_travel/', label: 'Instagram' },
+    { icon: Youtube, href: 'https://www.youtube.com/channel/UCzqJxEIGKQyIi9-EkCfR5ng', label: 'YouTube' }
   ]
 
   const quickLinks = [
@@ -90,7 +89,7 @@ const Footer = () => {
                   <Mail size={18} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold">info@papikondalutourism.com</div>
+                  <div className="font-semibold">aswinigodavari@gmail.com</div>
                   <div className="text-sm text-neutral-400">Quick Response Guaranteed</div>
                 </div>
               </div>
@@ -183,7 +182,7 @@ const Footer = () => {
         <div className="border-t border-neutral-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-neutral-400 text-sm mb-4 md:mb-0">
             <p>&copy; 2024 Papikondalu Tourism. All rights reserved.</p>
-            <p className="mt-1">Made with <Heart className="inline w-4 h-4 text-red-500 mx-1" /> for travelers</p>
+            <p className="mt-1">Made with <Heart className="inline w-4 h-4 text-red-500 mx-1" /> for travelers by <a href="https://www.linkedin.com/in/posibabu-yalla-a05746305/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 transition-colors">Posibabu Yalla</a></p>
           </div>
           
           <div className="flex items-center space-x-6">

@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { ArrowLeft, Star, MapPin, Users, Calendar, CheckCircle, Info, Route, Lightbulb } from 'lucide-react'
+import { ArrowLeft, Star, MapPin, Users, Calendar, CheckCircle, Info, Route, Lightbulb, Phone, MessageCircle } from 'lucide-react'
+import { agents } from '../../lib/agents'
 
 interface Package {
   id: number
@@ -236,15 +237,27 @@ export default function PackageDetailClient({ packageData }: PackageDetailClient
                   <Link href="/contact" className="w-full btn-primary text-center block">
                     Book Now
                   </Link>
-                  <Link href="/contact" className="w-full btn-outline text-center block">
-                    Get Quote
-                  </Link>
-                  <a 
-                    href="tel:+919876543210" 
-                    className="w-full bg-green-600 hover:bg-green-700 text-white py-3 px-4 rounded-lg font-medium transition-colors text-center block"
-                  >
-                    Call Now
-                  </a>
+                  <div className="text-center text-sm text-gray-600 mb-2">Quick Contact</div>
+                  {agents.slice(0, 2).map((agent) => (
+                    <div key={agent.id} className="flex gap-2">
+                      <a
+                        href={`https://wa.me/${agent.whatsapp}?text=Hi, I'm interested in ${packageData.name} package. Can you help me?`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center"
+                      >
+                        <MessageCircle size={14} className="mr-1" />
+                        {agent.name.split(' ')[0]}
+                      </a>
+                      <a
+                        href={`tel:+91${agent.phone}`}
+                        className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center"
+                      >
+                        <Phone size={14} className="mr-1" />
+                        Call
+                      </a>
+                    </div>
+                  ))}
                 </div>
               </motion.div>
             </div>

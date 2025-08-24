@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, MessageCircle, User, Facebook, Instagram, Youtube } from 'lucide-react'
+import { agents } from '../lib/agents'
 
 export default function ContactClient() {
   const [formData, setFormData] = useState({
@@ -31,14 +32,14 @@ export default function ContactClient() {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['+91 9876543210', '24/7 Customer Support'],
-      action: 'tel:+919876543210'
+      details: ['Multiple agents available', '24/7 Customer Support'],
+      action: null
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['info@papikondalutourism.com', 'Quick Response Guaranteed'],
-      action: 'mailto:info@papikondalutourism.com'
+      details: ['aswinigodavari@gmail.com', 'Quick Response Guaranteed'],
+      action: 'mailto:aswinigodavari@gmail.com'
     },
     {
       icon: MapPin,
@@ -294,6 +295,99 @@ export default function ContactClient() {
         </div>
       </div>
 
+      <section className="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Travel Experts</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Connect directly with our experienced travel consultants for personalized assistance
+            </p>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {agents.map((agent, index) => {
+              const colors = ['from-purple-500 to-purple-600', 'from-indigo-500 to-indigo-600', 'from-teal-500 to-teal-600']
+              return (
+                <motion.div
+                  key={agent.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                >
+                  <div className={`w-20 h-20 bg-gradient-to-r ${colors[index]} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg`}>
+                    <User className="text-white" size={28} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{agent.name}</h3>
+                  <p className="text-gray-600 mb-2 font-medium">{agent.role}</p>
+                  <p className="text-gray-700 font-semibold mb-6 text-lg">+91 {agent.phone}</p>
+                  
+                  <div className="flex gap-3">
+                    <a
+                      href={`https://wa.me/${agent.whatsapp}?text=Hi, I'm interested in Papikondalu tour packages. Can you help me?`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl font-medium transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
+                    >
+                      <MessageCircle size={18} className="mr-2" />
+                      WhatsApp
+                    </a>
+                    <a
+                      href={`tel:+91${agent.phone}`}
+                      className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-xl font-medium transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
+                    >
+                      <Phone size={18} className="mr-2" />
+                      Call
+                    </a>
+                  </div>
+                </motion.div>
+              )
+            })}
+          </div>
+
+          {/* Social Media Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            className="bg-white rounded-2xl shadow-xl p-8 text-center"
+          >
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Follow Us on Social Media</h3>
+            <p className="text-gray-600 mb-8">Stay updated with our latest tours and travel tips</p>
+            
+            <div className="flex justify-center gap-6">
+              <a
+                href="https://www.facebook.com/profile.php?id=61579935625167"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg"
+              >
+                <Facebook className="text-white" size={24} />
+              </a>
+              <a
+                href="https://www.instagram.com/aswinigodavari_travel/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg"
+              >
+                <Instagram className="text-white" size={24} />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCzqJxEIGKQyIi9-EkCfR5ng"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-16 h-16 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg"
+              >
+                <Youtube className="text-white" size={24} />
+              </a>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       <section className="bg-primary-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -302,18 +396,11 @@ export default function ContactClient() {
           >
             <h2 className="text-3xl font-bold mb-4">Need Immediate Assistance?</h2>
             <p className="text-xl mb-8">
-              Call us now for instant booking and travel assistance
+              Our team is available 24/7 for your travel needs
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+919876543210" 
-                className="btn-secondary inline-flex items-center justify-center"
-              >
-                <Phone size={20} className="mr-2" />
-                Call Now: +91 9876543210
-              </a>
-              <a 
-                href="mailto:info@papikondalutourism.com" 
+                href="mailto:aswinigodavari@gmail.com" 
                 className="bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors duration-200 inline-flex items-center justify-center"
               >
                 <Mail size={20} className="mr-2" />
