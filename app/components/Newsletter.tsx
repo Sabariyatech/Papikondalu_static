@@ -111,58 +111,60 @@ const Newsletter = () => {
               </p>
             </motion.div>
           ) : (
-            <motion.form
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
               viewport={{ once: true }}
-              onSubmit={handleSubmit}
-              className="max-w-lg mx-auto"
+              className="max-w-2xl mx-auto"
             >
-              <div className="card-glass p-6">
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <div className="flex-1 relative">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email address"
-                      required
+              <form onSubmit={handleSubmit} className="relative">
+                <div className="bg-white rounded-2xl p-2 shadow-2xl">
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <div className="flex-1 relative">
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="Enter your email address"
+                        required
+                        disabled={isLoading}
+                        className="w-full px-6 py-4 text-gray-800 placeholder-gray-500 bg-transparent border-0 focus:outline-none focus:ring-0 text-lg font-medium rounded-xl"
+                      />
+                    </div>
+                    <button
+                      type="submit"
                       disabled={isLoading}
-                      className="w-full px-4 py-4 rounded-xl border-0 bg-white/90 backdrop-blur-sm focus:bg-white focus:ring-2 focus:ring-secondary-400 focus:outline-none transition-all duration-300 text-neutral-800 placeholder-neutral-500"
-                    />
+                      className="bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white px-8 py-3 rounded-xl font-semibold group disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                    >
+                      {isLoading ? (
+                        <div className="flex items-center">
+                          <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                          Subscribing...
+                        </div>
+                      ) : (
+                        'Subscribe'
+                      )}
+                    </button>
                   </div>
-                  <button
-                    type="submit"
-                    disabled={isLoading}
-                    className="btn-secondary px-8 py-4 whitespace-nowrap group disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isLoading ? (
-                      <div className="flex items-center">
-                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
-                        Subscribing...
-                      </div>
-                    ) : (
-                      <>
-                        Subscribe Now
-                        <Send size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
-                      </>
-                    )}
-                  </button>
                 </div>
                 
-                <div className="flex items-center justify-center mt-6 space-x-6 text-sm text-white/70">
+                <div className="flex flex-col sm:flex-row items-center justify-center mt-6 gap-4 sm:gap-8 text-sm text-white/80">
                   <span className="flex items-center">
-                    <CheckCircle size={16} className="mr-2 text-accent-400" />
+                    <CheckCircle size={16} className="mr-2 text-green-400" />
                     No spam, ever
                   </span>
                   <span className="flex items-center">
-                    <CheckCircle size={16} className="mr-2 text-accent-400" />
+                    <CheckCircle size={16} className="mr-2 text-green-400" />
                     Unsubscribe anytime
                   </span>
+                  <span className="flex items-center">
+                    <CheckCircle size={16} className="mr-2 text-green-400" />
+                    Free updates
+                  </span>
                 </div>
-              </div>
-            </motion.form>
+              </form>
+            </motion.div>
           )}
 
           {/* Trust Indicators */}

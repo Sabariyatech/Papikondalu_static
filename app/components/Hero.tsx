@@ -98,7 +98,7 @@ const Hero = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                  className="card-glass p-4 text-center hover-lift"
+                  className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-xl p-4 text-center hover:bg-white/30 transition-all duration-300 transform hover:-translate-y-1 shadow-lg"
                 >
                   <Icon className="mx-auto mb-2 text-secondary-400" size={24} />
                   <div className="text-lg font-bold text-white">{stat.label}</div>

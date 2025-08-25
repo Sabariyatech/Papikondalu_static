@@ -79,7 +79,7 @@ const Footer = () => {
                   <Phone size={18} className="text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold">+91 9876543210</div>
+                  <div className="font-semibold">+91 9848323488</div>
                   <div className="text-sm text-neutral-400">24/7 Customer Support</div>
                 </div>
               </div>

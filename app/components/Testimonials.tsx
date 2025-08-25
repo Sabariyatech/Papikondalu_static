@@ -36,28 +36,32 @@ const testimonials = [
 
 const stats = [
   {
-    icon: Users,
-    number: '7+ Lakh',
-    label: 'Happy Customers',
-    color: 'text-primary-600'
-  },
-  {
     icon: Calendar,
     number: '20+',
     label: 'Years Experience',
-    color: 'text-secondary-600'
+    color: 'from-blue-500 to-blue-600',
+    bgColor: 'bg-blue-50'
+  },
+  {
+    icon: Users,
+    number: '7+ Lakh',
+    label: 'Happy Customers',
+    color: 'from-green-500 to-green-600',
+    bgColor: 'bg-green-50'
   },
   {
     icon: Award,
     number: '4.9/5',
-    label: 'Average Rating',
-    color: 'text-accent-600'
+    label: 'Rating',
+    color: 'from-yellow-500 to-orange-500',
+    bgColor: 'bg-yellow-50'
   },
   {
     icon: TrendingUp,
-    number: '98%',
-    label: 'Satisfaction Rate',
-    color: 'text-primary-600'
+    number: 'Premium',
+    label: 'Service',
+    color: 'from-purple-500 to-purple-600',
+    bgColor: 'bg-purple-50'
   }
 ]
 
@@ -154,11 +158,11 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
-          className="card-glass p-8 md:p-12"
+          className="bg-gradient-to-r from-white via-gray-50 to-white rounded-3xl shadow-2xl p-8 md:p-12 border border-gray-100"
         >
           <div className="text-center mb-12">
-            <h3 className="heading-md mb-4">Trusted by Thousands</h3>
-            <p className="text-body">Our numbers speak for our commitment to excellence</p>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Us</h3>
+            <p className="text-xl text-gray-600">Excellence that speaks through numbers</p>
           </div>
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -173,13 +177,15 @@ const Testimonials = () => {
                   viewport={{ once: true }}
                   className="text-center group"
                 >
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-white rounded-2xl shadow-soft mb-4 group-hover:shadow-medium transition-shadow">
-                    <Icon className={`${stat.color} group-hover:scale-110 transition-transform`} size={28} />
+                  <div className={`inline-flex items-center justify-center w-20 h-20 ${stat.bgColor} rounded-2xl shadow-lg mb-6 group-hover:shadow-xl transition-all duration-300 transform group-hover:scale-110`}>
+                    <div className={`bg-gradient-to-r ${stat.color} p-3 rounded-xl`}>
+                      <Icon className="text-white" size={24} />
+                    </div>
                   </div>
-                  <div className={`text-3xl md:text-4xl font-bold ${stat.color} mb-2`}>
+                  <div className={`text-3xl md:text-4xl font-bold bg-gradient-to-r ${stat.color} bg-clip-text text-transparent mb-2`}>
                     {stat.number}
                   </div>
-                  <div className="text-neutral-600 font-medium">
+                  <div className="text-gray-700 font-semibold text-lg">
                     {stat.label}
                   </div>
                 </motion.div>

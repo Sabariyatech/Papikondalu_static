@@ -104,8 +104,9 @@ export const packagesData = [
     name: 'Bhadrachalam to Sirivaka',
     shortDescription: 'Adventure package with overnight camping experience in nature.',
     description: 'An exciting adventure package that takes you from the spiritual Bhadrachalam to the wilderness of Sirivaka for an unforgettable camping experience under the stars.',
-    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif',
+    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
     gallery: [
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif'
     ],
     capacity: '30 People',

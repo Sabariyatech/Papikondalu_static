@@ -20,8 +20,9 @@ export const attractionsData = [
     name: 'Perantalapalli',
     shortDescription: 'A serene village along the Godavari River with traditional lifestyle and beautiful landscapes.',
     description: 'A serene village nestled along the Godavari River, known for its traditional lifestyle and beautiful landscapes. Experience authentic rural life and interact with friendly locals while enjoying the peaceful riverside atmosphere.',
-    image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980789/papikondalu-900x500-1_d4f8xn.jpg',
+    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978650/perantalapalli_ansers.jpg',
     gallery: [
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978650/perantalapalli_ansers.jpg',
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980789/papikondalu-900x500-1_d4f8xn.jpg'
     ],
     highlights: ['Village life experience', 'Local culture', 'River views', 'Traditional crafts'],
@@ -65,8 +66,9 @@ export const attractionsData = [
     name: 'Sirivaka Night Stay',
     shortDescription: 'Experience overnight camping in nature with campfires and stargazing.',
     description: 'Experience the magic of staying overnight in the heart of nature at Sirivaka. Enjoy campfires, stargazing, and the sounds of the forest in this unique accommodation experience that brings you closer to nature.',
-    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif',
+    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
     gallery: [
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif'
     ],
     highlights: ['Overnight camping', 'Campfire experience', 'Stargazing', 'Nature sounds'],
@@ -80,8 +82,9 @@ export const attractionsData = [
     name: 'Maredumalli',
     shortDescription: 'A pristine forest area with stunning waterfalls and rich biodiversity.',
     description: 'A pristine forest area with stunning waterfalls and rich biodiversity. Perfect for nature lovers and adventure enthusiasts seeking an escape into the wilderness, offering trekking trails and wildlife spotting opportunities.',
-    image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755978851/MAREDUMILLI_-_waterfalls_kmuppt.jpg',
+    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978648/maredumilli_lqndyb.webp',
     gallery: [
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978648/maredumilli_lqndyb.webp',
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755978851/MAREDUMILLI_-_waterfalls_kmuppt.jpg'
     ],
     highlights: ['Waterfalls', 'Forest trekking', 'Wildlife spotting', 'Adventure activities'],

@@ -3,53 +3,47 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Clock, Users, MapPin, Star, ArrowRight, Calendar, Award, Heart } from 'lucide-react'
+import { Users, MapPin, Star, ArrowRight, Calendar, Heart } from 'lucide-react'
 
 const packages = [
   {
     id: 1,
     name: 'Bhadrachalam to Papikondalu',
-    duration: '2 Days',
     capacity: '50 People',
     departure: 'Bhadrachalam',
     rating: 4.8,
     reviews: 245,
-    price: 'From ₹2,500',
-    originalPrice: '₹3,000',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_400,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png',
-    highlights: ['Temple Visit', 'Scenic Boat Ride', 'Local Cuisine'],
+    highlights: ['Temple Visit', 'Scenic Boat Ride', 'Local Cuisine', 'Professional Guide'],
     badge: 'Most Popular',
-    badgeColor: 'bg-secondary-500'
+    badgeColor: 'bg-gradient-to-r from-orange-500 to-red-500',
+    description: 'Experience the spiritual journey from sacred temple to scenic hills'
   },
   {
     id: 2,
     name: 'Rajahmundry to Papikondalu',
-    duration: '8 Hours',
     capacity: '100 People',
     departure: 'Rajahmundry',
     rating: 4.9,
     reviews: 189,
-    price: 'From ₹1,800',
-    originalPrice: '₹2,200',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_400,q_auto,f_auto/v1756003757/rajamundry_v2aufm.jpg',
-    highlights: ['Full Day Tour', 'Photography', 'Refreshments'],
+    highlights: ['Day Tour', 'Photography', 'Refreshments', 'Return Journey'],
     badge: 'Best Value',
-    badgeColor: 'bg-accent-500'
+    badgeColor: 'bg-gradient-to-r from-green-500 to-emerald-500',
+    description: 'Perfect day trip to experience the beauty of Papikondalu hills'
   },
   {
     id: 3,
     name: 'Sirivaka Night Stay',
-    duration: '2 Days 1 Night',
     capacity: '30 People',
     departure: 'Bhadrachalam',
     rating: 4.7,
     reviews: 156,
-    price: 'From ₹4,200',
-    originalPrice: '₹5,000',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_400,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif',
-    highlights: ['Night Stay', 'Campfire', 'Nature Walk'],
+    highlights: ['Night Stay', 'Campfire', 'Nature Walk', 'Stargazing'],
     badge: 'Premium',
-    badgeColor: 'bg-primary-600'
+    badgeColor: 'bg-gradient-to-r from-purple-500 to-indigo-500',
+    description: 'Adventure package with overnight camping in nature'
   }
 ]
 
@@ -105,7 +99,7 @@ const PackageShowcase = () => {
                 <Heart className="w-4 h-4 text-neutral-600 group-hover/heart:text-red-500 transition-colors" />
               </button>
 
-              <div className="relative h-72 overflow-hidden">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src={pkg.image}
                   alt={pkg.name}
@@ -127,27 +121,27 @@ const PackageShowcase = () => {
                   {pkg.name}
                 </h3>
                 
-                <div className="grid grid-cols-1 gap-3 mb-4">
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                  {pkg.description}
+                </p>
+                
+                <div className="grid grid-cols-2 gap-3 mb-4">
                   <div className="flex items-center text-neutral-600">
-                    <Clock size={16} className="mr-3 text-primary-500" />
-                    <span className="text-sm font-medium">{pkg.duration}</span>
+                    <Users size={16} className="mr-2 text-primary-500" />
+                    <span className="text-sm font-medium">{pkg.capacity}</span>
                   </div>
                   <div className="flex items-center text-neutral-600">
-                    <Users size={16} className="mr-3 text-primary-500" />
-                    <span className="text-sm font-medium">Up to {pkg.capacity}</span>
-                  </div>
-                  <div className="flex items-center text-neutral-600">
-                    <MapPin size={16} className="mr-3 text-primary-500" />
-                    <span className="text-sm font-medium">Departs from {pkg.departure}</span>
+                    <MapPin size={16} className="mr-2 text-primary-500" />
+                    <span className="text-sm font-medium">{pkg.departure}</span>
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="grid grid-cols-2 gap-2">
                     {pkg.highlights.map((highlight, idx) => (
                       <span
                         key={idx}
-                        className="bg-primary-50 text-primary-700 px-3 py-1 rounded-full text-xs font-medium border border-primary-100"
+                        className="bg-gradient-to-r from-primary-50 to-secondary-50 text-primary-700 px-3 py-2 rounded-lg text-xs font-medium border border-primary-100 text-center"
                       >
                         {highlight}
                       </span>
@@ -155,22 +149,18 @@ const PackageShowcase = () => {
                   </div>
                 </div>
 
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-2xl font-bold text-neutral-900">{pkg.price}</span>
-                    <span className="text-sm text-neutral-500 line-through">{pkg.originalPrice}</span>
-                  </div>
-                  <div className="flex items-center text-neutral-500">
-                    <Award size={14} className="mr-1" />
-                    <span className="text-xs">per person</span>
+                <div className="text-center mb-6">
+                  <div className="bg-gradient-to-r from-primary-50 to-secondary-50 rounded-lg p-3">
+                    <p className="text-primary-600 font-semibold text-sm">Contact for Best Pricing</p>
+                    <p className="text-xs text-gray-600 mt-1">Customizable packages available</p>
                   </div>
                 </div>
 
                 <Link 
-                  href="/packages"
-                  className="btn-primary w-full group/btn"
+                  href={`/packages/${pkg.id}`}
+                  className="w-full btn-primary text-center group/btn"
                 >
-                  Book Now
+                  View Details
                   <ArrowRight className="ml-2 transition-transform group-hover/btn:translate-x-1" size={16} />
                 </Link>
               </div>

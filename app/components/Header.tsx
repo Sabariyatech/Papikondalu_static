@@ -36,11 +36,11 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center">
                 <Phone size={14} className="mr-2" />
-                <span>+91 9876543210</span>
+                <span>+91 9848323488</span>
               </div>
               <div className="flex items-center">
                 <Mail size={14} className="mr-2" />
-                <span>info@papikondalutourism.com</span>
+                <span>aswinigodavari@gmail.com</span>
               </div>
             </div>
             <div className="text-xs">
