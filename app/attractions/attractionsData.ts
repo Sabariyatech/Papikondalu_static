@@ -3,11 +3,11 @@ export const attractionsData = [
     id: 1,
     name: 'Papikondalu',
     shortDescription: 'The crown jewel of Godavari tourism with breathtaking views of lush green hills.',
-    description: 'The crown jewel of Godavari tourism, Papikondalu offers breathtaking views of lush green hills reflected in the pristine waters of the Godavari River. This scenic wonder is perfect for photography and peaceful contemplation, providing visitors with an unforgettable experience of natural beauty.',
+    description: 'Often called the crown jewel of Godavari tourism, Papikondalu is a mesmerizing stretch of lush green hills mirrored in the crystal-clear waters of the Godavari River. The serene landscape, with its rolling hills and tranquil river cruises, creates a picture-perfect escape for travelers seeking peace, adventure, or simply the joy of being close to nature.Papikondalu is not just a destination—it’s an experience of breathtaking beauty, where every bend of the river reveals a new view worth capturing. Whether you are a photography enthusiast, a nature lover, or someone looking for quiet contemplation, this scenic wonder promises memories that last a lifetime.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg',
-      'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980789/papikondalu-900x500-1_d4f8xn.jpg'
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756004200/papikondalu_boat_clean_xyz123.jpg'
     ],
     highlights: ['Scenic boat rides', 'Photography spots', 'Peaceful environment', 'Natural beauty'],
     bestTime: 'October to March',
@@ -18,12 +18,12 @@ export const attractionsData = [
   {
     id: 2,
     name: 'Perantalapalli',
-    shortDescription: 'A serene village along the Godavari River with traditional lifestyle and beautiful landscapes.',
-    description: 'A serene village nestled along the Godavari River, known for its traditional lifestyle and beautiful landscapes. Experience authentic rural life and interact with friendly locals while enjoying the peaceful riverside atmosphere.',
-    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978650/perantalapalli_ansers.jpg',
+    shortDescription: 'A sacred seat of Lord Shiva with ancient temple surrounded by pristine Papikondalu landscapes.',
+    description: 'Perantalapalli Shiva Temple is believed to be a sacred seat of Lord Shiva, where devotees have worshipped for centuries amidst the tranquil hills of Papikondalu. Many consider the temple a place of spiritual purification, where prayers offered to the Godavari and Lord Shiva bring peace, prosperity, and divine blessings. Located deep within the Papikondalu hills on the banks of the Godavari, Perantalapalli is surrounded by dense forests, waterfalls, and pristine landscapes. The temple is accessible mainly by boat, making it both a geographical wonder and a serene stopover in the Godavari tourism circuit.',
+    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756004300/perantalapalli_clean_abc456.jpg',
     gallery: [
-      'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978650/perantalapalli_ansers.jpg',
-      'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980789/papikondalu-900x500-1_d4f8xn.jpg'
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756004300/perantalapalli_clean_abc456.jpg',
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756004200/papikondalu_boat_clean_xyz123.jpg'
     ],
     highlights: ['Village life experience', 'Local culture', 'River views', 'Traditional crafts'],
     bestTime: 'November to February',
@@ -35,10 +35,11 @@ export const attractionsData = [
     id: 3,
     name: 'Gandipochamma Temple',
     shortDescription: 'A sacred temple with deep spiritual significance and traditional South Indian architecture.',
-    description: 'A sacred temple with deep spiritual significance, offering devotees a peaceful place for worship and meditation. The temple architecture reflects traditional South Indian style and provides a serene atmosphere for spiritual contemplation.',
-    image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png',
+    description: 'Spiritual History:A sacred temple with deep spiritual significance, Perantalapalli Shiva Temple has long been a place where devotees seek peace, blessings, and divine connection. The temple architecture reflects traditional South Indian style, creating a serene space for worship, meditation, and spiritual contemplation along the holy banks of the Godavari.Geographical History:Situated in the heart of the Papikondalu hills, the temple is surrounded by lush forests, waterfalls, and the flowing Godavari River. Accessible mainly by boat, Perantalapalli stands as both a geographical marvel and a spiritual retreat, blending natural beauty with centuries of devotion.',
+    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978109/gandi_pza3wk.jpg',
     gallery: [
-      'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png'
+      'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png',
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978109/gandi_pza3wk.jpg'
     ],
     highlights: ['Spiritual experience', 'Traditional architecture', 'Religious ceremonies', 'Peaceful atmosphere'],
     bestTime: 'Year round',
@@ -50,7 +51,7 @@ export const attractionsData = [
     id: 4,
     name: 'Bhadrachalam Temple',
     shortDescription: 'One of the most revered temples dedicated to Lord Rama with grand architecture.',
-    description: 'One of the most revered temples dedicated to Lord Rama, attracting thousands of devotees from across the country. The temple is famous for its grand architecture, spiritual significance, and the annual Rama Navami celebrations.',
+    description: 'Spiritual History: One of the most revered temples dedicated to Lord Rama, this sacred shrine holds immense spiritual significance and draws thousands of devotees every year. The temple is especially known for its Rama Navami celebrations, where rituals, chanting, and cultural festivities fill the atmosphere with divine devotion.Geographical History:Renowned for its grand South Indian architecture, the temple stands as a symbol of faith and heritage. Its location amidst the cultural heartland makes it not only a center of worship but also an architectural landmark admired by pilgrims and travelers alike.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980907/Bhadrachalam_Temple_yg8met.jpg',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980907/Bhadrachalam_Temple_yg8met.jpg'
@@ -65,7 +66,7 @@ export const attractionsData = [
     id: 5,
     name: 'Sirivaka Night Stay',
     shortDescription: 'Experience overnight camping in nature with campfires and stargazing.',
-    description: 'Experience the magic of staying overnight in the heart of nature at Sirivaka. Enjoy campfires, stargazing, and the sounds of the forest in this unique accommodation experience that brings you closer to nature.',
+    description: 'Spiritual / Experiential History: Experience the magic of staying overnight in the heart of nature at Sirivaka, where the calm surroundings offer peace, reflection, and a deeper connection with the natural world. Campfires, stargazing, and the soothing sounds of the forest create a meditative atmosphere that refreshes both mind and soul.Geographical History: Nestled within the lush Papikondalu region along the Godavari River, Sirivaka is surrounded by dense forests, rolling hills, and serene landscapes. This unique eco-stay offers visitors an authentic riverside experience, blending rustic charm with the untouched beauty of the Eastern Ghats.',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
     gallery: [
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
@@ -81,7 +82,7 @@ export const attractionsData = [
     id: 6,
     name: 'Maredumalli',
     shortDescription: 'A pristine forest area with stunning waterfalls and rich biodiversity.',
-    description: 'A pristine forest area with stunning waterfalls and rich biodiversity. Perfect for nature lovers and adventure enthusiasts seeking an escape into the wilderness, offering trekking trails and wildlife spotting opportunities.',
+    description: 'Spiritual / Experiential History: A pristine forest area blessed with stunning waterfalls and untouched natural charm, this destination is a paradise for those seeking peace and renewal in the lap of nature. The calmness of the flowing streams and the songs of birds create a meditative atmosphere, offering travelers a spiritual escape into the wilderness.Geographical History: Rich in biodiversity, this forest region is home to rare flora and fauna, making it ideal for trekking, photography, and wildlife spotting. With scenic trails, cascading waterfalls, and dense greenery, it offers adventure enthusiasts and nature lovers an unforgettable journey into the wild beauty of the Eastern Ghats.',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978648/maredumilli_lqndyb.webp',
     gallery: [
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978648/maredumilli_lqndyb.webp',
@@ -97,7 +98,7 @@ export const attractionsData = [
     id: 7,
     name: 'Parnasala',
     shortDescription: 'A place of mythological significance where Lord Rama stayed during exile.',
-    description: 'A place of historical and mythological significance, believed to be where Lord Rama, Sita, and Lakshmana stayed during their exile. Rich in cultural heritage and natural beauty, offering visitors a glimpse into ancient Indian mythology.',
+    description: 'A place of Spiritual / Mythological History: A place of deep historical and mythological importance, this sacred site is believed to be where Lord Rama, Sita, and Lakshmana stayed during their exile. The region is revered by devotees as a living reminder of the Ramayana, offering pilgrims a chance to walk in the footsteps of the divine and experience the essence of ancient Indian spirituality.Geographical / Cultural History: Set amidst serene landscapes of hills and rivers, the area blends natural beauty with cultural heritage. Temples, sacred groves, and age-old traditions preserve its significance, allowing visitors not only to admire its scenic charm but also to connect with stories and practices passed down through generations and mythological significance, believed to be where Lord Rama, Sita, and Lakshmana stayed during their exile. Rich in cultural heritage and natural beauty, offering visitors a glimpse into ancient Indian mythology.',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1755979312/dev_parnasala_pfvan7.jpg',
     gallery: [
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1755979312/dev_parnasala_pfvan7.jpg'
@@ -112,7 +113,7 @@ export const attractionsData = [
     id: 8,
     name: 'Gudisa',
     shortDescription: 'A hill station offering panoramic views and cool climate for adventure seekers.',
-    description: 'A hill station offering panoramic views and cool climate. Perfect for those seeking adventure and breathtaking landscapes away from the hustle and bustle of city life, providing a refreshing mountain experience.',
+    description: 'A hiSpiritual / Experiential History: This hill station is a haven of peace and tranquility, where the cool mountain breeze and panoramic views provide a sense of renewal for the body and mind. Far from the rush of city life, it is an ideal retreat for travelers seeking adventure, meditation, or simply the joy of being surrounded by nature’s grandeur. Geographical / Natural History: Blessed with a refreshing climate, rolling hills, and breathtaking landscapes, the region offers endless opportunities for trekking, photography, and nature exploration. Its elevated terrain makes it a perfect getaway during summer, while its lush greenery and serene atmosphere attract visitors year-round for an unforgettable mountain experiencll station offering panoramic views and cool climate. Perfect for those seeking adventure and breathtaking landscapes away from the hustle and bustle of city life, providing a refreshing mountain experience.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755981754/Camping_in_Mountains_ytwmvi.avif',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755981754/Camping_in_Mountains_ytwmvi.avif'

@@ -15,19 +15,19 @@ export default function AboutUsClient() {
   const boats = [
     { 
       name: 'Aswini', 
-      capacity: '50 passengers', 
+      capacity: '120 passengers', 
       image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/v1756059545/WhatsApp_Image_2025-08-24_at_22.29.36_7a1d5156_ktga3z.jpg',
       features: ['AC Cabin', 'Restaurant', 'Safety Equipment', 'Panoramic Views'] 
     },
     { 
       name: 'Sri Godavari', 
-      capacity: '100 passengers', 
+      capacity: '150 passengers', 
       image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/v1756059654/WhatsApp_Image_2025-08-24_at_22.29.36_76559ca0_vgryqk.jpg',
       features: ['Luxury Seating', 'Entertainment', 'Dining Hall', 'Upper Deck'] 
     },
     { 
       name: 'Srilaxmi', 
-      capacity: '75 passengers', 
+      capacity: '100 passengers', 
       image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/v1756059655/WhatsApp_Image_2025-08-24_at_22.29.53_d0d316b3_gjgggn.jpg',
       features: ['Panoramic Views', 'Comfort Seating', 'Refreshments', 'Photography Deck'] 
     },
