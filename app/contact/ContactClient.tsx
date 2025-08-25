@@ -27,36 +27,20 @@ export default function ContactClient() {
     setIsLoading(true)
     
     try {
-      // Send to email
-      const emailBody = `
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Package Interest: ${formData.packageInterest || 'Not specified'}
-Subject: ${formData.subject}
-Message: ${formData.message}
-`
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
       
-      const mailtoLink = `mailto:aswinigodavari@gmail.com?subject=New Contact Form Submission - ${formData.subject}&body=${encodeURIComponent(emailBody)}`
-      window.open(mailtoLink, '_blank')
+      const result = await response.json()
       
-      // Send to WhatsApp
-      const whatsappMessage = `*New Contact Form Submission*
-
-*Name:* ${formData.name}
-*Email:* ${formData.email}
-*Phone:* ${formData.phone}
-*Package Interest:* ${formData.packageInterest || 'Not specified'}
-*Subject:* ${formData.subject}
-*Message:* ${formData.message}`
-      
-      const whatsappLink = `https://wa.me/919876543210?text=${encodeURIComponent(whatsappMessage)}`
-      setTimeout(() => window.open(whatsappLink, '_blank'), 1000)
-      
-      await new Promise(resolve => setTimeout(resolve, 1500))
-      
-      setIsSubmitted(true)
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '', packageInterest: '' })
+      if (result.success) {
+        setIsSubmitted(true)
+        setFormData({ name: '', email: '', phone: '', subject: '', message: '', packageInterest: '' })
+      }
     } catch (error) {
       console.error('Error submitting form:', error)
     } finally {
