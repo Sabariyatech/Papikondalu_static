@@ -12,7 +12,7 @@ const testimonials = [
     rating: 5,
     text: 'Amazing experience! The boat ride through Papikondalu was breathtaking. The team was professional and the arrangements were perfect. Highly recommend for families!',
     date: 'December 2023',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face'
+    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face'
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const testimonials = [
     rating: 5,
     text: 'Best tourism service in the region. 20+ years of experience really shows in their attention to detail and customer care. Worth every penny!',
     date: 'November 2023',
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face'
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const testimonials = [
     rating: 5,
     text: 'Visited with family and everyone loved it. The temple tour combined with scenic beauty made it a perfect spiritual journey. Unforgettable memories!',
     date: 'October 2023',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face'
   }
 ]
 

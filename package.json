@@ -9,7 +9,9 @@
     "lint": "next lint",
     "analyze": "ANALYZE=true next build",
     "build:analyze": "cross-env ANALYZE=true next build",
-    "lighthouse": "lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html"
+    "lighthouse": "lighthouse http://localhost:3000 --output html --output-path ./lighthouse-report.html",
+    "seo:check": "next build && next start",
+    "seo:audit": "lighthouse http://localhost:3000 --only-categories=seo --output html --output-path ./seo-audit.html"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

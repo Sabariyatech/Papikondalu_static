@@ -2,27 +2,51 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Papikondalu Tourism - Premium Boat Tours',
+    name: 'Papikondalu Tourism - Best Boat Tours in Andhra Pradesh',
     short_name: 'Papikondalu Tourism',
-    description: 'Experience the beauty of Papikondalu with our expert boat tours. 20+ years of experience serving 7+ lakh happy customers.',
+    description: 'Experience Papikondalu Hills with India\'s #1 river tourism company. Premium boat tours, temple visits & adventure packages.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#0f172a',
+    background_color: '#ffffff',
     theme_color: '#0f172a',
+    orientation: 'portrait-primary',
+    scope: '/',
+    lang: 'en',
+    categories: ['travel', 'tourism', 'entertainment'],
     icons: [
       {
         src: '/icon-192x192.png',
         sizes: '192x192',
         type: 'image/png',
+        purpose: 'maskable'
       },
       {
         src: '/icon-512x512.png',
         sizes: '512x512',
         type: 'image/png',
+        purpose: 'any'
       },
+      {
+        src: '/favicon.ico',
+        sizes: '48x48',
+        type: 'image/x-icon'
+      }
     ],
-    categories: ['travel', 'tourism', 'entertainment'],
-    lang: 'en',
-    orientation: 'portrait-primary',
+    screenshots: [
+      {
+        src: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1280,h_720,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
+        sizes: '1280x720',
+        type: 'image/jpeg',
+        form_factor: 'wide',
+        label: 'Papikondalu Hills Boat Tours'
+      },
+      {
+        src: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_750,h_1334,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
+        sizes: '750x1334',
+        type: 'image/jpeg',
+        form_factor: 'narrow',
+        label: 'Mobile View - Papikondalu Tourism'
+      }
+    ]
   }
 }
