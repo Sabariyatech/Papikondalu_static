@@ -69,7 +69,7 @@ export default function AboutUsClient() {
                 <p>
                   For over <strong className="text-primary-600">two decades</strong>, Papikondalu Tourism has been the 
                   <strong className="text-secondary-600">leading name</strong> in river tourism along the scenic Godavari River. 
-                  What started as a passionate family venture has evolved into Andhra Pradesh's most 
+                  What started as a passionate family venture has evolved into Andhra Pradesh most 
                   <strong className="text-primary-600">trusted tourism brand</strong>.
                 </p>
                 <p>
@@ -79,8 +79,8 @@ export default function AboutUsClient() {
                 </p>
                 <p>
                   Our unwavering commitment to <strong className="text-primary-600">excellence, safety, and customer satisfaction</strong> 
-                  has made us the preferred choice for tourists seeking authentic experiences in one of 
-                  India's most scenic destinations.
+                  has made us the preferred choice for tourists seeking authentic experiences in one of the 
+                  most scenic destinations in India.
                 </p>
               </div>
 
@@ -124,7 +124,7 @@ export default function AboutUsClient() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                 <div className="absolute bottom-8 left-8 text-white">
                   <h3 className="text-2xl font-bold mb-2">Papikondalu Hills</h3>
-                  <p className="text-white/90">Nature's Paradise on Godavari River</p>
+                  <p className="text-white/90">Natural Paradise on Godavari River</p>
                 </div>
               </div>
               

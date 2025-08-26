@@ -419,11 +419,9 @@ export default function ContactClient() {
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122064.89594777842!2d81.6871!3d17.0005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a4ca9c9d9c9d%3A0x9c9d9c9d9c9d9c9d!2sPapikondalu%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
-                    style={{ border: 0 }}
                     allowFullScreen
-                    loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="rounded-2xl"
+                    className="rounded-2xl border-0"
                     title="Papikondalu Location Map"
                   />
                 </div>
@@ -484,7 +482,7 @@ export default function ContactClient() {
                     
                     <div className="flex gap-3">
                       <a
-                        href={`https://wa.me/${agent.whatsapp}?text=Hi, I'm interested in Papikondalu tour packages. Can you help me?`}
+                        href={`https://wa.me/${agent.whatsapp}?text=Hi, I${''}m interested in Papikondalu tour packages. Can you help me?`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -527,6 +525,7 @@ export default function ContactClient() {
                   href="https://www.facebook.com/profile.php?id=61579935625167"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Follow us on Facebook"
                   className="w-20 h-20 bg-blue-600 hover:bg-blue-700 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl group"
                 >
                   <Facebook className="text-white group-hover:scale-110 transition-transform duration-300" size={28} />
@@ -535,6 +534,7 @@ export default function ContactClient() {
                   href="https://www.instagram.com/aswinigodavari_travel/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Follow us on Instagram"
                   className="w-20 h-20 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl group"
                 >
                   <Instagram className="text-white group-hover:scale-110 transition-transform duration-300" size={28} />
@@ -543,6 +543,7 @@ export default function ContactClient() {
                   href="https://www.youtube.com/channel/UCzqJxEIGKQyIi9-EkCfR5ng"
                   target="_blank"
                   rel="noopener noreferrer"
+                  title="Subscribe to our YouTube channel"
                   className="w-20 h-20 bg-red-600 hover:bg-red-700 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 shadow-lg hover:shadow-xl group"
                 >
                   <Youtube className="text-white group-hover:scale-110 transition-transform duration-300" size={28} />
@@ -589,9 +590,10 @@ export default function ContactClient() {
                     className="flex flex-col items-center"
                   >
                     <a
-                      href={`https://wa.me/${agent.whatsapp}?text=Hi, I'm interested in Papikondalu tour packages. Can you help me?`}
+                      href={`https://wa.me/${agent.whatsapp}?text=Hi, I${''}m interested in Papikondalu tour packages. Can you help me?`}
                       target="_blank"
                       rel="noopener noreferrer"
+                      title={`Contact ${agent.name} on WhatsApp`}
                       className={`w-20 h-20 ${colors[index]} rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 mb-3`}
                     >
                       <MessageCircle size={28} className="text-white" />
