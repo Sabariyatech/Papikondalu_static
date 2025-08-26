@@ -20,9 +20,9 @@ export const attractionsData = [
     name: 'Perantalapalli',
     shortDescription: 'A sacred seat of Lord Shiva with ancient temple surrounded by pristine Papikondalu landscapes.',
     description: 'Perantalapalli Shiva Temple is believed to be a sacred seat of Lord Shiva, where devotees have worshipped for centuries amidst the tranquil hills of Papikondalu. Many consider the temple a place of spiritual purification, where prayers offered to the Godavari and Lord Shiva bring peace, prosperity, and divine blessings. Located deep within the Papikondalu hills on the banks of the Godavari, Perantalapalli is surrounded by dense forests, waterfalls, and pristine landscapes. The temple is accessible mainly by boat, making it both a geographical wonder and a serene stopover in the Godavari tourism circuit.',
-    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756004300/perantalapalli_clean_abc456.jpg',
+    image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978650/perantalapalli_ansers.jpg',
     gallery: [
-      'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756004300/perantalapalli_clean_abc456.jpg',
+      'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755978650/perantalapalli_ansers.jpg',
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756004200/papikondalu_boat_clean_xyz123.jpg'
     ],
     highlights: ['Village life experience', 'Local culture', 'River views', 'Traditional crafts'],

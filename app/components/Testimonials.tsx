@@ -7,30 +7,30 @@ import Image from 'next/image'
 const testimonials = [
   {
     id: 1,
-    name: 'Rajesh Kumar',
+    name: 'Laxman Rao',
     location: 'Hyderabad',
     rating: 5,
     text: 'Amazing experience! The boat ride through Papikondalu was breathtaking. The team was professional and the arrangements were perfect. Highly recommend for families!',
     date: 'December 2023',
-    avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face'
+    avatar: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1756177667/laxaman_rao_cshydd.jpg'
   },
   {
     id: 2,
-    name: 'Priya Sharma',
+    name: 'Daniel',
     location: 'Bangalore',
     rating: 5,
     text: 'Best tourism service in the region. 20+ years of experience really shows in their attention to detail and customer care. Worth every penny!',
     date: 'November 2023',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face'
+    avatar: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1756177679/daniel_psd7do.jpg'
   },
   {
     id: 3,
-    name: 'Venkat Reddy',
+    name: 'Janu',
     location: 'Vijayawada',
     rating: 5,
     text: 'Visited with family and everyone loved it. The temple tour combined with scenic beauty made it a perfect spiritual journey. Unforgettable memories!',
     date: 'October 2023',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face'
+    avatar: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1756177697/janu_t64fm3.jpg'
   }
 ]
 
