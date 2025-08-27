@@ -1,8 +1,8 @@
 import Hero from './components/Hero'
 import FeaturedAttractions from './components/FeaturedAttractions'
 import PackageShowcase from './components/PackageShowcase'
-import Testimonials from './components/Testimonials'
-import Newsletter from './components/Newsletter'
+import { LazyTestimonials, LazyNewsletter } from './components/LazyComponents'
+import CriticalCSS from './components/CriticalCSS'
 import Script from 'next/script'
 import { Metadata } from 'next'
 
@@ -54,6 +54,7 @@ export default function Home() {
 
   return (
     <>
+      <CriticalCSS />
       <Script
         id="home-structured-data"
         type="application/ld+json"
@@ -62,8 +63,8 @@ export default function Home() {
       <Hero />
       <FeaturedAttractions />
       <PackageShowcase />
-      <Testimonials />
-      <Newsletter />
+      <LazyTestimonials />
+      <LazyNewsletter />
     </>
   )
 }

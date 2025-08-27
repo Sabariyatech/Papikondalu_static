@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, memo } from 'react'
+import { useState, memo, useCallback } from 'react'
 import { getOptimizedImageUrl } from '../lib/performance'
 
 interface OptimizedImageProps {
@@ -32,11 +32,11 @@ const OptimizedImage = memo(({
 
   const optimizedSrc = width ? getOptimizedImageUrl(src, width, height, quality) : src
 
-  const handleLoad = () => setIsLoading(false)
-  const handleError = () => {
+  const handleLoad = useCallback(() => setIsLoading(false), [])
+  const handleError = useCallback(() => {
     setError(true)
     setIsLoading(false)
-  }
+  }, [])
 
   if (error) {
     return (
@@ -56,7 +56,7 @@ const OptimizedImage = memo(({
         fill={fill}
         priority={priority}
         quality={quality}
-        sizes={sizes || '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'}
+        sizes={sizes || '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'}
         className={`transition-opacity duration-300 ${
           isLoading ? 'opacity-0' : 'opacity-100'
         } ${fill ? 'object-cover' : ''}`}
@@ -64,9 +64,10 @@ const OptimizedImage = memo(({
         onError={handleError}
         placeholder="blur"
         blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+        loading="eager"
       />
       {isLoading && (
-        <div className="absolute inset-0 bg-neutral-200 animate-pulse" />
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 via-neutral-100 to-neutral-200 animate-pulse" />
       )}
     </div>
   )

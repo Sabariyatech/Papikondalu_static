@@ -2,10 +2,10 @@
 
 import { useReportWebVitals } from 'next/web-vitals'
 
-export function WebVitals() {
+export default function WebVitals() {
   useReportWebVitals((metric) => {
     if (process.env.NODE_ENV === 'production') {
-      // Send to analytics service
+      // Log to analytics service
       console.log(metric)
     }
   })

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* Font will be loaded via next/font for better performance */
 
 @layer base {
   html {
@@ -10,7 +10,7 @@
   }
   
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
     @apply text-neutral-800 antialiased;
   }
 
