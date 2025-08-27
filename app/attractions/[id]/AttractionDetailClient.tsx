@@ -14,7 +14,6 @@ interface Attraction {
   gallery: string[]
   highlights: string[]
   bestTime: string
-  duration: string
   activities: string[]
   facilities: string[]
   tips: string[]

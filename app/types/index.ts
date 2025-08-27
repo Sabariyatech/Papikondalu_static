@@ -14,11 +14,17 @@ export interface Package {
 }
 
 export interface Attraction {
-  id: string
+  id: number
   name: string
+  shortDescription: string
   description: string
   image: string
+  gallery: string[]
   highlights: string[]
+  bestTime: string
+  activities: string[]
+  facilities: string[]
+  tips: string[]
 }
 
 export interface GalleryImage {
