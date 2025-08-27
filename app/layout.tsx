@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     'DC.description': 'Premium boat tours and river cruise experiences in Papikondalu Hills',
     'DC.publisher': 'Papikondalu Tourism',
     'DC.contributor': 'Papikondalu Tourism Team',
-    'DC.date': new Date().toISOString(),
+    'DC.date': '2024-01-01T00:00:00.000Z',
     'DC.type': 'Service',
     'DC.format': 'text/html',
     'DC.identifier': 'https://papikondalutourism.com',

@@ -2,7 +2,6 @@
 const nextConfig = {
   images: {
     unoptimized: true,
-    qualities: [60, 75, 90],
     remotePatterns: [
       {
         protocol: 'https',
@@ -17,6 +16,7 @@ const nextConfig = {
   reactStrictMode: false,
   compress: true,
   poweredByHeader: false,
+  output: 'standalone',
 }
 
 module.exports = nextConfig
