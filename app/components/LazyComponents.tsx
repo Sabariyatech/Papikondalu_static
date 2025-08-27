@@ -1,7 +1,7 @@
 'use client'
 
 import dynamic from 'next/dynamic'
-import { Suspense } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 
 // Lazy load non-critical components
 export const LazyTestimonials = dynamic(() => import('./Testimonials'), {
@@ -16,7 +16,7 @@ export const LazyNewsletter = dynamic(() => import('./Newsletter'), {
 
 export const LazyMultiAgentWidget = dynamic(() => import('./MultiAgentWidget'), {
   loading: () => null,
-  ssr: true
+  ssr: false
 })
 
 export const LazyLightbox = dynamic(() => import('./Lightbox'), {
@@ -24,9 +24,21 @@ export const LazyLightbox = dynamic(() => import('./Lightbox'), {
   ssr: false
 })
 
-// Wrapper component with Suspense
-export const LazyComponentWrapper = ({ children }: { children: React.ReactNode }) => (
-  <Suspense fallback={<div className="h-32 bg-neutral-100 animate-pulse rounded-2xl" />}>
-    {children}
-  </Suspense>
-)
+// Wrapper component with Suspense and mounting check
+export const LazyComponentWrapper = ({ children }: { children: React.ReactNode }) => {
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
+
+  if (!isMounted) {
+    return <div className="h-32 bg-neutral-100 animate-pulse rounded-2xl" />
+  }
+
+  return (
+    <Suspense fallback={<div className="h-32 bg-neutral-100 animate-pulse rounded-2xl" />}>
+      {children}
+    </Suspense>
+  )
+}

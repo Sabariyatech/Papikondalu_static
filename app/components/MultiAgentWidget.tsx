@@ -9,7 +9,12 @@ export default function MultiAgentWidget() {
   const [isOpen, setIsOpen] = useState(false)
   const [showAgents, setShowAgents] = useState(false)
   const [contactType, setContactType] = useState<'whatsapp' | 'call'>('whatsapp')
+  const [isMounted, setIsMounted] = useState(false)
   const widgetRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -41,6 +46,10 @@ export default function MultiAgentWidget() {
     }
     setIsOpen(false)
     setShowAgents(false)
+  }
+
+  if (!isMounted) {
+    return null
   }
 
   return (

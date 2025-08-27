@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -7,13 +6,6 @@ import { LazyMultiAgentWidget } from './components/LazyComponents'
 import WebVitals from './components/WebVitals'
 import ImagePreloader from './components/ImagePreloader'
 import Script from 'next/script'
-
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-  preload: true,
-  variable: '--font-inter',
-})
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -215,14 +207,14 @@ export default function RootLayout({
         <link rel="preconnect" href="https://djmcbqzqt.cloudinary.com" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://djmcbqzqt.cloudinary.com" />
-        <link rel="preload" href="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1920,h_1080,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg" as="image" />
+
         <meta name="theme-color" content="#0f172a" />
         <meta name="msapplication-TileColor" content="#0f172a" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
-      <body className={`${inter.variable} font-sans antialiased`}>
+      <body className="font-sans antialiased">
         <WebVitals />
         <ImagePreloader />
         <Header />

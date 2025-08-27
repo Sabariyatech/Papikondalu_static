@@ -4,10 +4,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowRight, Star, Users, Calendar, Award, MapPin, Play } from 'lucide-react'
-import { useState, memo } from 'react'
+import { useState, useEffect, memo } from 'react'
 
 const Hero = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   const stats = [
     { icon: Calendar, label: '20+ Years', sublabel: 'Experience' },
@@ -21,15 +26,13 @@ const Hero = () => {
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0">
         <Image
-          src="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1920,h_1080,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg"
+          src="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1200,h_800,q_60/v1755401093/papihills1_hmfpkr.jpg"
           alt="Papikondalu Hills - Scenic Godavari River Boat Tours"
           fill
           className="object-cover scale-110"
           priority
           sizes="100vw"
-          quality={75}
-          placeholder="blur"
-          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+          quality={60}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/20 to-secondary-900/20" />
@@ -50,12 +53,13 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 text-center text-white max-w-6xl mx-auto container-padding">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          className="space-y-8"
-        >
+        {isMounted ? (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            className="space-y-8"
+          >
           {/* Main Heading */}
           <div className="space-y-4">
             <motion.div
@@ -147,7 +151,27 @@ const Hero = () => {
             <div className="text-sm">✓ Certified by Tourism Board</div>
             <div className="text-sm">✓ 24/7 Customer Support</div>
           </motion.div>
-        </motion.div>
+          </motion.div>
+        ) : (
+          <div className="space-y-8 opacity-0">
+            {/* Static content for SSR */}
+            <div className="space-y-4">
+              <div className="inline-flex items-center bg-white/10 backdrop-blur-md rounded-full px-6 py-2 border border-white/20">
+                <MapPin size={16} className="mr-2 text-secondary-400" />
+                <span className="text-sm font-medium">Godavari River, Andhra Pradesh</span>
+              </div>
+              
+              <h1 className="heading-xl text-white leading-tight">
+                Discover the Magic of
+                <span className="block">
+                  <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
+                    Papikondalu
+                  </span>
+                </span>
+              </h1>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* Scroll Indicator */}

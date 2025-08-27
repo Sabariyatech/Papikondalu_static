@@ -1,8 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useState, memo, useCallback } from 'react'
-import { getOptimizedImageUrl } from '../lib/performance'
+import { useState } from 'react'
 
 interface OptimizedImageProps {
   src: string
@@ -11,68 +10,47 @@ interface OptimizedImageProps {
   height?: number
   className?: string
   priority?: boolean
-  quality?: number
   sizes?: string
+  quality?: number
   fill?: boolean
 }
 
-const OptimizedImage = memo(({
+export default function OptimizedImage({
   src,
   alt,
   width,
   height,
   className = '',
   priority = false,
-  quality = 80,
   sizes,
-  fill = false
-}: OptimizedImageProps) => {
+  quality = 75,
+  fill = false,
+  ...props
+}: OptimizedImageProps) {
+  const [imgSrc, setImgSrc] = useState(src)
   const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState(false)
 
-  const optimizedSrc = width ? getOptimizedImageUrl(src, width, height, quality) : src
-
-  const handleLoad = useCallback(() => setIsLoading(false), [])
-  const handleError = useCallback(() => {
-    setError(true)
-    setIsLoading(false)
-  }, [])
-
-  if (error) {
-    return (
-      <div className={`bg-neutral-200 flex items-center justify-center ${className}`}>
-        <span className="text-neutral-500 text-sm">Image not available</span>
-      </div>
-    )
-  }
+  const fallbackSrc = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlPC90ZXh0Pjwvc3ZnPg=='
 
   return (
-    <div className={`relative overflow-hidden ${className}`}>
+    <div className={`relative ${isLoading ? 'animate-pulse bg-gray-200' : ''}`}>
       <Image
-        src={optimizedSrc}
+        src={imgSrc}
         alt={alt}
         width={width}
         height={height}
-        fill={fill}
+        className={className}
         priority={priority}
+        sizes={sizes}
         quality={quality}
-        sizes={sizes || '(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw'}
-        className={`transition-opacity duration-300 ${
-          isLoading ? 'opacity-0' : 'opacity-100'
-        } ${fill ? 'object-cover' : ''}`}
-        onLoad={handleLoad}
-        onError={handleError}
-        placeholder="blur"
-        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-        loading="eager"
+        fill={fill}
+        onLoad={() => setIsLoading(false)}
+        onError={() => {
+          setImgSrc(fallbackSrc)
+          setIsLoading(false)
+        }}
+        {...props}
       />
-      {isLoading && (
-        <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 via-neutral-100 to-neutral-200 animate-pulse" />
-      )}
     </div>
   )
-})
-
-OptimizedImage.displayName = 'OptimizedImage'
-
-export default OptimizedImage
+}
