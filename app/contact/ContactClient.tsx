@@ -123,7 +123,7 @@ export default function ContactClient() {
             </motion.div>
             
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Let's Plan Your
+              Let&apos;s Plan Your
               <span className="block text-secondary-300">Dream Journey</span>
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-white/90">
@@ -272,7 +272,7 @@ export default function ContactClient() {
                         Message Sent Successfully!
                       </h3>
                       <p className="text-gray-600 text-lg">
-                        Thank you for contacting us. We'll get back to you within 24 hours with personalized recommendations.
+                        Thank you for contacting us. We&apos;ll get back to you within 24 hours with personalized recommendations.
                       </p>
                     </motion.div>
                   ) : (
@@ -482,7 +482,7 @@ export default function ContactClient() {
                     
                     <div className="flex gap-3">
                       <a
-                        href={`https://wa.me/${agent.whatsapp}?text=Hi, I${''}m interested in Papikondalu tour packages. Can you help me?`}
+                        href={`https://wa.me/${agent.whatsapp}?text=Hi, I&apos;m interested in Papikondalu tour packages. Can you help me?`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
@@ -590,7 +590,7 @@ export default function ContactClient() {
                     className="flex flex-col items-center"
                   >
                     <a
-                      href={`https://wa.me/${agent.whatsapp}?text=Hi, I${''}m interested in Papikondalu tour packages. Can you help me?`}
+                      href={`https://wa.me/${agent.whatsapp}?text=Hi, I&apos;m interested in Papikondalu tour packages. Can you help me?`}
                       target="_blank"
                       rel="noopener noreferrer"
                       title={`Contact ${agent.name} on WhatsApp`}

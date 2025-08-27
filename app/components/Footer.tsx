@@ -69,7 +69,7 @@ const Footer = () => {
             
             <p className="text-neutral-300 mb-6 leading-relaxed text-lg">
               Experience the beauty of Papikondalu with 20+ years of expertise. 
-              We've served 7+ lakh happy customers with unforgettable boat tours 
+              We&apos;ve served 7+ lakh happy customers with unforgettable boat tours 
               and temple visits along the scenic Godavari River.
             </p>
             

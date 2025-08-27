@@ -73,7 +73,7 @@ const PackageShowcase = () => {
           </h2>
           <p className="text-body max-w-3xl mx-auto">
             Choose from our carefully crafted tour packages designed to give you the most 
-            unforgettable experience of Papikondalu's natural beauty and cultural heritage
+            unforgettable experience of Papikondalu&apos;s natural beauty and cultural heritage
           </p>
         </motion.div>
 

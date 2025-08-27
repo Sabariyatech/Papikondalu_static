@@ -146,7 +146,7 @@ export default function PackageDetailClient({ packageData }: PackageDetailClient
                 transition={{ delay: 0.3 }}
                 className="card-elevated p-8 mb-8"
               >
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">What's Included</h2>
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">What&apos;s Included</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {packageData.inclusions.map((inclusion, index) => (
                     <div key={index} className="flex items-center gap-3">
@@ -241,7 +241,7 @@ export default function PackageDetailClient({ packageData }: PackageDetailClient
                   {agents.slice(0, 2).map((agent) => (
                     <div key={agent.id} className="flex gap-2">
                       <a
-                        href={`https://wa.me/${agent.whatsapp}?text=Hi, I'm interested in ${packageData.name} package. Can you help me?`}
+                        href={`https://wa.me/${agent.whatsapp}?text=Hi, I&apos;m interested in ${packageData.name} package. Can you help me?`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center"

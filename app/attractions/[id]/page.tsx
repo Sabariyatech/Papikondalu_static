@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function AttractionDetailPage({ params }: { params: { id: string } }) {
-  const attraction = attractionsData.find(a => a.id === parseInt(params.id))
+export default async function AttractionDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const attraction = attractionsData.find(a => a.id === parseInt(id))
   
   if (!attraction) {
     notFound()

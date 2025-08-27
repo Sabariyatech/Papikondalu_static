@@ -29,8 +29,8 @@ export default function NotFound() {
             Oops! Page Not Found
           </h1>
           <p className="text-body mb-8">
-            It seems like you've wandered off the beaten path. The page you're looking for 
-            doesn't exist or has been moved to a new location.
+            It seems like you&apos;ve wandered off the beaten path. The page you&apos;re looking for 
+            doesn&apos;t exist or has been moved to a new location.
           </p>
 
           {/* Action Buttons */}

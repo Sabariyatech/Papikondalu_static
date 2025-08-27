@@ -89,9 +89,9 @@ export default function AttractionsClient() {
               Contact us to create a custom package with your favorite attractions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/packages" className="btn-secondary">
+              <Link href="/packages" className="btn-secondary">
                 View Packages
-              </a>
+              </Link>
               <a href="/contact" className="bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors duration-200">
                 Contact Us
               </a>

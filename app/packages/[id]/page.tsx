@@ -8,8 +8,9 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function PackageDetailPage({ params }: { params: { id: string } }) {
-  const packageData = packagesData.find(p => p.id === parseInt(params.id))
+export default async function PackageDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const packageData = packagesData.find(p => p.id === parseInt(id))
   
   if (!packageData) {
     notFound()

@@ -83,7 +83,7 @@ const Hero = () => {
             
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Experience breathtaking boat tours through the scenic Godavari River with 
-              <span className="text-secondary-400 font-semibold"> India's most trusted tourism partner</span>
+              <span className="text-secondary-400 font-semibold"> India&apos;s most trusted tourism partner</span>
             </p>
           </div>
           
