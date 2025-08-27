@@ -20,6 +20,11 @@ export const metadata: Metadata = {
     default: 'Papikondalu Tourism - Best Boat Tours in Andhra Pradesh | 7+ Lakh Happy Customers',
     template: '%s | Papikondalu Tourism - Best River Cruise Experience'
   },
+  icons: {
+    icon: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
+    shortcut: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
+    apple: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
+  },
   description: 'Experience Papikondalu Hills with India\'s #1 river tourism company. 20+ years expertise, 7+ lakh satisfied customers. Book premium Godavari boat tours, temple visits & adventure packages. Best prices guaranteed!',
   keywords: [
     'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
