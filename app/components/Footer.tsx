@@ -196,6 +196,7 @@ const Footer = () => {
               onClick={scrollToTop}
               className="w-10 h-10 bg-primary-600 hover:bg-primary-500 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
               aria-label="Scroll to top"
+              suppressHydrationWarning
             >
               <ArrowUp size={18} className="text-white" />
             </button>

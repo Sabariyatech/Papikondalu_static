@@ -130,12 +130,14 @@ const Newsletter = () => {
                         required
                         disabled={isLoading}
                         className="w-full px-6 py-4 text-gray-800 placeholder-gray-500 bg-transparent border-0 focus:outline-none focus:ring-0 text-lg font-medium rounded-xl"
+                        suppressHydrationWarning
                       />
                     </div>
                     <button
                       type="submit"
                       disabled={isLoading}
                       className="bg-gradient-to-r from-primary-600 to-secondary-600 hover:from-primary-700 hover:to-secondary-700 text-white px-8 py-3 rounded-xl font-semibold group disabled:opacity-50 disabled:cursor-not-allowed shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                      suppressHydrationWarning
                     >
                       {isLoading ? (
                         <div className="flex items-center">

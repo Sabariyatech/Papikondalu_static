@@ -95,7 +95,7 @@ const PackageShowcase = () => {
               </div>
 
               {/* Heart Icon */}
-              <button className="absolute top-4 right-4 z-10 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors group/heart">
+              <button className="absolute top-4 right-4 z-10 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors group/heart" suppressHydrationWarning>
                 <Heart className="w-4 h-4 text-neutral-600 group-hover/heart:text-red-500 transition-colors" />
               </button>
 
