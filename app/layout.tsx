@@ -213,7 +213,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://djmcbqzqt.cloudinary.com" />
 
-        <meta name="theme-color" content="#0f172a" />
+
         <meta name="msapplication-TileColor" content="#0f172a" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
