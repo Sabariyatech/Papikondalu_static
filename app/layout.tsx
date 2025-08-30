@@ -150,7 +150,7 @@ export default function RootLayout({
         'url': 'https://papikondalutourism.com',
         'logo': 'https://papikondalutourism.com/icon-512x512.png',
         'image': 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755401093/papihills1_hmfpkr.jpg',
-        'telephone': '+91-9876543210',
+        'telephone': '+91-9848323488',
         'email': 'info@papikondalutourism.com',
         'address': {
           '@type': 'PostalAddress',

@@ -364,7 +364,7 @@ export default function AboutUsClient() {
                   <Phone size={20} className="text-secondary-300" />
                   <div>
                     <p className="font-semibold">Call Us</p>
-                    <p className="text-white/80">+91 9876543210</p>
+                    <p className="text-white/80">+91 9848323488</p>
                   </div>
                 </div>
                 <div className="flex items-center justify-center space-x-3">

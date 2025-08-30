@@ -112,8 +112,8 @@ export default function PackagesClient() {
               <a href="/contact" className="btn-secondary">
                 Contact Us
               </a>
-              <a href="tel:+919876543210" className="bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors duration-200">
-                Call Now: +91 9876543210
+              <a href="tel:+919848323488" className="bg-white text-primary-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors duration-200">
+                Call Now: +91 9848323488
               </a>
             </div>
           </motion.div>

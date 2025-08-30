@@ -326,7 +326,7 @@ export default function ContactClient() {
                             required
                             disabled={isLoading}
                             className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 text-gray-900 placeholder-gray-500 disabled:opacity-50"
-                            placeholder="+91 9876543210"
+                            placeholder="+91 9848323488"
                           />
                         </div>
                         <div>

@@ -28,7 +28,7 @@ export default function SchemaPage() {
           'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755401093/papihills1_hmfpkr.jpg',
           'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1756004871/aboutus_papikonalu_mjtxyo.jpg'
         ],
-        'telephone': '+91-9876543210',
+        'telephone': '+91-9848323488',
         'email': 'info@papikondalutourism.com',
         'address': {
           '@type': 'PostalAddress',
