@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     }
 
     const formData = new FormData()
-    formData.append('access_key', process.env.WEB3FORMS_ACCESS_KEY || '')
+    formData.append('access_key', '8085587f-ba96-4164-9809-d5804b1fd563')
     formData.append('name', name)
     formData.append('email', email)
     formData.append('phone', phone || '')
@@ -32,7 +32,6 @@ export async function POST(request: NextRequest) {
       throw new Error(result.message || 'Failed to send message')
     }
   } catch (error) {
-    console.error('Contact form error:', error)
     return NextResponse.json(
       { error: 'Failed to send message' },
       { status: 500 }

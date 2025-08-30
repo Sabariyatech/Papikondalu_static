@@ -15,21 +15,16 @@ export default function manifest(): MetadataRoute.Manifest {
     categories: ['travel', 'tourism', 'entertainment'],
     icons: [
       {
-        src: '/icon-192x192.png',
+        src: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
         sizes: '192x192',
         type: 'image/png',
         purpose: 'maskable'
       },
       {
-        src: '/icon-512x512.png',
+        src: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
         sizes: '512x512',
         type: 'image/png',
         purpose: 'any'
-      },
-      {
-        src: '/favicon.ico',
-        sizes: '48x48',
-        type: 'image/x-icon'
       }
     ],
     screenshots: [

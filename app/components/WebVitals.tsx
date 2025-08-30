@@ -4,10 +4,7 @@ import { useReportWebVitals } from 'next/web-vitals'
 
 export default function WebVitals() {
   useReportWebVitals((metric) => {
-    if (process.env.NODE_ENV === 'production') {
-      // Log to analytics service
-      console.log(metric)
-    }
+    // Remove console logs in production
   })
 
   return null
