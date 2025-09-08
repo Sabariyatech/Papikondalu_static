@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import FloatingActionButton from './components/FloatingActionButton'
 import { LazyMultiAgentWidget } from './components/LazyComponents'
 import WebVitals from './components/WebVitals'
 import ImagePreloader from './components/ImagePreloader'
@@ -223,6 +224,7 @@ export default function RootLayout({
         <WebVitals />
         <ImagePreloader />
         <Header />
+        <FloatingActionButton />
         <main className="relative" role="main">{children}</main>
         <Footer />
         <LazyMultiAgentWidget />
