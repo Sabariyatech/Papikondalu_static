@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backlink Tracker - Papikondalu Tourism</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: #0f172a; color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .section { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .progress { background: #e9ecef; height: 20px; border-radius: 10px; overflow: hidden; margin-top: 20px; }
+        .progress-bar { background: #28a745; height: 100%; transition: width 0.3s; }
+        .link-item { background: white; padding: 15px; margin: 10px 0; border-radius: 5px; border-left: 4px solid #007bff; }
+        .status-pending { border-left-color: #ffc107; }
+        .status-completed { border-left-color: #28a745; }
+        .status-failed { border-left-color: #dc3545; }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; border: 1px solid #ddd; border-radius: 4px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .stat-card { background: white; padding: 20px; border-radius: 8px; text-align: center; }
+        .stat-number { font-size: 2em; font-weight: bold; color: #007bff; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Backlink Building Tracker</h1>
+        <p>Track your progress in building backlinks for Papikondalu Tourism</p>
+    </div>
+
+    <div class="section">
+        <h2>Current Progress</h2>
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalLinks">1</div>
+                <div>Total Backlinks</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="pendingLinks">15</div>
+                <div>Pending Submissions</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="completedLinks">0</div>
+                <div>Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="targetLinks">50</div>
+                <div>Target (6 months)</div>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width: 2%"></div>
+        </div>
+        <p>2% of target achieved</p>
+    </div>
+
+    <div class="section">
+        <h2>Priority Actions This Week</h2>
+        <div class="link-item status-pending">
+            <strong>Google My Business</strong><br>
+            <small>business.google.com - Claim and verify listing</small>
+            <button onclick="markCompleted(this)">Mark Complete</button>
+        </div>
+        <div class="link-item status-pending">
+            <strong>TripAdvisor Business</strong><br>
+            <small>tripadvisor.com/Owners - Create business profile</small>
+            <button onclick="markCompleted(this)">Mark Complete</button>
+        </div>
+        <div class="link-item status-pending">
+            <strong>MakeMyTrip Partner</strong><br>
+            <small>corporate.makemytrip.com/partner-with-us</small>
+            <button onclick="markCompleted(this)">Mark Complete</button>
+        </div>
+        <div class="link-item status-pending">
+            <strong>Justdial Listing</strong><br>
+            <small>justdial.com - Add business listing</small>
+            <button onclick="markCompleted(this)">Mark Complete</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Add New Backlink Opportunity</h2>
+        <label for="websiteName">Website Name:</label>
+        <input type="text" id="websiteName" placeholder="Website Name">
+        <label for="websiteUrl">Website URL:</label>
+        <input type="url" id="websiteUrl" placeholder="Website URL">
+        <label for="notes">Notes:</label>
+        <textarea id="notes" placeholder="Notes (contact person, email, etc.)" rows="3"></textarea>
+        <button onclick="addOpportunity()">Add Opportunity</button>
+    </div>
+
+    <div class="section">
+        <h2>Contact Templates</h2>
+        <h3>Partnership Email Template:</h3>
+        <label for="emailTemplate">Email Template:</label>
+        <textarea id="emailTemplate" readonly rows="8">Subject: Partnership Opportunity - Papikondalu Tourism
+
+Hi [Name],
+
+I'm reaching out from Papikondalu Tourism, Andhra Pradesh's leading river cruise operator with 20+ years of experience serving 7+ lakh customers.
+
+We'd love to explore a partnership opportunity with [Their Business]. We can offer:
+- Cross-promotional opportunities  
+- Package deals for your customers
+- Mutual website linking
+
+Would you be interested in a brief call to discuss this further?
+
+Best regards,
+[Your Name]
+Papikondalu Tourism
++91 9848323488</textarea>
+        <button onclick="copyTemplate(this)">Copy Template</button>
+    </div>
+
+    <script>
+        function markCompleted(button) {
+            const item = button.parentElement;
+            item.classList.remove('status-pending');
+            item.classList.add('status-completed');
+            button.textContent = 'Completed ✓';
+            button.disabled = true;
+            
+            // Update stats
+            const completed = document.getElementById('completedLinks');
+            const pending = document.getElementById('pendingLinks');
+            completed.textContent = parseInt(completed.textContent) + 1;
+            pending.textContent = parseInt(pending.textContent) - 1;
+            
+            // Update progress bar
+            const total = parseInt(document.getElementById('totalLinks').textContent);
+            const completedCount = parseInt(completed.textContent);
+            const progress = ((total + completedCount) / 50) * 100;
+            document.querySelector('.progress-bar').style.width = progress + '%';
+        }
+
+        function addOpportunity() {
+            const name = document.getElementById('websiteName').value;
+            const url = document.getElementById('websiteUrl').value;
+            const notes = document.getElementById('notes').value;
+            
+            if (name && url) {
+                const container = document.querySelector('.section:nth-child(3)');
+                const newItem = document.createElement('div');
+                newItem.className = 'link-item status-pending';
+                newItem.innerHTML = `
+                    <strong>${name}</strong><br>
+                    <small>${url} - ${notes}</small>
+                    <button onclick="markCompleted(this)">Mark Complete</button>
+                `;
+                container.appendChild(newItem);
+                
+                // Clear form
+                document.getElementById('websiteName').value = '';
+                document.getElementById('websiteUrl').value = '';
+                document.getElementById('notes').value = '';
+                
+                // Update pending count
+                const pending = document.getElementById('pendingLinks');
+                pending.textContent = parseInt(pending.textContent) + 1;
+            }
+        }
+
+        function copyTemplate(button) {
+            const textarea = button.previousElementSibling;
+            textarea.select();
+            document.execCommand('copy');
+            button.textContent = 'Copied!';
+            setTimeout(() => {
+                button.textContent = 'Copy Template';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
