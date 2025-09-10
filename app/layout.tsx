@@ -16,17 +16,17 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://papikondalutourism.com'),
+  metadataBase: new URL('https://manapapikondalu.vercel.app'),
   title: {
-    default: 'Papikondalu Tourism - Best Boat Tours in Andhra Pradesh | 7+ Lakh Happy Customers',
-    template: '%s | Papikondalu Tourism - Best River Cruise Experience'
+    default: 'Papikondalu Tourism - Best Boat Tours | 7+ Lakh Happy Customers',
+    template: '%s | Papikondalu Tourism'
   },
   icons: {
     icon: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
     shortcut: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
     apple: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
   },
-  description: 'Experience Papikondalu Hills with India\'s #1 river tourism company. 20+ years expertise, 7+ lakh satisfied customers. Book premium Godavari boat tours, temple visits & adventure packages. Best prices guaranteed!',
+  description: 'Experience Papikondalu Hills with India\'s #1 river tourism company. 20+ years expertise, 7+ lakh satisfied customers. Book now!',
   keywords: [
     'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
     'Papikondalu hills boat ride', 'Godavari river tourism', 'Rajahmundry boat tours', 'temple tours Andhra Pradesh',
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://papikondalutourism.com',
+    url: 'https://manapapikondalu.vercel.app',
     siteName: 'Papikondalu Tourism - Best River Cruise Experience',
-    title: 'Papikondalu Tourism - #1 Boat Tours in Andhra Pradesh | 7+ Lakh Happy Customers',
-    description: 'Experience Papikondalu Hills with India\'s leading river tourism company. 20+ years of excellence, premium boat tours, temple visits & adventure packages. Book now!',
+    title: 'Papikondalu Tourism - Best Boat Tours | 7+ Lakh Customers',
+    description: 'Experience Papikondalu Hills with India\'s leading river tourism company. 20+ years of excellence. Book now!',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,
@@ -86,11 +86,11 @@ export const metadata: Metadata = {
     yahoo: 'your-yahoo-verification-code',
   },
   alternates: {
-    canonical: 'https://papikondalutourism.com',
+    canonical: 'https://manapapikondalu.vercel.app',
     languages: {
-      'en-US': 'https://papikondalutourism.com',
-      'te-IN': 'https://papikondalutourism.com/te',
-      'hi-IN': 'https://papikondalutourism.com/hi'
+      'en-US': 'https://manapapikondalu.vercel.app',
+      'te-IN': 'https://manapapikondalu.vercel.app/te',
+      'hi-IN': 'https://manapapikondalu.vercel.app/hi'
     }
   },
   category: 'tourism',
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
     'DC.date': '2024-01-01T00:00:00.000Z',
     'DC.type': 'Service',
     'DC.format': 'text/html',
-    'DC.identifier': 'https://papikondalutourism.com',
+    'DC.identifier': 'https://manapapikondalu.vercel.app',
     'DC.language': 'en',
     'DC.coverage': 'Andhra Pradesh, India',
     'DC.rights': '© 2024 Papikondalu Tourism. All rights reserved.'
@@ -125,36 +125,24 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'TouristAttraction',
-        '@id': 'https://papikondalutourism.com/#attraction',
-        'name': 'Papikondalu Hills',
-        'description': 'Scenic hills along the Godavari River offering breathtaking boat tours and temple visits',
-        'url': 'https://papikondalutourism.com',
-        'image': 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755401093/papihills1_hmfpkr.jpg',
-        'address': {
-          '@type': 'PostalAddress',
-          'addressLocality': 'Rajahmundry',
-          'addressRegion': 'Andhra Pradesh',
-          'addressCountry': 'IN'
-        },
-        'geo': {
-          '@type': 'GeoCoordinates',
-          'latitude': 17.0005,
-          'longitude': 81.8040
-        }
-      },
-      {
         '@type': 'TravelAgency',
-        '@id': 'https://papikondalutourism.com/#organization',
+        '@id': 'https://manapapikondalu.vercel.app/#organization',
         'name': 'Papikondalu Tourism',
+        'alternateName': 'Papikondalu River Tourism',
         'description': 'Leading river tourism company with 20+ years of experience serving 7+ lakh customers',
-        'url': 'https://papikondalutourism.com',
-        'logo': 'https://papikondalutourism.com/icon-512x512.png',
+        'url': 'https://manapapikondalu.vercel.app',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
+          'width': 512,
+          'height': 512
+        },
         'image': 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755401093/papihills1_hmfpkr.jpg',
         'telephone': '+91-9848323488',
         'email': 'info@papikondalutourism.com',
         'address': {
           '@type': 'PostalAddress',
+          'streetAddress': 'Rajahmundry',
           'addressLocality': 'Rajahmundry',
           'addressRegion': 'Andhra Pradesh',
           'postalCode': '533101',
@@ -166,9 +154,11 @@ export default function RootLayout({
           'longitude': 81.8040
         },
         'foundingDate': '2004',
-        'numberOfEmployees': '50-100',
-        'areaServed': 'Andhra Pradesh, Telangana',
-        'serviceType': 'River Tourism, Boat Tours, Temple Tours',
+        'areaServed': {
+          '@type': 'State',
+          'name': 'Andhra Pradesh'
+        },
+        'serviceType': ['River Tourism', 'Boat Tours', 'Temple Tours', 'Adventure Packages'],
         'aggregateRating': {
           '@type': 'AggregateRating',
           'ratingValue': '4.8',
@@ -176,6 +166,10 @@ export default function RootLayout({
           'bestRating': '5',
           'worstRating': '1'
         },
+        'priceRange': '₹₹',
+        'currenciesAccepted': 'INR',
+        'paymentAccepted': 'Cash, Card, UPI',
+        'openingHours': 'Mo-Su 06:00-20:00',
         'sameAs': [
           'https://www.facebook.com/papikondalutourism',
           'https://www.instagram.com/papikondalutourism',
@@ -183,20 +177,73 @@ export default function RootLayout({
         ]
       },
       {
+        '@type': 'TouristAttraction',
+        '@id': 'https://manapapikondalu.vercel.app/#attraction',
+        'name': 'Papikondalu Hills',
+        'description': 'Scenic hills along the Godavari River offering breathtaking boat tours and temple visits',
+        'url': 'https://manapapikondalu.vercel.app/attractions/papikondalu-hills',
+        'image': {
+          '@type': 'ImageObject',
+          'url': 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755401093/papihills1_hmfpkr.jpg',
+          'width': 1200,
+          'height': 800
+        },
+        'address': {
+          '@type': 'PostalAddress',
+          'addressLocality': 'Papikondalu',
+          'addressRegion': 'Andhra Pradesh',
+          'addressCountry': 'IN'
+        },
+        'geo': {
+          '@type': 'GeoCoordinates',
+          'latitude': 17.0005,
+          'longitude': 81.8040
+        },
+        'touristType': ['Family', 'Adventure', 'Nature Lovers', 'Pilgrims'],
+        'availableLanguage': ['English', 'Telugu', 'Hindi']
+      },
+      {
         '@type': 'WebSite',
-        '@id': 'https://papikondalutourism.com/#website',
-        'url': 'https://papikondalutourism.com',
+        '@id': 'https://manapapikondalu.vercel.app/#website',
+        'url': 'https://manapapikondalu.vercel.app',
         'name': 'Papikondalu Tourism',
         'description': 'Best boat tours and river cruise experiences in Papikondalu Hills',
         'publisher': {
-          '@id': 'https://papikondalutourism.com/#organization'
+          '@id': 'https://manapapikondalu.vercel.app/#organization'
         },
         'potentialAction': {
           '@type': 'SearchAction',
-          'target': 'https://papikondalutourism.com/search?q={search_term_string}',
+          'target': {
+            '@type': 'EntryPoint',
+            'urlTemplate': 'https://manapapikondalu.vercel.app/search?q={search_term_string}'
+          },
           'query-input': 'required name=search_term_string'
         },
         'inLanguage': 'en-US'
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://manapapikondalu.vercel.app/#breadcrumb',
+        'itemListElement': [
+          {
+            '@type': 'ListItem',
+            'position': 1,
+            'name': 'Home',
+            'item': 'https://manapapikondalu.vercel.app'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 2,
+            'name': 'Packages',
+            'item': 'https://manapapikondalu.vercel.app/packages'
+          },
+          {
+            '@type': 'ListItem',
+            'position': 3,
+            'name': 'Attractions',
+            'item': 'https://manapapikondalu.vercel.app/attractions'
+          }
+        ]
       }
     ]
   }

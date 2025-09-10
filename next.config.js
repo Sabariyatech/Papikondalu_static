@@ -17,6 +17,21 @@ const nextConfig = {
   compress: true,
   poweredByHeader: false,
   output: 'standalone',
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'manapapikondalu.vercel.app',
+          },
+        ],
+        destination: 'https://manapapikondalu.vercel.app/:path*',
+        permanent: true,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig
