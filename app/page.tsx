@@ -7,7 +7,7 @@ import Script from 'next/script'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
+  title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
   description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers. Book now!',
   keywords: [
     'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'adventure packages Papikondalu', 'river cruise India', 'weekend getaway Andhra Pradesh', 'family tour packages'
   ],
   openGraph: {
-    title: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
+    title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
     description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, serving 7+ lakh customers.',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',

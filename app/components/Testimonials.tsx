@@ -90,8 +90,8 @@ const Testimonials = () => {
             What Our <span className="gradient-text">Customers Say</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Join thousands of satisfied customers who have experienced the best boat tours and Papikondalu tourism 
-            with our award-winning Godavari river cruise services
+            Join thousands of satisfied customers who have experienced the best boat tours Papikondalu adventures 
+            with our award-winning Godavari river cruise services and premium tour packages
           </p>
         </motion.div>
 

@@ -19,12 +19,12 @@ const Header = () => {
   }, [])
 
   const navItems = [
-    { href: '/', label: 'Home', ariaLabel: 'Papikondalu Tourism Home' },
-    { href: '/aboutus', label: 'About Us', ariaLabel: 'About Papikondalu Tourism Company' },
-    { href: '/attractions', label: 'Attractions', ariaLabel: 'Tourist Attractions in Papikondalu' },
-    { href: '/packages', label: 'Packages', ariaLabel: 'Boat Tour Packages' },
-    { href: '/gallery', label: 'Gallery', ariaLabel: 'Photo Gallery of Tours' },
-    { href: '/contact', label: 'Contact', ariaLabel: 'Contact Papikondalu Tourism' },
+    { href: '/', label: 'Home Page', ariaLabel: 'Papikondalu Tourism Home Page' },
+    { href: '/aboutus', label: 'About Company', ariaLabel: 'About Papikondalu Tourism Company Story' },
+    { href: '/attractions', label: 'Tourist Places', ariaLabel: 'Tourist Attractions and Places in Papikondalu' },
+    { href: '/packages', label: 'Tour Packages', ariaLabel: 'Best Boat Tour Packages and Pricing' },
+    { href: '/gallery', label: 'Photo Gallery', ariaLabel: 'Photo Gallery of Boat Tours and Attractions' },
+    { href: '/contact', label: 'Contact Us', ariaLabel: 'Contact Papikondalu Tourism for Bookings' },
   ]
 
   return (

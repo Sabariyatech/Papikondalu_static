@@ -19,7 +19,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://manapapikondalu.vercel.app'),
   title: {
-    default: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
+    default: 'Best Boat Tours Papikondalu | Godavari River Cruise',
     template: '%s | Papikondalu Tourism'
   },
   icons: {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://manapapikondalu.vercel.app',
     siteName: 'Papikondalu Tourism - Best River Cruise Experience',
-    title: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
+    title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
     description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise. Book now!',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@papikondalutourism',
     creator: '@papikondalutourism',
-    title: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
+    title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
     description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers.',
     images: ['https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg'],
   },

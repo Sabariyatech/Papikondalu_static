@@ -63,8 +63,8 @@ const FeaturedAttractions = () => {
             Featured <span className="gradient-text">Attractions</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Experience the best boat tours to Papikondalu tourism destinations. Our Godavari river cruises 
-            take you to the most beautiful and sacred places, offering unique Papikondalu tourism experiences
+            Experience the best boat tours Papikondalu destinations with our premium Godavari river cruise packages. 
+            Our Godavari river cruise adventures take you to the most beautiful places for unforgettable experiences
           </p>
         </motion.div>
 

@@ -72,8 +72,8 @@ const PackageShowcase = () => {
             Popular <span className="gradient-text">Tour Packages</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Choose from our best boat tours and Papikondalu tourism packages. Experience premium Godavari river cruises 
-            designed to give you the most unforgettable Papikondalu tourism experience with our expert guides
+            Choose from our best boat tours Papikondalu packages. Experience premium Godavari river cruise adventures 
+            designed to give you the most unforgettable best boat tours Papikondalu experience with expert guides
           </p>
         </motion.div>
 

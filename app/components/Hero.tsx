@@ -73,17 +73,17 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="heading-xl text-white leading-tight">
-              Papikondalu Tourism - Best Boat Tours
+              Best Boat Tours Papikondalu
               <span className="block">
                 <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
-                  Godavari River Experience
+                  Godavari River Cruise
                 </span>
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Experience the best boat tours and discover Papikondalu tourism with premium Godavari river cruises. 
-              <span className="text-secondary-400 font-semibold">India&apos;s most trusted boat tour operator</span> serving 7+ lakh customers
+              Experience the best boat tours Papikondalu with premium Godavari river cruise adventures. 
+              <span className="text-secondary-400 font-semibold">India&apos;s most trusted Godavari river cruise operator</span> serving 7+ lakh customers
             </p>
           </div>
           
@@ -162,10 +162,10 @@ const Hero = () => {
               </div>
               
               <h1 className="heading-xl text-white leading-tight">
-                Papikondalu Tourism - Best Boat Tours
+                Best Boat Tours Papikondalu
                 <span className="block">
                   <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
-                    Godavari River Experience
+                    Godavari River Cruise
                   </span>
                 </span>
               </h1>
