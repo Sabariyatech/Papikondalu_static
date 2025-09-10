@@ -62,8 +62,8 @@ const Newsletter = () => {
           </h2>
           
           <p className="text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Join our exclusive community and be the first to discover new destinations, 
-            special offers, and insider travel tips from Papikondalu Tourism.
+            Join our exclusive community and be the first to discover the best boat tours, 
+            special Papikondalu tourism offers, and insider Godavari river cruise tips.
           </p>
 
           {/* Benefits */}

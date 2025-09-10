@@ -63,8 +63,8 @@ const FeaturedAttractions = () => {
             Featured <span className="gradient-text">Attractions</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Discover the magic of the most beautiful and sacred places in the Papikondalu region, 
-            each offering unique experiences and unforgettable memories
+            Experience the best boat tours to Papikondalu tourism destinations. Our Godavari river cruises 
+            take you to the most beautiful and sacred places, offering unique Papikondalu tourism experiences
           </p>
         </motion.div>
 

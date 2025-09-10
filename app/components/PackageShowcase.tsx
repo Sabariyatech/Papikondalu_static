@@ -72,8 +72,8 @@ const PackageShowcase = () => {
             Popular <span className="gradient-text">Tour Packages</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Choose from our carefully crafted tour packages designed to discover the magic and give you the most 
-            unforgettable experience of Papikondalu&apos;s natural beauty and cultural heritage
+            Choose from our best boat tours and Papikondalu tourism packages. Experience premium Godavari river cruises 
+            designed to give you the most unforgettable Papikondalu tourism experience with our expert guides
           </p>
         </motion.div>
 

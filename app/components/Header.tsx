@@ -19,12 +19,12 @@ const Header = () => {
   }, [])
 
   const navItems = [
-    { href: '/', label: 'Home' },
-    { href: '/aboutus', label: 'About Us' },
-    { href: '/attractions', label: 'Attractions' },
-    { href: '/packages', label: 'Packages' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/contact', label: 'Contact' },
+    { href: '/', label: 'Home', ariaLabel: 'Papikondalu Tourism Home' },
+    { href: '/aboutus', label: 'About Us', ariaLabel: 'About Papikondalu Tourism Company' },
+    { href: '/attractions', label: 'Attractions', ariaLabel: 'Tourist Attractions in Papikondalu' },
+    { href: '/packages', label: 'Packages', ariaLabel: 'Boat Tour Packages' },
+    { href: '/gallery', label: 'Gallery', ariaLabel: 'Photo Gallery of Tours' },
+    { href: '/contact', label: 'Contact', ariaLabel: 'Contact Papikondalu Tourism' },
   ]
 
   return (
@@ -87,6 +87,7 @@ const Header = () => {
                 <Link
                   key={item.href}
                   href={item.href}
+                  aria-label={item.ariaLabel}
                   className="relative px-4 py-2 text-neutral-700 hover:text-primary-600 font-medium transition-all duration-300 rounded-lg hover:bg-primary-50 group"
                 >
                   {item.label}
@@ -136,6 +137,7 @@ const Header = () => {
                     >
                       <Link
                         href={item.href}
+                        aria-label={item.ariaLabel}
                         className="block py-3 px-4 text-neutral-700 hover:text-primary-600 hover:bg-primary-50 font-medium rounded-lg transition-all duration-200"
                         onClick={() => setIsOpen(false)}
                       >

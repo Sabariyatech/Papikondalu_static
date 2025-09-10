@@ -19,7 +19,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://manapapikondalu.vercel.app'),
   title: {
-    default: 'Papikondalu Tourism - Best Boat Tours | 7+ Lakh Customers',
+    default: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
     template: '%s | Papikondalu Tourism'
   },
   icons: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     shortcut: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
     apple: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
   },
-  description: 'Discover magical Papikondalu Hills with India\'s #1 river tourism company. 20+ years expertise, 7+ lakh customers. Book now!',
+  description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers. Book now!',
   keywords: [
     'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
     'Papikondalu hills boat ride', 'Godavari river tourism', 'Rajahmundry boat tours', 'temple tours Andhra Pradesh',
@@ -50,8 +50,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://manapapikondalu.vercel.app',
     siteName: 'Papikondalu Tourism - Best River Cruise Experience',
-    title: 'Papikondalu Tourism - Best Boat Tours | 7+ Lakh Customers',
-    description: 'Discover magical Papikondalu Hills with India\'s leading river tourism company. 20+ years of excellence. Book now!',
+    title: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
+    description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise. Book now!',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,
@@ -64,8 +64,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@papikondalutourism',
     creator: '@papikondalutourism',
-    title: 'Papikondalu Tourism - Best Boat Tours in Andhra Pradesh',
-    description: 'Discover magical Papikondalu Hills with 20+ years expertise. 7+ lakh customers. Premium boat tours & temple visits.',
+    title: 'Papikondalu Tourism - Best Boat Tours | Godavari River Experience',
+    description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers.',
     images: ['https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg'],
   },
   robots: {
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://manapapikondalu.vercel.app',
     languages: {
-      'en-US': 'https://manapapikondalu.vercel.app'
+      'en': 'https://manapapikondalu.vercel.app'
     }
   },
   category: 'tourism',
