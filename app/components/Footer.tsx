@@ -16,17 +16,17 @@ const Footer = () => {
   ]
 
   const quickLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/aboutus', label: 'About Us' },
-    { href: '/attractions', label: 'Attractions' },
-    { href: '/packages', label: 'Packages' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/contact', label: 'Contact' }
+    { href: '/', label: 'Homepage' },
+    { href: '/aboutus', label: 'Company Info' },
+    { href: '/attractions', label: 'Places to Visit' },
+    { href: '/packages', label: 'Tour Plans' },
+    { href: '/gallery', label: 'Image Gallery' },
+    { href: '/contact', label: 'Get in Touch' }
   ]
 
   const services = [
-    'Boat Tours',
-    'Temple Visits', 
+    'Best Boat Tours Papikondalu',
+    'Godavari River Cruise', 
     'Adventure Packages',
     'Night Stay Arrangements',
     'Group Bookings',
@@ -68,9 +68,9 @@ const Footer = () => {
             </div>
             
             <p className="text-neutral-300 mb-6 leading-relaxed text-lg">
-              Experience the beauty of Papikondalu with 20+ years of expertise. 
-              We&apos;ve served 7+ lakh happy customers with unforgettable boat tours 
-              and temple visits along the scenic Godavari River.
+              Experience the best boat tours Papikondalu with 20+ years of expertise. 
+              We&apos;ve served 7+ lakh happy customers with unforgettable Godavari river cruise 
+              adventures and temple visits along the scenic Godavari River.
             </p>
             
             <div className="space-y-4 mb-8">
