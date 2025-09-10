@@ -16,7 +16,8 @@ const nextConfig = {
   reactStrictMode: false,
   compress: true,
   poweredByHeader: false,
-  output: 'standalone',
+  output: 'export',
+  trailingSlash: true,
 
 }
 
