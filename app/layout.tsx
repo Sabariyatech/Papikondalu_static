@@ -7,6 +7,7 @@ import { LazyMultiAgentWidget } from './components/LazyComponents'
 import WebVitals from './components/WebVitals'
 import ImagePreloader from './components/ImagePreloader'
 import Script from 'next/script'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -275,6 +276,7 @@ export default function RootLayout({
         <main className="relative" role="main">{children}</main>
         <Footer />
         <LazyMultiAgentWidget />
+        <SpeedInsights />
       </body>
     </html>
   )
