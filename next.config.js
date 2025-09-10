@@ -18,6 +18,9 @@ const nextConfig = {
   poweredByHeader: false,
   output: 'export',
   trailingSlash: true,
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
+  },
 
 }
 
