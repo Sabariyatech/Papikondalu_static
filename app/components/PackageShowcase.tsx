@@ -72,7 +72,7 @@ const PackageShowcase = () => {
             Popular <span className="gradient-text">Tour Packages</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Choose from our carefully crafted tour packages designed to give you the most 
+            Choose from our carefully crafted tour packages designed to discover the magic and give you the most 
             unforgettable experience of Papikondalu&apos;s natural beauty and cultural heritage
           </p>
         </motion.div>
@@ -95,7 +95,7 @@ const PackageShowcase = () => {
               </div>
 
               {/* Heart Icon */}
-              <button className="absolute top-4 right-4 z-10 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors group/heart" suppressHydrationWarning>
+              <button className="absolute top-4 right-4 z-10 p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors group/heart" aria-label={`Add ${pkg.name} to favorites`} suppressHydrationWarning>
                 <Heart className="w-4 h-4 text-neutral-600 group-hover/heart:text-red-500 transition-colors" />
               </button>
 

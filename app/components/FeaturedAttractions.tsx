@@ -63,7 +63,7 @@ const FeaturedAttractions = () => {
             Featured <span className="gradient-text">Attractions</span>
           </h2>
           <p className="text-body max-w-3xl mx-auto">
-            Discover the most beautiful and sacred places in the Papikondalu region, 
+            Discover the magic of the most beautiful and sacred places in the Papikondalu region, 
             each offering unique experiences and unforgettable memories
           </p>
         </motion.div>
