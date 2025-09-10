@@ -193,6 +193,16 @@ const Hero = () => {
           />
         </motion.div>
       </motion.div>
+      
+      {/* SEO Content Section */}
+      <div className="absolute bottom-0 left-0 w-full bg-black/20 backdrop-blur-sm py-4">
+        <div className="max-w-7xl mx-auto container-padding">
+          <p className="text-white/80 text-center text-sm">
+            Welcome to the best boat tours Papikondalu experience. Our premium Godavari river cruise 
+            adventures offer unforgettable journeys through scenic landscapes and cultural heritage sites.
+          </p>
+        </div>
+      </div>
     </section>
   )
 }
