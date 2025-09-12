@@ -6,6 +6,7 @@ import FloatingActionButton from './components/FloatingActionButton'
 import { LazyMultiAgentWidget } from './components/LazyComponents'
 import WebVitals from './components/WebVitals'
 import ImagePreloader from './components/ImagePreloader'
+import PerformanceOptimizer from './components/PerformanceOptimizer'
 import Script from 'next/script'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -17,7 +18,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://manapapikondalu.vercel.app'),
+  metadataBase: new URL('https://bhadradripapikondalu.com'),
   title: {
     default: 'Best Boat Tours Papikondalu | Godavari River Cruise',
     template: '%s | Papikondalu Tourism'
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     'honeymoon packages Papikondalu', 'group tours Godavari', 'budget tour packages', 'premium boat tours',
     'Perantalapalli temple', 'Kolluru bamboo huts', 'Parnasala tours', 'Rampa waterfalls'
   ],
-  authors: [{ name: 'Papikondalu Tourism', url: 'https://papikondalutourism.com' }],
+  authors: [{ name: 'Papikondalu Tourism', url: 'https://bhadradripapikondalu.com' }],
   creator: 'Papikondalu Tourism',
   publisher: 'Papikondalu Tourism',
   applicationName: 'Papikondalu Tourism',
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://manapapikondalu.vercel.app',
+    url: 'https://bhadradripapikondalu.com',
     siteName: 'Papikondalu Tourism - Best River Cruise Experience',
     title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
     description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise. Book now!',
@@ -87,9 +88,13 @@ export const metadata: Metadata = {
     yahoo: 'your-yahoo-verification-code',
   },
   alternates: {
-    canonical: 'https://manapapikondalu.vercel.app',
+    canonical: 'https://bhadradripapikondalu.com',
     languages: {
-      'en': 'https://manapapikondalu.vercel.app'
+      'en': 'https://bhadradripapikondalu.com',
+      'x-default': 'https://bhadradripapikondalu.com'
+    },
+    types: {
+      'application/rss+xml': 'https://bhadradripapikondalu.com/feed.xml'
     }
   },
   category: 'tourism',
@@ -108,7 +113,7 @@ export const metadata: Metadata = {
     'DC.date': '2024-01-01T00:00:00.000Z',
     'DC.type': 'Service',
     'DC.format': 'text/html',
-    'DC.identifier': 'https://manapapikondalu.vercel.app',
+    'DC.identifier': 'https://bhadradripapikondalu.com',
     'DC.language': 'en',
     'DC.coverage': 'Andhra Pradesh, India',
     'DC.rights': '© 2024 Papikondalu Tourism. All rights reserved.'
@@ -125,11 +130,11 @@ export default function RootLayout({
     '@graph': [
       {
         '@type': 'TravelAgency',
-        '@id': 'https://manapapikondalu.vercel.app/#organization',
+        '@id': 'https://bhadradripapikondalu.com/#organization',
         'name': 'Papikondalu Tourism',
         'alternateName': 'Papikondalu River Tourism',
         'description': 'Leading river tourism company with 20+ years of experience serving 7+ lakh customers',
-        'url': 'https://manapapikondalu.vercel.app',
+        'url': 'https://bhadradripapikondalu.com',
         'logo': {
           '@type': 'ImageObject',
           'url': 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
@@ -177,10 +182,10 @@ export default function RootLayout({
       },
       {
         '@type': 'TouristAttraction',
-        '@id': 'https://manapapikondalu.vercel.app/#attraction',
+        '@id': 'https://bhadradripapikondalu.com/#attraction',
         'name': 'Papikondalu Hills',
         'description': 'Scenic hills along the Godavari River offering breathtaking boat tours and temple visits',
-        'url': 'https://manapapikondalu.vercel.app/attractions/papikondalu-hills',
+        'url': 'https://bhadradripapikondalu.com/attractions/papikondalu-hills',
         'image': {
           '@type': 'ImageObject',
           'url': 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755401093/papihills1_hmfpkr.jpg',
@@ -203,18 +208,18 @@ export default function RootLayout({
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://manapapikondalu.vercel.app/#website',
-        'url': 'https://manapapikondalu.vercel.app',
+        '@id': 'https://bhadradripapikondalu.com/#website',
+        'url': 'https://bhadradripapikondalu.com',
         'name': 'Papikondalu Tourism',
         'description': 'Best boat tours and river cruise experiences in Papikondalu Hills',
         'publisher': {
-          '@id': 'https://manapapikondalu.vercel.app/#organization'
+          '@id': 'https://bhadradripapikondalu.com/#organization'
         },
         'potentialAction': {
           '@type': 'SearchAction',
           'target': {
             '@type': 'EntryPoint',
-            'urlTemplate': 'https://manapapikondalu.vercel.app/search?q={search_term_string}'
+            'urlTemplate': 'https://bhadradripapikondalu.com/search?q={search_term_string}'
           },
           'query-input': 'required name=search_term_string'
         },
@@ -222,25 +227,25 @@ export default function RootLayout({
       },
       {
         '@type': 'BreadcrumbList',
-        '@id': 'https://manapapikondalu.vercel.app/#breadcrumb',
+        '@id': 'https://bhadradripapikondalu.com/#breadcrumb',
         'itemListElement': [
           {
             '@type': 'ListItem',
             'position': 1,
             'name': 'Home',
-            'item': 'https://manapapikondalu.vercel.app'
+            'item': 'https://bhadradripapikondalu.com'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': 'Packages',
-            'item': 'https://manapapikondalu.vercel.app/packages'
+            'item': 'https://bhadradripapikondalu.com/packages'
           },
           {
             '@type': 'ListItem',
             'position': 3,
             'name': 'Attractions',
-            'item': 'https://manapapikondalu.vercel.app/attractions'
+            'item': 'https://bhadradripapikondalu.com/attractions'
           }
         ]
       }
@@ -255,10 +260,13 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        <link rel="preconnect" href="https://res.cloudinary.com" />
-        <link rel="preconnect" href="https://djmcbqzqt.cloudinary.com" />
+        <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://djmcbqzqt.cloudinary.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://djmcbqzqt.cloudinary.com" />
+        <link rel="preload" href="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1200,h_800,q_60/v1755401093/papihills1_hmfpkr.jpg" as="image" type="image/jpeg" />
+        <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="en" />
+        <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="x-default" />
 
 
         <meta name="msapplication-TileColor" content="#0f172a" />
@@ -269,6 +277,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <WebVitals />
         <ImagePreloader />
+        <PerformanceOptimizer />
         <Header />
         <FloatingActionButton />
         <main className="relative" role="main">{children}</main>

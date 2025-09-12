@@ -20,9 +20,9 @@ export default function robots(): MetadataRoute.Robots {
       }
     ],
     sitemap: [
-      'https://papikondalutourism.com/sitemap.xml',
-      'https://papikondalutourism.com/sitemap-images.xml'
+      'https://bhadradripapikondalu.com/sitemap.xml',
+      'https://bhadradripapikondalu.com/sitemap-images.xml'
     ],
-    host: 'https://papikondalutourism.com',
+    host: 'https://bhadradripapikondalu.com',
   }
 }

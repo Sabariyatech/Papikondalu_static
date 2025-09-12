@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://manapapikondalu.vercel.app'
+  const baseUrl = 'https://bhadradripapikondalu.com'
   const currentDate = new Date().toISOString()
 
   // Main pages with enhanced SEO priorities

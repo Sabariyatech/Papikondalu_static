@@ -83,6 +83,7 @@ const Hero = () => {
             
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
               Experience the best boat tours Papikondalu with premium Godavari river cruise adventures. 
+              Discover scenic hills, temple visits, and cultural heritage with our expert guides.
               <span className="text-secondary-400 font-semibold">India&apos;s most trusted Godavari river cruise operator</span> serving 7+ lakh customers
             </p>
           </div>
@@ -199,7 +200,8 @@ const Hero = () => {
         <div className="max-w-7xl mx-auto container-padding">
           <p className="text-white/80 text-center text-sm">
             Welcome to the best boat tours Papikondalu experience. Our premium Godavari river cruise 
-            adventures offer unforgettable journeys through scenic landscapes and cultural heritage sites.
+            adventures offer unforgettable journeys through scenic Papikondalu hills, temple visits, 
+            and cultural heritage sites along the majestic Godavari river.
           </p>
         </div>
       </div>

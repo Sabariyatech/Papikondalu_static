@@ -1,6 +1,7 @@
 import Hero from './components/Hero'
 import FeaturedAttractions from './components/FeaturedAttractions'
 import PackageShowcase from './components/PackageShowcase'
+import SEOContent from './components/SEOContent'
 import { LazyTestimonials, LazyNewsletter } from './components/LazyComponents'
 import CriticalCSS from './components/CriticalCSS'
 import Script from 'next/script'
@@ -30,24 +31,24 @@ export default function Home() {
   const homePageStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
-    '@id': 'https://papikondalutourism.com/#webpage',
-    'url': 'https://papikondalutourism.com',
+    '@id': 'https://bhadradripapikondalu.com/#webpage',
+    'url': 'https://bhadradripapikondalu.com',
     'name': 'Papikondalu Tourism - Best Boat Tours in Andhra Pradesh',
     'isPartOf': {
-      '@id': 'https://papikondalutourism.com/#website'
+      '@id': 'https://bhadradripapikondalu.com/#website'
     },
     'about': {
-      '@id': 'https://papikondalutourism.com/#organization'
+      '@id': 'https://bhadradripapikondalu.com/#organization'
     },
     'description': 'Experience Papikondalu Hills with India\'s #1 river tourism company. Premium boat tours, temple visits & adventure packages.',
     'breadcrumb': {
-      '@id': 'https://papikondalutourism.com/#breadcrumb'
+      '@id': 'https://bhadradripapikondalu.com/#breadcrumb'
     },
     'inLanguage': 'en-US',
     'potentialAction': [
       {
         '@type': 'ReadAction',
-        'target': ['https://papikondalutourism.com']
+        'target': ['https://bhadradripapikondalu.com']
       }
     ]
   }
@@ -62,6 +63,7 @@ export default function Home() {
       />
       <Hero />
       <FeaturedAttractions />
+      <SEOContent />
       <PackageShowcase />
       <LazyTestimonials />
       <LazyNewsletter />
