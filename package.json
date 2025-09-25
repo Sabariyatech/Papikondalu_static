@@ -14,6 +14,7 @@
     "seo:audit": "lighthouse http://localhost:3000 --only-categories=seo --output html --output-path ./seo-audit.html",
     "perf:audit": "lighthouse http://localhost:3000 --only-categories=performance --output html --output-path ./performance-audit.html",
     "optimize": "next build && next-bundle-analyzer"
+
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
