@@ -26,13 +26,15 @@ const Hero = () => {
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0">
         <Image
-          src="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1200,h_800,q_60/v1755401093/papihills1_hmfpkr.jpg"
+          src="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1920,h_1080,q_auto,f_webp/v1755401093/papihills1_hmfpkr.jpg"
           alt="Papikondalu Hills - Scenic Godavari River Boat Tours"
           fill
           className="object-cover scale-110"
           priority
           sizes="100vw"
-          quality={60}
+          quality={85}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary-900/20 to-secondary-900/20" />
@@ -82,7 +84,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Experience the best boat tours Papikondalu with premium Godavari river cruise adventures. 
+              Experience the <strong>best boat tours Papikondalu</strong> with premium <strong>Godavari river cruise</strong> adventures. 
               Discover scenic hills, temple visits, and cultural heritage with our expert guides.
               <span className="text-secondary-400 font-semibold">India&apos;s most trusted Godavari river cruise operator</span> serving 7+ lakh customers
             </p>
@@ -199,7 +201,7 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full bg-black/20 backdrop-blur-sm py-4">
         <div className="max-w-7xl mx-auto container-padding">
           <p className="text-white/80 text-center text-sm">
-            Welcome to the best boat tours Papikondalu experience. Our premium Godavari river cruise 
+            Welcome to the <strong>best boat tours Papikondalu</strong> experience. Our premium <strong>Godavari river cruise</strong> 
             adventures offer unforgettable journeys through scenic Papikondalu hills, temple visits, 
             and cultural heritage sites along the majestic Godavari river.
           </p>

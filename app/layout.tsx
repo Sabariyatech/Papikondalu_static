@@ -264,7 +264,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://djmcbqzqt.cloudinary.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://djmcbqzqt.cloudinary.com" />
-        <link rel="preload" href="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1200,h_800,q_60/v1755401093/papihills1_hmfpkr.jpg" as="image" type="image/jpeg" />
+        <link rel="preload" href="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1920,h_1080,q_auto,f_webp/v1755401093/papihills1_hmfpkr.jpg" as="image" type="image/webp" />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="canonical" href="https://bhadradripapikondalu.com" />
         <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="en" />
         <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="x-default" />
 
@@ -275,6 +277,17 @@ export default function RootLayout({
         <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="font-sans antialiased">
+        <Script id="sw-register" strategy="afterInteractive">
+          {`
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                  .then(registration => console.log('SW registered'))
+                  .catch(error => console.log('SW registration failed'))
+              })
+            }
+          `}
+        </Script>
         <WebVitals />
         <ImagePreloader />
         <PerformanceOptimizer />

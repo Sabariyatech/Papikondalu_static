@@ -5,11 +5,12 @@ import { useEffect } from 'react'
 const PerformanceOptimizer = () => {
   useEffect(() => {
     // Preload critical resources
-    const preloadCriticalResources = () => {
+    const preloadCriticalImages = () => {
       const criticalImages = [
-        'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1200,h_800,q_60/v1755401093/papihills1_hmfpkr.jpg'
+        'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_400,h_300,q_auto,f_webp/v1755401093/papihills1_hmfpkr.jpg',
+        'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_400,h_300,q_auto,f_webp/v1755401093/bhadrachalam_temple_ixqhqy.jpg'
       ]
-
+      
       criticalImages.forEach(src => {
         const link = document.createElement('link')
         link.rel = 'preload'
@@ -19,40 +20,42 @@ const PerformanceOptimizer = () => {
       })
     }
 
-    // Optimize images loading
-    const optimizeImages = () => {
-      const images = document.querySelectorAll('img[loading="lazy"]')
-      const imageObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const img = entry.target as HTMLImageElement
-            img.loading = 'eager'
-            imageObserver.unobserve(img)
-          }
-        })
-      }, { rootMargin: '50px' })
-
-      images.forEach(img => imageObserver.observe(img))
-    }
-
-    // Remove unused CSS
-    const removeUnusedCSS = () => {
-      const stylesheets = document.querySelectorAll('link[rel="stylesheet"]')
-      stylesheets.forEach(sheet => {
-        const link = sheet as HTMLLinkElement
-        if (link.href.includes('unused')) {
-          link.remove()
+    // Optimize third-party scripts
+    const optimizeThirdPartyScripts = () => {
+      // Defer non-critical scripts
+      const scripts = document.querySelectorAll('script[src]')
+      scripts.forEach(script => {
+        if (!script.hasAttribute('async') && !script.hasAttribute('defer')) {
+          script.setAttribute('defer', '')
         }
       })
     }
 
-    preloadCriticalResources()
-    optimizeImages()
-    removeUnusedCSS()
+    // Enable resource hints
+    const addResourceHints = () => {
+      const hints = [
+        { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
+        { rel: 'dns-prefetch', href: '//www.google-analytics.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossOrigin: 'anonymous' }
+      ]
 
-    // Cleanup
+      hints.forEach(hint => {
+        const link = document.createElement('link')
+        link.rel = hint.rel
+        link.href = hint.href
+        if (hint.crossOrigin) link.crossOrigin = hint.crossOrigin
+        document.head.appendChild(link)
+      })
+    }
+
+    // Run optimizations
+    preloadCriticalImages()
+    optimizeThirdPartyScripts()
+    addResourceHints()
+
+    // Cleanup function
     return () => {
-      // Cleanup observers if needed
+      // Remove preloaded resources if needed
     }
   }, [])
 
