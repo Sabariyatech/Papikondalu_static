@@ -143,14 +143,6 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 1 }}
             className="flex flex-wrap justify-center items-center gap-8 pt-8 text-white/80"
           >
-            <div className="flex items-center">
-              <div className="flex -space-x-2 mr-3">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <Star key={i} className="w-4 h-4 text-secondary-400 fill-current" />
-                ))}
-              </div>
-              <span className="text-sm">Rated 4.9/5 by customers</span>
-            </div>
             <div className="text-sm">✓ Certified by Tourism Board</div>
             <div className="text-sm">✓ 24/7 Customer Support</div>
           </motion.div>
@@ -197,16 +189,7 @@ const Hero = () => {
         </motion.div>
       </motion.div>
       
-      {/* SEO Content Section */}
-      <div className="absolute bottom-0 left-0 w-full bg-black/20 backdrop-blur-sm py-4">
-        <div className="max-w-7xl mx-auto container-padding">
-          <p className="text-white/80 text-center text-sm">
-            Welcome to the <strong>best boat tours Papikondalu</strong> experience. Our premium <strong>Godavari river cruise</strong> 
-            adventures offer unforgettable journeys through scenic Papikondalu hills, temple visits, 
-            and cultural heritage sites along the majestic Godavari river.
-          </p>
-        </div>
-      </div>
+
     </section>
   )
 }
