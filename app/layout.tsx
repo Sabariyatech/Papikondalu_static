@@ -20,21 +20,22 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://bhadradripapikondalu.com'),
   title: {
-    default: 'Best Boat Tours Papikondalu | Godavari River Cruise',
-    template: '%s | Papikondalu Tourism'
+    default: 'Papikondalu Tours | Badrachalam Temple Tours | East Godavari Tourism',
+    template: '%s | East Godavari Tourism'
   },
   icons: {
     icon: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
     shortcut: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
     apple: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
   },
-  description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers. Book now!',
+  description: 'Best Papikondalu tours, Badrachalam temple tours & East Godavari tourism. Premium Rajahmundry tours, Maredumilli tours & Rampachodavaram tours. 20+ years expertise, 7+ lakh customers. Book now!',
   keywords: [
-    'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
-    'Papikondalu hills boat ride', 'Godavari river tourism', 'Rajahmundry boat tours', 'temple tours Andhra Pradesh',
-    'adventure packages Papikondalu', 'river cruise India', 'weekend getaway Andhra Pradesh', 'family tour packages',
-    'honeymoon packages Papikondalu', 'group tours Godavari', 'budget tour packages', 'premium boat tours',
-    'Perantalapalli temple', 'Kolluru bamboo huts', 'Parnasala tours', 'Rampa waterfalls'
+    'Papikondalu tours', 'Badrachalam temple tours', 'East Godavari tourism', 'Rajahmundry tours', 'Maredumilli tours', 'Rampachodavaram tours',
+    'best tourist places in East Godavari', 'Papikondalu boat tours', 'Godavari river cruise', 'Badrachalam tour packages',
+    'East Godavari tour packages', 'Rajahmundry boat tours', 'Maredumilli waterfalls', 'Rampachodavaram adventure tours',
+    'Papikondalu tourism', 'Bhadradri Kothagudem tours', 'Andhra Pradesh tourism', 'Eastern Ghats tours',
+    'weekend getaways East Godavari', 'family tour packages', 'adventure tourism Andhra Pradesh', 'eco tourism packages',
+    'temple tourism Andhra Pradesh', 'river cruise India', 'forest tours Andhra Pradesh', 'tribal tourism packages'
   ],
   authors: [{ name: 'Papikondalu Tourism', url: 'https://bhadradripapikondalu.com' }],
   creator: 'Papikondalu Tourism',
@@ -51,8 +52,8 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://bhadradripapikondalu.com',
     siteName: 'Papikondalu Tourism - Best River Cruise Experience',
-    title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
-    description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise. Book now!',
+    title: 'Papikondalu Tours | Badrachalam Temple Tours | East Godavari Tourism',
+    description: 'Best Papikondalu tours, Badrachalam temple tours & East Godavari tourism. Premium Rajahmundry tours, Maredumilli tours & Rampachodavaram tours. Book now!',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,
@@ -65,8 +66,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@papikondalutourism',
     creator: '@papikondalutourism',
-    title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
-    description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers.',
+    title: 'Papikondalu Tours | Badrachalam Temple Tours | East Godavari Tourism',
+    description: 'Best Papikondalu tours, Badrachalam temple tours & East Godavari tourism. Premium Rajahmundry tours, Maredumilli tours & Rampachodavaram tours. 7+ lakh customers.',
     images: ['https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg'],
   },
   robots: {

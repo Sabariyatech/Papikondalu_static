@@ -63,6 +63,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
+  // SEO Landing Pages - High Priority for Target Keywords
+  const seoLandingPages = [
+    { url: `${baseUrl}/papikondalu-tours`, priority: 0.95, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/badrachalam-temple-tours`, priority: 0.9, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/east-godavari-tourism`, priority: 0.95, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/rajahmundry-tours`, priority: 0.9, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/maredumilli-tours`, priority: 0.85, changeFrequency: 'weekly' as const },
+  ]
+
   // Additional SEO pages
   const additionalPages = [
     { url: `${baseUrl}/boat-tours-godavari`, priority: 0.8, changeFrequency: 'weekly' as const },
@@ -70,10 +79,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/andhra-pradesh-tourism`, priority: 0.75, changeFrequency: 'monthly' as const },
     { url: `${baseUrl}/river-cruise-india`, priority: 0.8, changeFrequency: 'weekly' as const },
     { url: `${baseUrl}/bhadrachalam-tours`, priority: 0.8, changeFrequency: 'weekly' as const },
+    { url: `${baseUrl}/rampachodavaram-tours`, priority: 0.8, changeFrequency: 'weekly' as const },
+    { url: `${baseUrl}/godavari-river-cruise`, priority: 0.85, changeFrequency: 'weekly' as const },
+    { url: `${baseUrl}/best-tourist-places-east-godavari`, priority: 0.8, changeFrequency: 'weekly' as const },
   ]
 
   return [
     ...mainPages.map(page => ({
+      url: page.url,
+      lastModified: currentDate,
+      changeFrequency: page.changeFrequency,
+      priority: page.priority,
+    })),
+    ...seoLandingPages.map(page => ({
       url: page.url,
       lastModified: currentDate,
       changeFrequency: page.changeFrequency,

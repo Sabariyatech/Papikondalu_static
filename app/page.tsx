@@ -2,27 +2,29 @@ import Hero from './components/Hero'
 import FeaturedAttractions from './components/FeaturedAttractions'
 import PackageShowcase from './components/PackageShowcase'
 import SEOContent from './components/SEOContent'
+import SEOBoostContent from './components/SEOBoostContent'
 import { LazyTestimonials, LazyNewsletter } from './components/LazyComponents'
 import CriticalCSS from './components/CriticalCSS'
 import Script from 'next/script'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
-  description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers. Book now!',
+  title: 'Papikondalu Tours | Badrachalam Temple Tours | East Godavari Tourism',
+  description: 'Best Papikondalu tours, Badrachalam temple tours & East Godavari tourism. Premium Rajahmundry tours, Maredumilli tours & Rampachodavaram tours. 20+ years expertise, 7+ lakh customers. Book now!',
   keywords: [
-    'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
-    'Papikondalu hills boat ride', 'Godavari river tourism', 'Rajahmundry boat tours', 'temple tours Andhra Pradesh',
-    'adventure packages Papikondalu', 'river cruise India', 'weekend getaway Andhra Pradesh', 'family tour packages'
+    'Papikondalu tours', 'Badrachalam temple tours', 'East Godavari tourism', 'Rajahmundry tours', 'Maredumilli tours', 'Rampachodavaram tours',
+    'best tourist places in East Godavari', 'Papikondalu boat tours', 'Godavari river cruise', 'Badrachalam tour packages',
+    'East Godavari tour packages', 'Rajahmundry boat tours', 'Maredumilli waterfalls', 'Rampachodavaram adventure tours',
+    'weekend getaways East Godavari', 'family tour packages', 'adventure tourism Andhra Pradesh', 'temple tourism'
   ],
   openGraph: {
-    title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
-    description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, serving 7+ lakh customers.',
+    title: 'Papikondalu Tours | Badrachalam Temple Tours | East Godavari Tourism',
+    description: 'Best Papikondalu tours, Badrachalam temple tours & East Godavari tourism. Premium Rajahmundry tours, Maredumilli tours & Rampachodavaram tours. 7+ lakh customers.',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,
       height: 630,
-      alt: 'Papikondalu Hills Boat Tours - Best River Cruise Experience'
+      alt: 'Papikondalu Tours - Best East Godavari Tourism & Badrachalam Temple Tours'
     }]
   }
 }
@@ -63,6 +65,7 @@ export default function Home() {
       />
       <Hero />
       <FeaturedAttractions />
+      <SEOBoostContent />
       <SEOContent />
       <PackageShowcase />
       <LazyTestimonials />
