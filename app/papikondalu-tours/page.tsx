@@ -55,7 +55,7 @@ export default function PapikondaluToursPage() {
             <p className="text-xl text-gray-700 max-w-4xl mx-auto">
               Discover the crown jewel of <strong>East Godavari tourism</strong> with our premium <strong>Papikondalu tours</strong>. 
               Experience breathtaking <strong>Godavari river cruise</strong>, scenic hill views, temple visits, and cultural heritage 
-              with India's most trusted tour operator serving 7+ lakh customers.
+              with India&apos;s most trusted tour operator serving 7+ lakh customers.
             </p>
           </div>
 
@@ -134,7 +134,7 @@ export default function PapikondaluToursPage() {
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center">
             <h2 className="text-3xl font-bold mb-6">
-              India's #1 <span className="text-yellow-300">Papikondalu Tour Operator</span>
+              India&apos;s #1 <span className="text-yellow-300">Papikondalu Tour Operator</span>
             </h2>
             <div className="grid md:grid-cols-4 gap-6 mb-8">
               <div>
@@ -155,7 +155,7 @@ export default function PapikondaluToursPage() {
               </div>
             </div>
             <p className="text-xl mb-6">
-              Book the best <strong>Papikondalu tours</strong> with India's most trusted tour operator. 
+              Book the best <strong>Papikondalu tours</strong> with India&apos;s most trusted tour operator. 
               Experience premium <strong>Godavari river cruise</strong> with safety, comfort, and unforgettable memories.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

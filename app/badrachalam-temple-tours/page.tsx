@@ -52,7 +52,7 @@ export default function BadrachalamTempleToursPage() {
             <p className="text-xl text-gray-700 max-w-4xl mx-auto">
               Discover the spiritual significance of <strong>Badrachalam temple</strong> with our premium <strong>temple tours</strong>. 
               Experience <strong>Lord Rama darshan</strong>, participate in religious ceremonies, and explore the rich cultural heritage 
-              with India's most trusted spiritual tourism operator.
+              with India&apos;s most trusted spiritual tourism operator.
             </p>
           </div>
 
@@ -117,7 +117,7 @@ export default function BadrachalamTempleToursPage() {
 
           <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-2xl p-8 text-white text-center">
             <h2 className="text-3xl font-bold mb-6">
-              India's Most Trusted <span className="text-yellow-300">Temple Tour Operator</span>
+              India&apos;s Most Trusted <span className="text-yellow-300">Temple Tour Operator</span>
             </h2>
             <p className="text-xl mb-6">
               Experience divine <strong>Badrachalam temple tours</strong> with complete spiritual guidance, 

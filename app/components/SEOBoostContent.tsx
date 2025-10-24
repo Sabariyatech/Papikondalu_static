@@ -18,7 +18,7 @@ const SEOBoostContent = () => {
             <p className="text-xl text-neutral-700 max-w-4xl mx-auto leading-relaxed">
               Discover the ultimate <strong>Papikondalu tours</strong>, <strong>Badrachalam temple tours</strong>, and complete <strong>East Godavari tourism</strong> experiences. 
               Our premium <strong>Rajahmundry tours</strong>, <strong>Maredumilli tours</strong>, and <strong>Rampachodavaram tours</strong> offer unforgettable adventures 
-              in Andhra Pradesh's most scenic destinations.
+              in Andhra Pradesh&apos;s most scenic destinations.
             </p>
           </div>
 
@@ -253,7 +253,7 @@ const SEOBoostContent = () => {
             </h3>
             <p className="text-xl mb-6 opacity-90">
               Experience the best <strong>Papikondalu tours</strong>, <strong>Badrachalam temple tours</strong>, 
-              and complete <strong>East Godavari tourism</strong> with India's most trusted tour operator.
+              and complete <strong>East Godavari tourism</strong> with India&apos;s most trusted tour operator.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/packages" className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-neutral-100 transition-colors">
