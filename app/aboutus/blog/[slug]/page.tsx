@@ -5,7 +5,7 @@ import BlogPostClient from './BlogPostClient'
 import { getBlogPost, blogPosts } from '../blogData'
 
 interface Props {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
@@ -15,7 +15,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = getBlogPost(params.slug)
+  const { slug } = await params
+  const post = getBlogPost(slug)
   
   if (!post) {
     return {
@@ -48,8 +49,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default function BlogPost({ params }: Props) {
-  const post = getBlogPost(params.slug)
+export default async function BlogPost({ params }: Props) {
+  const { slug } = await params
+  const post = getBlogPost(slug)
   
   if (!post) {
     notFound()
@@ -115,7 +117,7 @@ export default function BlogPost({ params }: Props) {
           '@type': 'ListItem',
           'position': 4,
           'name': post.title,
-          'item': `https://papikondalutourism.com/aboutus/blog/${post.slug}`
+          'item': `https://papikondalutourism.com/aboutus/blog/${slug}`
         }
       ]
     }

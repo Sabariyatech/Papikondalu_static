@@ -75,7 +75,7 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="heading-xl text-white leading-tight">
-              Best Boat Tours Papikondalu Tourism
+              Best Boat Tours Papikondalu
               <span className="block">
                 <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
                   Godavari River Cruise
