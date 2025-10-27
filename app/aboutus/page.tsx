@@ -3,8 +3,8 @@ import Script from 'next/script'
 import AboutUsClient from './AboutUsClient'
 
 export const metadata: Metadata = {
-  title: 'About Papikondalu Tourism - 20+ Years Excellence | 7+ Lakh Happy Customers',
-  description: 'Discover Papikondalu Tourism\'s journey since 2004. Leading Andhra Pradesh river tourism with 20+ years experience, modern boat fleet, and 7+ lakh satisfied customers. Learn our story of excellence.',
+  title: 'About Us | Papikondalu Tours & Bhadradri Temple | East Godavari Tourism Leaders',
+  description: 'Learn about the top Papikondalu tour operator from Rajahmundry. East Godavari, Bhadrachalam, Maredumalli, and Rampachodavaram heritage experts. 20+ years creating unforgettable experiences.',
   keywords: [
     'Papikondalu Tourism about', 'river tourism company Andhra Pradesh', '20 years experience boat tours',
     'Godavari river tourism history', 'boat fleet Papikondalu', 'tourism company since 2004',

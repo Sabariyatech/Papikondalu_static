@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import GalleryClient from './GalleryClient'
 
 export const metadata: Metadata = {
-  title: 'Photo Gallery - Papikondalu Tourism | Nature, Temple & Heritage Photos',
-  description: 'Browse our stunning photo gallery featuring nature landscapes, temple architecture, heritage sites, and accommodation options in Papikondalu region.',
-  keywords: 'Papikondalu photos, gallery, nature photography, temple images, heritage sites, accommodation',
+  title: 'Photo Gallery | Papikondalu Hills, Bhadradri Temples & East Godavari Adventures',
+  description: 'Browse stunning images of Papikondalu river cruises from Rajahmundry, Bhadrachalam temples, Maredumalli waterfalls, and Rampachodavaram adventures. See why 7 lakh travelers love our East Godavari tours.',
+  keywords: 'Papikondalu photos, Bhadrachalam temple images, Rajahmundry gallery, Maredumalli waterfalls photos, Rampachodavaram pictures, East Godavari tourism gallery',
 }
 
 export default function Gallery() {

@@ -8,16 +8,17 @@ import Script from 'next/script'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
-  description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, 7+ lakh customers. Book now!',
+  title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
+  description: 'Book top-rated Papikondalu tours from Rajahmundry and Bhadrachalam. Explore East Godavari river cruises, Maredumalli waterfalls, Rampachodavaram adventures, and Bhadradri temple visits. No.1 operator trusted by 7 lakh customers for 20+ years.',
   keywords: [
-    'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
-    'Papikondalu hills boat ride', 'Godavari river tourism', 'Rajahmundry boat tours', 'temple tours Andhra Pradesh',
-    'adventure packages Papikondalu', 'river cruise India', 'weekend getaway Andhra Pradesh', 'family tour packages'
+    'Papikondalu tourism', 'Bhadrachalam temple tours', 'Rajahmundry boat tours', 'Maredumalli waterfalls',
+    'Rampachodavaram tours', 'East Godavari tourism', 'Papikondalu from Rajahmundry', 'Bhadradri temple packages',
+    'Godavari river cruise', 'Papikondalu hills', 'Andhra Pradesh tourism', 'weekend getaway packages',
+    'family tour packages', 'adventure tours East Godavari', 'temple tours Andhra Pradesh', 'river tourism India'
   ],
   openGraph: {
-    title: 'Best Boat Tours Papikondalu | Godavari River Cruise',
-    description: 'Experience the best boat tours with Papikondalu Tourism. Premium Godavari river cruises, 20+ years expertise, serving 7+ lakh customers.',
+    title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
+    description: 'Book top-rated Papikondalu tours from Rajahmundry and Bhadrachalam. Explore East Godavari river cruises, Maredumalli waterfalls, Rampachodavaram adventures, and Bhadradri temple visits. No.1 operator trusted by 7 lakh customers.',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,

@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import AttractionsClient from './AttractionsClient'
 
 export const metadata: Metadata = {
-  title: 'Attractions - Papikondalu Tourism | 8 Amazing Destinations',
-  description: 'Explore 8 stunning attractions including Papikondalu hills, Bhadrachalam temple, Maredumalli waterfalls, and more scenic destinations.',
-  keywords: 'Papikondalu attractions, Bhadrachalam temple, Maredumalli waterfalls, Godavari tourism',
+  title: 'Papikondalu Attractions | Bhadradri Temples | Maredumalli Waterfalls - East Godavari Tourism',
+  description: 'Discover top attractions in Papikondalu, Bhadrachalam, Rajahmundry, Maredumalli, and Rampachodavaram. Scenic hills, ancient temples, waterfalls, and cultural sites in East Godavari. Plan your perfect tour today!',
+  keywords: 'Papikondalu attractions, Bhadrachalam temple, Maredumalli waterfalls, Rajahmundry tourism, Rampachodavaram attractions, East Godavari tourism, Bhadradri temple',
 }
 
 export default function Attractions() {
