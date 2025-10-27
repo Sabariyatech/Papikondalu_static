@@ -122,12 +122,12 @@ export default function ContactClient() {
               <MessageCircle className="text-white" size={40} />
             </motion.div>
             
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-2xl md:text-4xl font-bold mb-6 leading-tight">
               Let&apos;s Plan Your
-              <span className="block text-secondary-300">Dream Journey</span>
+              <span className="block text-secondary-300">Journey through Papikondalu Tours, Bhadradri, East Godavari & Maredumalli Tourism</span>
             </h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-white/90">
-              Connect with our travel experts and discover the magic of Papikondalu with personalized service
+              Get in touch with the leading Papikondalu tour operator for Bhadradri temple visits, East Godavari river cruises, and Maredumalli adventures. 24/7 expert assistance, best pricing, and customized travel support.
             </p>
           </motion.div>
         </div>

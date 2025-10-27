@@ -14,9 +14,9 @@ export default function AttractionsClient() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-2xl md:text-4xl font-bold mb-4"
           >
-            Discover Amazing Attractions
+            Papikondalu Attractions, Bhadradri Temples, Maredumalli Waterfalls - East Godavari Tourism
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export default function AttractionsClient() {
             transition={{ delay: 0.2 }}
             className="text-xl max-w-2xl mx-auto"
           >
-            Explore the most beautiful and sacred places in the Papikondalu region
+            Discover the top attractions in Papikondalu, Bhadradri, East Godavari, and Maredumalli. From scenic hills and temples to waterfalls and cultural sites—plan your perfect tour today!
           </motion.p>
         </div>
       </section>

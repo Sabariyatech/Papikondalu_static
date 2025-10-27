@@ -14,17 +14,16 @@ export default function PackagesClient() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-2xl md:text-4xl font-bold mb-4"
           >
-            Tour Packages
-          </motion.h1>
+          Best Papikondalu Tour Packages | Bhadradri Temple Trips & East Godavari Cruises          </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="text-xl max-w-2xl mx-auto"
           >
-            Choose from our carefully crafted packages for an unforgettable experience
+            Explore premium Papikondalu boat tour packages, Bhadradri temple trips, and East Godavari river cruises. Custom adventures and spiritual journeys for every traveler—book your unforgettable experience!
           </motion.p>
         </div>
       </section>

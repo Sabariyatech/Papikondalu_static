@@ -3,7 +3,7 @@ import GalleryClient from './GalleryClient'
 
 export const metadata: Metadata = {
   title: 'Photo Gallery | Papikondalu Hills, Bhadradri Temples & East Godavari Adventures',
-  description: 'Browse stunning images of Papikondalu river cruises from Rajahmundry, Bhadrachalam temples, Maredumalli waterfalls, and Rampachodavaram adventures. See why 7 lakh travelers love our East Godavari tours.',
+  description: 'Browse stunning images of Papikondalu river cruises, Bhadradri temples, Maredumalli waterfalls, and East Godavari attractions. See why 7 lakh travelers love our memorable tours.',
   keywords: 'Papikondalu photos, Bhadrachalam temple images, Rajahmundry gallery, Maredumalli waterfalls photos, Rampachodavaram pictures, East Godavari tourism gallery',
 }
 

@@ -74,8 +74,8 @@ const Hero = () => {
               <span className="text-sm font-medium">Godavari River, Andhra Pradesh</span>
             </motion.div>
             
-            <h1 className="heading-xl text-white leading-tight">
-              Papikondalu Tours | Badrachalam Temple Tours
+            <h1 className="text-2xl md:text-4xl font-bold text-white leading-tight">
+              Papikondalu Tours, Bhadradri Temple, East Godavari & Maredumalli Tourism Packages
               <span className="block">
                 <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
                   East Godavari Tourism
@@ -84,9 +84,7 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Experience <strong>Papikondalu tours</strong>, <strong>Badrachalam temple tours</strong>, and <strong>East Godavari tourism</strong> with <strong>Rajahmundry tours</strong>. 
-              Explore <strong>Maredumilli tours</strong>, <strong>Rampachodavaram tours</strong>, and premium <strong>Godavari river cruise</strong> adventures.
-              <span className="text-secondary-400 font-semibold">India&apos;s #1 East Godavari tour operator</span> serving 7+ lakh customers
+              Book top-rated <span className="font-bold text-secondary-400">Papikondalu</span> tours and <span className="font-bold text-blue-400">East Godavari</span> river cruises with the No.1 operator. Explore <span className="font-bold text-yellow-400">Bhadradri</span> temples, <span className="font-bold text-green-400">Maredumalli</span> waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years. Reserve your ultimate tour today!
             </p>
           </div>
           
@@ -156,7 +154,7 @@ const Hero = () => {
                 <span className="text-sm font-medium">Godavari River, Andhra Pradesh</span>
               </div>
               
-              <h1 className="heading-xl text-white leading-tight">
+              <h1 className="text-2xl md:text-4xl font-bold text-white leading-tight">
                 Best Boat Tours Papikondalu
                 <span className="block">
                   <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">

@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     shortcut: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
     apple: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755418849/AG_LOGO_2_xfznol.png',
   },
-  description: 'Book top-rated Papikondalu tours from Rajahmundry and Bhadrachalam. Explore East Godavari river cruises, Maredumalli waterfalls, Rampachodavaram adventures, and Bhadradri temple visits. No.1 operator trusted by 7 lakh customers for 20+ years.',
+  description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years. Reserve your ultimate tour today!',
   keywords: [
     'Papikondalu tours', 'Badrachalam temple tours', 'East Godavari tourism', 'Rajahmundry tours', 'Maredumilli tours', 'Rampachodavaram tours',
     'best tourist places in East Godavari', 'Papikondalu boat tours', 'Godavari river cruise', 'Badrachalam tour packages',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     url: 'https://bhadradripapikondalu.com',
     siteName: 'Papikondalu Tourism - Best River Cruise Experience',
     title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
-    description: 'Book top-rated Papikondalu tours from Rajahmundry and Bhadrachalam. Explore East Godavari river cruises, Maredumalli waterfalls, Rampachodavaram adventures, and Bhadradri temple visits. No.1 operator trusted by 7 lakh customers.',
+    description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years.',
     images: [{
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     site: '@papikondalutourism',
     creator: '@papikondalutourism',
     title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
-    description: 'Book top-rated Papikondalu tours from Rajahmundry and Bhadrachalam. Explore East Godavari river cruises, Maredumalli waterfalls, Rampachodavaram adventures, and Bhadradri temple visits. No.1 operator trusted by 7 lakh customers.',
+    description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years.',
     images: ['https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg'],
   },
   robots: {

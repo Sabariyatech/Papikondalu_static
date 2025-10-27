@@ -3,7 +3,7 @@ import PackagesClient from './PackagesClient'
 
 export const metadata: Metadata = {
   title: 'Best Papikondalu Tour Packages | Bhadradri Temple Trips & East Godavari Cruises',
-  description: 'Explore premium Papikondalu boat tour packages from Rajahmundry and Bhadrachalam. Bhadradri temple trips, East Godavari river cruises, Maredumalli waterfalls, and Rampachodavaram adventures. Custom spiritual journeys for every traveler.',
+  description: 'Explore premium Papikondalu boat tour packages, Bhadradri temple trips, and East Godavari river cruises. Custom adventures and spiritual journeys for every traveler—book your unforgettable experience!',
   keywords: 'Papikondalu tour packages, Bhadrachalam tours, Rajahmundry packages, Maredumalli tours, Rampachodavaram adventures, East Godavari cruises, Bhadradri temple packages',
 }
 

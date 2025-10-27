@@ -95,9 +95,9 @@ export default function GalleryClient() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-4xl md:text-5xl font-bold mb-4"
+            className="text-2xl md:text-4xl font-bold mb-4"
           >
-            Photo Gallery
+            Photo Gallery | Papikondalu Hills, Bhadradri Temples & East Godavari Adventures
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -105,7 +105,7 @@ export default function GalleryClient() {
             transition={{ delay: 0.2 }}
             className="text-xl max-w-2xl mx-auto"
           >
-            Explore the beauty of Papikondalu through our curated collection of photographs
+            Browse stunning images of Papikondalu river cruises, Bhadradri temples, Maredumalli waterfalls, and East Godavari attractions. See why 7 lakh travelers love our memorable tours.
           </motion.p>
         </div>
       </section>

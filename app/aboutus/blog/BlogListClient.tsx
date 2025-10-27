@@ -25,12 +25,11 @@ const BlogListClient = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="heading-xl mb-6">
-              Papikondalu Tourism <span className="text-secondary-400">Blog</span>
+            <h1 className="heading-xl mb-4text-2xl md:text-4xl font-bold mb-4">
+              Travel Blog ! <span className="text-secondary-400"> Papikondalu, Bhadradri, East Godavari & Maredumalli StoriesMeta </span>
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Expert travel guides, hidden gems, and insider insights about Godavari river cruises 
-              and Papikondalu hills from industry leaders with 20+ years experience.
+              Explore the latest travel tips, adventure stories, and insights for Papikondalu, Bhadradri temple, East Godavari, and Maredumalli. Find guides from trusted local experts and customer experiences.
             </p>
           </motion.div>
         </div>

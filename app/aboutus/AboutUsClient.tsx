@@ -60,7 +60,7 @@ export default function AboutUsClient() {
                 <span className="inline-block px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-4">
                   About Our Organization
                 </span>
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                <h1 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
                   Papikondalu Tourism
                   <span className="block text-primary-600">Excellence Since 2004</span>
                 </h1>

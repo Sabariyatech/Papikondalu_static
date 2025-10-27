@@ -4,7 +4,7 @@ import AboutUsClient from './AboutUsClient'
 
 export const metadata: Metadata = {
   title: 'About Us | Papikondalu Tours & Bhadradri Temple | East Godavari Tourism Leaders',
-  description: 'Learn about the top Papikondalu tour operator from Rajahmundry. East Godavari, Bhadrachalam, Maredumalli, and Rampachodavaram heritage experts. 20+ years creating unforgettable experiences.',
+  description: 'Learn about the top Papikondalu tour operator, East Godavari and Bhadradri heritage experts. 20+ years creating unforgettable experiences to Maredumalli waterfalls and local attractions.',
   keywords: [
     'Papikondalu Tourism about', 'river tourism company Andhra Pradesh', '20 years experience boat tours',
     'Godavari river tourism history', 'boat fleet Papikondalu', 'tourism company since 2004',
