@@ -25,7 +25,7 @@ export default function Blog() {
             Coming Soon
           </h2>
           <p className="text-neutral-600">
-            We're working on bringing you amazing travel stories and guides. 
+            We&apos;re working on bringing you amazing travel stories and guides. 
             Stay tuned for exciting content about our destinations!
           </p>
         </div>
