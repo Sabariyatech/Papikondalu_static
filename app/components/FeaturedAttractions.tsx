@@ -46,7 +46,7 @@ const attractions = [
 
 const FeaturedAttractions = () => {
   return (
-    <section className="section-padding bg-gradient-to-b from-neutral-50 to-white">
+    <section className="section-padding bg-gradient-to-b from-neutral-50 to-white" data-section="featured-attractions">
       <div className="max-w-7xl mx-auto container-padding">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

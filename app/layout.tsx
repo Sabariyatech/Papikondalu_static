@@ -265,7 +265,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://djmcbqzqt.cloudinary.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://res.cloudinary.com" />
         <link rel="dns-prefetch" href="https://djmcbqzqt.cloudinary.com" />
-        <link rel="preload" href="https://res.cloudinary.com/dnz1dmnmb/image/upload/c_fill,w_1920,h_1080,q_auto,f_webp/v1755401093/papihills1_hmfpkr.jpg" as="image" type="image/webp" />
+
 
         <link rel="canonical" href="https://bhadradripapikondalu.com" />
         <link rel="alternate" href="https://bhadradripapikondalu.com" hrefLang="en" />
