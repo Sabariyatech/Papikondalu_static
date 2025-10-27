@@ -1,5 +1,4 @@
 import { MetadataRoute } from 'next'
-import { blogPosts } from './aboutus/blog/blogData'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://bhadradripapikondalu.com'
@@ -9,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const mainPages = [
     { url: baseUrl, priority: 1.0, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/aboutus`, priority: 0.9, changeFrequency: 'weekly' as const },
-    { url: `${baseUrl}/aboutus/blog`, priority: 0.85, changeFrequency: 'daily' as const },
+    { url: `${baseUrl}/blog`, priority: 0.85, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/attractions`, priority: 0.95, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/packages`, priority: 0.95, changeFrequency: 'daily' as const },
     { url: `${baseUrl}/gallery`, priority: 0.8, changeFrequency: 'weekly' as const },
@@ -55,13 +54,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: pkg.priority,
   }))
 
-  // All blog pages
-  const blogPages = blogPosts.map(post => ({
-    url: `${baseUrl}/aboutus/blog/${post.slug}`,
-    lastModified: post.publishDate,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
+  // Blog pages (placeholder for future blog posts)
+  const blogPages: any[] = []
 
   // SEO landing pages
   const seoLandingPages = [
