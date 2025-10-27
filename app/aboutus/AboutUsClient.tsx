@@ -1,8 +1,9 @@
 'use client'
 
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Users, Award, Ship, Clock, Star, CheckCircle, Shield, Heart, MapPin, Phone, Mail, Calendar } from 'lucide-react'
+import { Users, Award, Ship, Clock, Star, CheckCircle, Shield, Heart, MapPin, Phone, Mail, Calendar, BookOpen, ArrowRight } from 'lucide-react'
 
 export default function AboutUsClient() {
   const stats = [
@@ -382,12 +383,22 @@ export default function AboutUsClient() {
                   </div>
                 </div>
               </div>
-              <a 
-                href="/contact" 
-                className="inline-block bg-white text-primary-600 px-8 py-4 rounded-2xl font-semibold hover:bg-white/90 transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                Contact Us Today
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link 
+                  href="/contact" 
+                  className="inline-block bg-white text-primary-600 px-8 py-4 rounded-2xl font-semibold hover:bg-white/90 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                >
+                  Contact Us Today
+                </Link>
+                <Link 
+                  href="/aboutus/blog" 
+                  className="inline-flex items-center bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white/30 transition-all duration-300 border border-white/30"
+                >
+                  <BookOpen className="mr-2" size={20} />
+                  Read Our Blog
+                  <ArrowRight className="ml-2" size={16} />
+                </Link>
+              </div>
             </div>
           </motion.div>
         </div>

@@ -75,18 +75,18 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="heading-xl text-white leading-tight">
-              Best Boat Tours Papikondalu
+              Papikondalu Tours | Badrachalam Temple Tours
               <span className="block">
                 <span className="bg-gradient-to-r from-secondary-400 to-secondary-600 bg-clip-text text-transparent">
-                  Godavari River Cruise
+                  East Godavari Tourism
                 </span>
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Experience the <strong>best boat tours Papikondalu</strong> with premium <strong>Godavari river cruise</strong> adventures. 
-              Discover scenic hills, temple visits, and cultural heritage with our expert guides.
-              <span className="text-secondary-400 font-semibold">India&apos;s most trusted Godavari river cruise operator</span> serving 7+ lakh customers
+              Experience <strong>Papikondalu tours</strong>, <strong>Badrachalam temple tours</strong>, and <strong>East Godavari tourism</strong> with <strong>Rajahmundry tours</strong>. 
+              Explore <strong>Maredumilli tours</strong>, <strong>Rampachodavaram tours</strong>, and premium <strong>Godavari river cruise</strong> adventures.
+              <span className="text-secondary-400 font-semibold">India&apos;s #1 East Godavari tour operator</span> serving 7+ lakh customers
             </p>
           </div>
           

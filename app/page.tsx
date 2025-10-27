@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import FeaturedAttractions from './components/FeaturedAttractions'
 import PackageShowcase from './components/PackageShowcase'
 import SEOContent from './components/SEOContent'
+import SEOBoostContent from './components/SEOBoostContent'
 import { LazyTestimonials, LazyNewsletter } from './components/LazyComponents'
 import CriticalCSS from './components/CriticalCSS'
 import Script from 'next/script'
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
       url: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_1200,h_630,q_auto,f_auto/v1755401093/papihills1_hmfpkr.jpg',
       width: 1200,
       height: 630,
-      alt: 'Papikondalu Hills Boat Tours - Best River Cruise Experience'
+      alt: 'Papikondalu Tours - Best East Godavari Tourism & Badrachalam Temple Tours'
     }]
   }
 }
@@ -64,6 +65,7 @@ export default function Home() {
       />
       <Hero />
       <FeaturedAttractions />
+      <SEOBoostContent />
       <SEOContent />
       <PackageShowcase />
       <LazyTestimonials />

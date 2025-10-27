@@ -30,11 +30,12 @@ export const metadata: Metadata = {
   },
   description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years. Reserve your ultimate tour today!',
   keywords: [
-    'Papikondalu tourism', 'best boat tours Godavari', 'Andhra Pradesh river cruise', 'Bhadrachalam temple tours',
-    'Papikondalu hills boat ride', 'Godavari river tourism', 'Rajahmundry boat tours', 'temple tours Andhra Pradesh',
-    'adventure packages Papikondalu', 'river cruise India', 'weekend getaway Andhra Pradesh', 'family tour packages',
-    'honeymoon packages Papikondalu', 'group tours Godavari', 'budget tour packages', 'premium boat tours',
-    'Perantalapalli temple', 'Kolluru bamboo huts', 'Parnasala tours', 'Rampa waterfalls'
+    'Papikondalu tours', 'Badrachalam temple tours', 'East Godavari tourism', 'Rajahmundry tours', 'Maredumilli tours', 'Rampachodavaram tours',
+    'best tourist places in East Godavari', 'Papikondalu boat tours', 'Godavari river cruise', 'Badrachalam tour packages',
+    'East Godavari tour packages', 'Rajahmundry boat tours', 'Maredumilli waterfalls', 'Rampachodavaram adventure tours',
+    'Papikondalu tourism', 'Bhadradri Kothagudem tours', 'Andhra Pradesh tourism', 'Eastern Ghats tours',
+    'weekend getaways East Godavari', 'family tour packages', 'adventure tourism Andhra Pradesh', 'eco tourism packages',
+    'temple tourism Andhra Pradesh', 'river cruise India', 'forest tours Andhra Pradesh', 'tribal tourism packages'
   ],
   authors: [{ name: 'Papikondalu Tourism', url: 'https://bhadradripapikondalu.com' }],
   creator: 'Papikondalu Tourism',
