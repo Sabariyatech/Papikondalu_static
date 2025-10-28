@@ -62,7 +62,7 @@ export default function MultiAgentWidget() {
       >
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-colors"
+          className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110"
         >
           {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
         </button>
@@ -105,7 +105,12 @@ export default function MultiAgentWidget() {
             className="fixed bottom-24 right-6 z-40 flex flex-col gap-2"
           >
             {agents.map((agent, index) => {
-              const colors = ['bg-purple-500 hover:bg-purple-600', 'bg-indigo-500 hover:bg-indigo-600', 'bg-teal-500 hover:bg-teal-600']
+              const colors = [
+                'bg-blue-500 hover:bg-blue-600', 
+                'bg-green-500 hover:bg-green-600', 
+                'bg-purple-500 hover:bg-purple-600',
+                'bg-orange-500 hover:bg-orange-600'
+              ]
               return (
                 <button
                   key={agent.id}

@@ -438,7 +438,7 @@ export default function ContactClient() {
       </section>
 
       {/* Travel Experts Section */}
-      <section className="py-20 bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-green-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -453,48 +453,52 @@ export default function ContactClient() {
             </p>
           </motion.div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
             {agents.map((agent, index) => {
               const gradients = [
+                'from-blue-500 to-blue-600',
+                'from-green-500 to-green-600',
                 'from-purple-500 to-purple-600',
-                'from-indigo-500 to-indigo-600',
-                'from-teal-500 to-teal-600'
+                'from-orange-500 to-orange-600'
+              ]
+              const bgColors = [
+                'bg-gradient-to-br from-blue-50 to-blue-100',
+                'bg-gradient-to-br from-green-50 to-green-100',
+                'bg-gradient-to-br from-purple-50 to-purple-100',
+                'bg-gradient-to-br from-orange-50 to-orange-100'
               ]
               return (
                 <motion.div
                   key={agent.id}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.2, duration: 0.8 }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="bg-white rounded-3xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 group relative overflow-hidden"
+                  className={`${bgColors[index]} rounded-2xl shadow-lg p-4 text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 group relative overflow-hidden`}
                 >
-                  {/* Background decoration */}
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-300" />
-                  
                   <div className="relative">
-                    <div className={`w-24 h-24 bg-gradient-to-r ${gradients[index]} rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <User className="text-white" size={32} />
+                    <div className={`w-16 h-16 bg-gradient-to-r ${gradients[index]} rounded-full flex items-center justify-center mx-auto mb-3 shadow-md group-hover:scale-110 transition-transform duration-300`}>
+                      <User className="text-white" size={24} />
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{agent.name}</h3>
-                    <p className="text-gray-600 mb-2 font-medium text-lg">{agent.role}</p>
-                    <p className="text-gray-700 font-bold mb-8 text-xl">+91 {agent.phone}</p>
+                    <h3 className="text-lg font-bold text-gray-900 mb-1">{agent.name}</h3>
+                    <p className="text-gray-600 mb-1 font-medium text-sm">{agent.role}</p>
+                    <p className="text-gray-700 font-bold mb-4 text-sm">+91 {agent.phone}</p>
                     
-                    <div className="flex gap-3">
+                    <div className="flex gap-2">
                       <a
                         href={`https://wa.me/${agent.whatsapp}?text=Hi, I&apos;m interested in Papikondalu tour packages. Can you help me?`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
+                        className="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 px-2 rounded-lg font-medium text-xs transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-105"
                       >
-                        <MessageCircle size={18} className="mr-2" />
+                        <MessageCircle size={14} className="mr-1" />
                         WhatsApp
                       </a>
                       <a
                         href={`tel:+91${agent.phone}`}
-                        className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-3 px-4 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
+                        className="flex-1 bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 rounded-lg font-medium text-xs transition-all duration-300 flex items-center justify-center shadow-md hover:shadow-lg transform hover:scale-105"
                       >
-                        <Phone size={18} className="mr-2" />
+                        <Phone size={14} className="mr-1" />
                         Call
                       </a>
                     </div>
@@ -573,12 +577,13 @@ export default function ContactClient() {
             <p className="text-xl md:text-2xl mb-10 text-white/90 leading-relaxed">
               Our team is available 24/7 to help you plan the perfect Papikondalu experience
             </p>
-            <div className="flex justify-center gap-8">
+            <div className="flex justify-center gap-6">
               {agents.map((agent, index) => {
                 const colors = [
-                  'bg-green-500 hover:bg-green-600 shadow-green-500/30',
                   'bg-blue-500 hover:bg-blue-600 shadow-blue-500/30',
-                  'bg-purple-500 hover:bg-purple-600 shadow-purple-500/30'
+                  'bg-green-500 hover:bg-green-600 shadow-green-500/30',
+                  'bg-purple-500 hover:bg-purple-600 shadow-purple-500/30',
+                  'bg-orange-500 hover:bg-orange-600 shadow-orange-500/30'
                 ]
                 return (
                   <motion.div
@@ -594,11 +599,11 @@ export default function ContactClient() {
                       target="_blank"
                       rel="noopener noreferrer"
                       title={`Contact ${agent.name} on WhatsApp`}
-                      className={`w-20 h-20 ${colors[index]} rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 mb-3`}
+                      className={`w-16 h-16 ${colors[index]} rounded-2xl flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 mb-2`}
                     >
-                      <MessageCircle size={28} className="text-white" />
+                      <MessageCircle size={20} className="text-white" />
                     </a>
-                    <span className="text-white font-semibold">{agent.name}</span>
+                    <span className="text-white font-medium text-sm">{agent.name.split(' ')[0]}</span>
                   </motion.div>
                 )
               })}

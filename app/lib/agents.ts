@@ -19,5 +19,12 @@ export const agents = [
     phone: '9951716888',
     whatsapp: '919951716888',
     role: 'Booking Manager'
+  },
+  {
+    id: 4,
+    name: 'Srinivasrao',
+    phone: '9542723488',
+    whatsapp: '919542723488',
+    role: 'Travel Consultant'
   }
 ]
