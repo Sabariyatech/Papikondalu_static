@@ -1,9 +1,11 @@
 export const packagesData = [
   {
     id: 1,
-    name: 'Bhadrachalam to Papikondalu',
-    shortDescription: 'Spiritual journey from sacred Bhadrachalam temple to scenic Papikondalu hills.',
-    description: 'Experience the perfect blend of spirituality and natural beauty on this comprehensive journey from the sacred Bhadrachalam temple to the breathtaking Papikondalu hills. This package offers a unique combination of religious significance and scenic splendor.',
+    name: 'Papikondalu River Cruise Package',
+    title: 'Papikondalu River Cruise Package – East Godavari\'s Top Tour',
+    metaDescription: 'Book the best Papikondalu river cruise tour in East Godavari. Enjoy breathtaking views, safe boats, and expert guides. Reserve today!',
+    shortDescription: 'Book the best Papikondalu river cruise tour in East Godavari. Enjoy breathtaking views, safe boats, and expert guides.',
+    description: 'Book the best Papikondalu river cruise tour in East Godavari. Enjoy breathtaking views, safe boats, and expert guides. Reserve today!',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png',
@@ -26,9 +28,11 @@ export const packagesData = [
   },
   {
     id: 2,
-    name: 'Bhadrachalam to Rajahmundry via Papikondalu',
-    shortDescription: 'Complete Godavari river experience covering major attractions.',
-    description: 'Embark on the ultimate Godavari river experience that covers all major attractions from the spiritual Bhadrachalam to the cultural hub of Rajahmundry. This comprehensive package offers the complete essence of the region.',
+    name: 'Bhadradri Temple & Godavari Cruise Tour Package',
+    title: 'Bhadradri Temple & Godavari Cruise Tour Package',
+    metaDescription: 'Experience Bhadradri temple darshan and scenic Godavari cruise with trusted operators. Custom packages for families and groups.',
+    shortDescription: 'Experience Bhadradri temple darshan and scenic Godavari cruise with trusted operators.',
+    description: 'Experience Bhadradri temple darshan and scenic Godavari cruise with trusted operators. Custom packages for families and groups.',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003757/rajamundry_v2aufm.jpg',
     gallery: [
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003757/rajamundry_v2aufm.jpg',
@@ -51,9 +55,11 @@ export const packagesData = [
   },
   {
     id: 3,
-    name: 'Rajahmundry to Papikondalu',
-    shortDescription: 'Perfect day trip to experience the beauty of Papikondalu hills.',
-    description: 'A perfect day excursion from Rajahmundry to the magnificent Papikondalu hills. Ideal for those seeking a quick escape into nature without overnight stays, offering stunning views and memorable experiences.',
+    name: 'Maredumilli Waterfalls Adventure Package',
+    title: 'Maredumilli Waterfalls Adventure Package – East Godavari',
+    metaDescription: 'Explore Maredumilli waterfalls and forest treks. Adventure-filled tour package with safe travel, meals, and expert guides.',
+    shortDescription: 'Explore Maredumilli waterfalls and forest treks with safe travel, meals, and expert guides.',
+    description: 'Explore Maredumilli waterfalls and forest treks. Adventure-filled tour package with safe travel, meals, and expert guides.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg',
@@ -76,9 +82,11 @@ export const packagesData = [
   },
   {
     id: 4,
-    name: 'Rajahmundry to Bhadrachalam via Papikondalu',
-    shortDescription: 'Reverse journey covering all major attractions with cultural experiences.',
-    description: 'Experience the reverse route from Rajahmundry to Bhadrachalam, covering all major attractions with enhanced cultural experiences. This package offers a different perspective of the same beautiful journey.',
+    name: 'Rampachodavaram Tribal Culture Tour Package',
+    title: 'Rampachodavaram Tribal Culture Tour Package – Andhra Pradesh',
+    metaDescription: 'Discover Rampachodavaram tribal heritage and river rafting. Book your authentic adventure with local experts and best rates.',
+    shortDescription: 'Discover Rampachodavaram tribal heritage and river rafting with local experts.',
+    description: 'Discover Rampachodavaram tribal heritage and river rafting. Book your authentic adventure with local experts and best rates.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980907/Bhadrachalam_Temple_yg8met.jpg',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755980907/Bhadrachalam_Temple_yg8met.jpg',
@@ -101,9 +109,11 @@ export const packagesData = [
   },
   {
     id: 5,
-    name: 'Bhadrachalam to Sirivaka',
-    shortDescription: 'Adventure package with overnight camping experience in nature.',
-    description: 'An exciting adventure package that takes you from the spiritual Bhadrachalam to the wilderness of Sirivaka for an unforgettable camping experience under the stars.',
+    name: 'Rajahmundry Papikondalu Day Tour Package',
+    title: 'Rajahmundry Papikondalu Day Tour Package – Family Special',
+    metaDescription: 'Join top-rated day tours from Rajahmundry to Papikondalu hills. Ideal for families, with sightseeing, meals, and safe return.',
+    shortDescription: 'Join top-rated day tours from Rajahmundry to Papikondalu hills, ideal for families.',
+    description: 'Join top-rated day tours from Rajahmundry to Papikondalu hills. Ideal for families, with sightseeing, meals, and safe return.',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
     gallery: [
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/v1755979074/sirivaka-bamboo-huts-papikondalu_sgrm4p.jpg',
@@ -126,9 +136,11 @@ export const packagesData = [
   },
   {
     id: 6,
-    name: 'Rajahmundry to Sirivaka',
-    shortDescription: 'Camping adventure starting from Rajahmundry with unique overnight experience.',
-    description: 'Begin your camping adventure from Rajahmundry and journey to the pristine Sirivaka for a unique overnight experience in the heart of nature.',
+    name: 'Sirivaka Night Stay & Camping Package',
+    title: 'Sirivaka Night Stay & Camping Package – Papikondalu Adventures',
+    metaDescription: 'Book Sirivaka camping in Papikondalu with campfire, nature walks, and stargazing. Secure your adventure night now!',
+    shortDescription: 'Book Sirivaka camping in Papikondalu with campfire, nature walks, and stargazing.',
+    description: 'Book Sirivaka camping in Papikondalu with campfire, nature walks, and stargazing. Secure your adventure night now!',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif',
     gallery: [
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1756003855/sirivaka_fdzsuf.avif'
@@ -150,9 +162,11 @@ export const packagesData = [
   },
   {
     id: 7,
-    name: 'Maredumalli Special Package',
-    shortDescription: 'Explore pristine waterfalls and dense forests of Maredumalli.',
-    description: 'Discover the untouched beauty of Maredumalli with its pristine waterfalls, dense forests, and rich biodiversity. Perfect for nature enthusiasts and adventure seekers.',
+    name: 'Parnasala Heritage Temple Tour Package',
+    title: 'Parnasala Heritage Temple Tour Package – East Godavari',
+    metaDescription: 'Visit ancient Shiva temples and heritage sites at Parnasala. Guided tours with cultural insights and spiritual experiences.',
+    shortDescription: 'Visit ancient Shiva temples and heritage sites at Parnasala with guided cultural tours.',
+    description: 'Visit ancient Shiva temples and heritage sites at Parnasala. Guided tours with cultural insights and spiritual experiences.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755978851/MAREDUMILLI_-_waterfalls_kmuppt.jpg',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755978851/MAREDUMILLI_-_waterfalls_kmuppt.jpg'
@@ -174,9 +188,11 @@ export const packagesData = [
   },
   {
     id: 8,
-    name: 'Parnasala Addon Package',
-    shortDescription: 'Visit mythologically significant Parnasala with cultural insights.',
-    description: 'Explore the mythologically significant Parnasala, believed to be where Lord Rama stayed during exile. Rich in cultural heritage and spiritual significance.',
+    name: 'Gudisa Hills Trekking Tour Package',
+    title: 'Gudisa Hills Trekking Tour Package – Scenic Andhra Pradesh Views',
+    metaDescription: 'Trek Gudisa hills for panoramic mountain views. Adventure package includes expert guides and memorable camping experiences.',
+    shortDescription: 'Trek Gudisa hills for panoramic mountain views with expert guides and camping.',
+    description: 'Trek Gudisa hills for panoramic mountain views. Adventure package includes expert guides and memorable camping experiences.',
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1755979312/dev_parnasala_pfvan7.jpg',
     gallery: [
       'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_600,q_auto,f_auto/v1755979312/dev_parnasala_pfvan7.jpg'
@@ -198,9 +214,11 @@ export const packagesData = [
   },
   {
     id: 9,
-    name: 'Gudisa Package',
-    shortDescription: 'Hill station experience with panoramic views and adventure activities.',
-    description: 'Experience the cool climate and panoramic views of Gudisa hill station. Perfect for adventure seekers and those looking for a refreshing mountain experience.',
+    name: 'Perantalapalli Eco Tour Package',
+    title: 'Perantalapalli Eco Tour Package – Papikondalu Nature Special',
+    metaDescription: 'Eco-friendly tour to Perantalapalli with jungle trekking, river views, and ancient temples. Ideal for nature lovers and explorers.',
+    shortDescription: 'Eco-friendly tour to Perantalapalli with jungle trekking, river views, and ancient temples.',
+    description: 'Eco-friendly tour to Perantalapalli with jungle trekking, river views, and ancient temples. Ideal for nature lovers and explorers.',
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755981754/Camping_in_Mountains_ytwmvi.avif',
     gallery: [
       'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_600,q_auto,f_auto/v1755981754/Camping_in_Mountains_ytwmvi.avif'

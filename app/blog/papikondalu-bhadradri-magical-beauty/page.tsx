@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { Calendar, MapPin, Clock, ArrowLeft } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Discover the Magical Beauty of Papikondalu Hills & Bhadradri Temples | Travel Guide',
-  description: 'Explore the magical beauty of Papikondalu Hills, sacred Bhadradri temples, and Maredumilli waterfalls. Complete travel guide with best times to visit, attractions, and tour packages.',
-  keywords: 'Papikondalu Hills, Bhadradri temple, Maredumilli waterfalls, East Godavari tourism, Godavari river cruise, Rama Navami celebrations',
+  title: 'Papikondalu River Cruise Package – East Godavari\'s Top Tour | Bhadradri Temple & Godavari Cruise',
+  description: 'Book the best Papikondalu river cruise tour in East Godavari. Experience Bhadradri temple darshan, Maredumilli waterfalls adventure, and Rampachodavaram tribal culture tours with expert guides.',
+  keywords: 'Papikondalu river cruise, Bhadradri temple tour, Maredumilli waterfalls adventure, Rampachodavaram tribal culture, Sirivaka camping, Parnasala heritage temple, Gudisa hills trekking, Perantalapalli eco tour, East Godavari tours',
 }
 
 export default function BlogPost() {
@@ -17,11 +17,11 @@ export default function BlogPost() {
         <div className="absolute inset-0 bg-black/30"></div>
         <div className="relative container mx-auto px-4 h-full flex items-center justify-center text-center">
           <div className="text-white">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              Discover the Magical Beauty
+            <h1 className="text-2xl md:text-4xl font-bold mb-4">
+              Magical Beauty of Papikondalu & Bhadradri – Ultimate East Godavari Travel Guide
             </h1>
             <p className="text-xl md:text-2xl opacity-90">
-              Papikondalu Hills & Bhadradri Temples
+              Discover the wonders of Papikondalu hills and Bhadradri temple in East Godavari. Read this complete travel guide for scenic river cruises, spiritual escapes, adventure tours, and top tips. Plan your memorable East Godavari getaway today!
             </p>
           </div>
         </div>
