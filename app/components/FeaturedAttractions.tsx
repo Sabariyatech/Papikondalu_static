@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowRight, MapPin, Clock, Star } from 'lucide-react'
+import { getAttractionSlug } from '../utils/slugs'
 
 const attractions = [
   {
@@ -44,7 +45,7 @@ const attractions = [
     duration: '2-3 hours',
     rating: 4.6,
     highlight: 'Heritage',
-    link: '/attractions/7'
+    link: `/attractions/${getAttractionSlug(7)}`
   }
 ]
 

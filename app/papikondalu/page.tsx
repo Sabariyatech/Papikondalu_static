@@ -50,17 +50,17 @@ export default function PapikondaluPage() {
               <div className="bg-white p-6 rounded-lg">
                 <h4 className="text-xl font-bold mb-3">Day Tour</h4>
                 <p className="mb-4">Rajahmundry to Papikondalu day cruise with lunch and sightseeing</p>
-                <Link href="/packages/5" className="text-blue-600 font-semibold">Book Now →</Link>
+                <Link href="/packages/rajahmundry-papikondalu-day-tour" className="text-blue-600 font-semibold">Book Now →</Link>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h4 className="text-xl font-bold mb-3">Temple & Cruise</h4>
                 <p className="mb-4">Bhadrachalam temple visit combined with Papikondalu cruise</p>
-                <Link href="/packages/2" className="text-blue-600 font-semibold">Book Now →</Link>
+                <Link href="/packages/bhadradri-temple-godavari-cruise-tour" className="text-blue-600 font-semibold">Book Now →</Link>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h4 className="text-xl font-bold mb-3">River Cruise</h4>
                 <p className="mb-4">Premium Papikondalu river cruise with comfortable boats</p>
-                <Link href="/packages/1" className="text-blue-600 font-semibold">Book Now →</Link>
+                <Link href="/packages/papikondalu-river-cruise-package" className="text-blue-600 font-semibold">Book Now →</Link>
               </div>
             </div>
           </div>

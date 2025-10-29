@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Users, MapPin, Star, ArrowRight, Calendar, Heart } from 'lucide-react'
+import { getPackageSlug } from '../utils/slugs'
 
 const packages = [
   {
@@ -157,7 +158,7 @@ const PackageShowcase = () => {
                 </div>
 
                 <Link 
-                  href={`/packages/${pkg.id}`}
+                  href={`/packages/${getPackageSlug(pkg.id)}`}
                   className="w-full btn-primary text-center group/btn"
                 >
                   View Details

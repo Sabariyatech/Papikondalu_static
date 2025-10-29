@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Users, MapPin, Star } from 'lucide-react'
 import { packagesData } from './packagesData'
+import { getPackageSlug } from '../utils/slugs'
 
 export default function PackagesClient() {
   return (
@@ -78,13 +79,13 @@ export default function PackagesClient() {
 
                   <div className="flex gap-3">
                     <Link 
-                      href={`/packages/${pkg.id}`} 
+                      href={`/packages/${getPackageSlug(pkg.id)}`} 
                       className="flex-1 btn-primary text-center"
                     >
                       Know More
                     </Link>
                     <Link 
-                      href={`/packages/${pkg.id}`} 
+                      href={`/packages/${getPackageSlug(pkg.id)}`} 
                       className="flex-1 btn-outline text-center"
                     >
                       View Details

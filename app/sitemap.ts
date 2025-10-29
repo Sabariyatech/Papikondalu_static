@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import { attractionSlugs, packageSlugs } from './utils/slugs'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://bhadradripapikondalu.com'
@@ -16,42 +17,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // All attraction pages
-  const attractions = [
-    { slug: 'papi-hills', priority: 0.9 },
-    { slug: 'bhadrachalam-temple', priority: 0.85 },
-    { slug: 'perantalapalli', priority: 0.8 },
-    { slug: 'kolluru-bamboo-huts', priority: 0.8 },
-    { slug: 'gandi-pochamma-temple', priority: 0.75 },
-    { slug: 'sabari-temple', priority: 0.75 },
-    { slug: 'parnasala', priority: 0.75 },
-    { slug: 'rampa-waterfalls', priority: 0.8 }
-  ]
-
-  const attractionPages = attractions.map(attraction => ({
-    url: `${baseUrl}/attractions/${attraction.slug}`,
+  const attractionPages = Object.values(attractionSlugs).map(slug => ({
+    url: `${baseUrl}/attractions/${slug}`,
     lastModified: currentDate,
     changeFrequency: 'weekly' as const,
-    priority: attraction.priority,
+    priority: 0.85,
   }))
 
   // All package pages
-  const packages = [
-    { slug: 'day-cruise', priority: 0.9 },
-    { slug: 'overnight-package', priority: 0.85 },
-    { slug: 'temple-tour', priority: 0.85 },
-    { slug: 'adventure-package', priority: 0.8 },
-    { slug: 'family-package', priority: 0.85 },
-    { slug: 'honeymoon-package', priority: 0.8 },
-    { slug: 'group-package', priority: 0.8 },
-    { slug: 'premium-package', priority: 0.75 },
-    { slug: 'budget-package', priority: 0.85 }
-  ]
-
-  const packagePages = packages.map(pkg => ({
-    url: `${baseUrl}/packages/${pkg.slug}`,
+  const packagePages = Object.values(packageSlugs).map(slug => ({
+    url: `${baseUrl}/packages/${slug}`,
     lastModified: currentDate,
     changeFrequency: 'weekly' as const,
-    priority: pkg.priority,
+    priority: 0.85,
   }))
 
   // Blog pages (placeholder for future blog posts)

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Star } from 'lucide-react'
 import { attractionsData } from './attractionsData'
+import { getAttractionSlug } from '../utils/slugs'
 
 export default function AttractionsClient() {
   return (
@@ -66,7 +67,7 @@ export default function AttractionsClient() {
                   </div>
 
                   <Link 
-                    href={`/attractions/${attraction.id}`} 
+                    href={`/attractions/${getAttractionSlug(attraction.id)}`} 
                     className="w-full btn-primary text-center block"
                   >
                     Know More
