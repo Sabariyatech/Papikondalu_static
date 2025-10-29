@@ -13,12 +13,11 @@ const SEOBoostContent = () => {
           {/* Hero SEO Section */}
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
-              Best <span className="text-primary-600">Papikondalu Tours</span> & <span className="text-secondary-600">East Godavari Tourism</span>
+              <span className="text-primary-600">Papikondalu</span> | <span className="text-secondary-600">Maredumilli</span> | <span className="text-green-600">Bhadrachalam</span> | <span className="text-blue-600">East Godavari Tourism</span>
             </h2>
             <p className="text-xl text-neutral-700 max-w-4xl mx-auto leading-relaxed">
-              Discover the ultimate <strong>Papikondalu tours</strong>, <strong>Badrachalam temple tours</strong>, and complete <strong>East Godavari tourism</strong> experiences. 
-              Our premium <strong>Rajahmundry tours</strong>, <strong>Maredumilli tours</strong>, and <strong>Rampachodavaram tours</strong> offer unforgettable adventures 
-              in Andhra Pradesh&apos;s most scenic destinations.
+              Experience <strong>Papikondalu</strong> hills, <strong>Maredumilli</strong> waterfalls, <strong>Bhadrachalam</strong> temples, and <strong>East Godavari tourism</strong>. 
+              Explore <strong>Gudisa</strong> hills, <strong>Rampa waterfalls</strong>, and authentic Andhra Pradesh destinations with 20+ years of expertise.
             </p>
           </div>
 
@@ -28,11 +27,11 @@ const SEOBoostContent = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <MapPin className="text-primary-600 mr-2" size={24} />
-                <h3 className="text-2xl font-bold text-neutral-900">Papikondalu Tours</h3>
+                <h3 className="text-2xl font-bold text-neutral-900">Papikondalu</h3>
               </div>
               <p className="text-neutral-700 mb-4">
-                Experience the best <strong>Papikondalu boat tours</strong> with scenic <strong>Godavari river cruise</strong>. 
-                Our <strong>Papikondalu tour packages</strong> include temple visits, hill sightseeing, and cultural experiences.
+                Discover <strong>Papikondalu</strong> scenic beauty with river cruises and hill sightseeing. 
+                <strong>Papikondalu</strong> tours include boat rides, temple visits, and cultural experiences in East Godavari.
               </p>
               <div className="flex items-center text-sm text-neutral-600 mb-2">
                 <Star className="text-yellow-500 mr-1" size={16} />
@@ -47,11 +46,11 @@ const SEOBoostContent = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <MapPin className="text-secondary-600 mr-2" size={24} />
-                <h3 className="text-2xl font-bold text-neutral-900">Badrachalam Temple Tours</h3>
+                <h3 className="text-2xl font-bold text-neutral-900">Bhadrachalam</h3>
               </div>
               <p className="text-neutral-700 mb-4">
-                Sacred <strong>Badrachalam temple tours</strong> with <strong>Lord Rama darshan</strong>. 
-                Our <strong>Badrachalam tour packages</strong> include temple visits, cultural programs, and spiritual experiences.
+                Visit <strong>Bhadrachalam</strong> temple for Lord Rama darshan and spiritual experiences. 
+                <strong>Bhadrachalam</strong> tours include temple visits, cultural programs, and religious ceremonies.
               </p>
               <div className="flex items-center text-sm text-neutral-600 mb-2">
                 <Star className="text-yellow-500 mr-1" size={16} />
@@ -104,11 +103,11 @@ const SEOBoostContent = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <MapPin className="text-emerald-600 mr-2" size={24} />
-                <h3 className="text-2xl font-bold text-neutral-900">Maredumilli Tours</h3>
+                <h3 className="text-2xl font-bold text-neutral-900">Maredumilli</h3>
               </div>
               <p className="text-neutral-700 mb-4">
-                Adventure <strong>Maredumilli tours</strong> with <strong>waterfalls and forest trekking</strong>. 
-                Our <strong>Maredumilli packages</strong> include eco-tourism, wildlife spotting, and nature walks.
+                Explore <strong>Maredumilli</strong> waterfalls and dense forests with adventure activities. 
+                <strong>Maredumilli</strong> experiences include eco-tourism, wildlife spotting, and nature photography.
               </p>
               <div className="flex items-center text-sm text-neutral-600 mb-2">
                 <Star className="text-yellow-500 mr-1" size={16} />
@@ -123,11 +122,11 @@ const SEOBoostContent = () => {
             <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
               <div className="flex items-center mb-4">
                 <MapPin className="text-purple-600 mr-2" size={24} />
-                <h3 className="text-2xl font-bold text-neutral-900">Rampachodavaram Tours</h3>
+                <h3 className="text-2xl font-bold text-neutral-900">Gudisa & Rampa Waterfalls</h3>
               </div>
               <p className="text-neutral-700 mb-4">
-                Exciting <strong>Rampachodavaram tours</strong> with <strong>adventure activities</strong>. 
-                Our <strong>Rampachodavaram packages</strong> include river rafting, trekking, and tribal culture experiences.
+                Experience <strong>Gudisa</strong> hills and <strong>Rampa waterfalls</strong> with adventure activities. 
+                <strong>Gudisa</strong> and <strong>Rampa waterfalls</strong> tours include trekking, camping, and nature exploration.
               </p>
               <div className="flex items-center text-sm text-neutral-600 mb-2">
                 <Star className="text-yellow-500 mr-1" size={16} />

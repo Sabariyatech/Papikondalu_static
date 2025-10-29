@@ -15,12 +15,12 @@ const SEOContent = () => {
           className="text-center mb-16"
         >
           <h2 className="heading-lg mb-6">
-            Why Choose Our <span className="gradient-text">Boat Tours Papikondalu</span>
+            <span className="gradient-text">Papikondalu</span> | Maredumilli | Bhadrachalam | East Godavari Tourism
           </h2>
           <p className="text-body max-w-4xl mx-auto">
-            Experience the best boat tours Papikondalu with our premium Godavari river cruise services. 
-            Our Godavari river cruise adventures offer unmatched comfort, safety, and memorable experiences 
-            through the scenic Papikondalu hills and cultural heritage sites.
+            Explore Papikondalu hills, Maredumilli waterfalls, Bhadrachalam temples, and East Godavari tourism. 
+            Visit Gudisa hills and Rampa waterfalls with expert guides. Authentic experiences in Andhra Pradesh&apos;s 
+            most beautiful destinations with 20+ years of trusted service.
           </p>
         </motion.div>
 
@@ -73,30 +73,30 @@ const SEOContent = () => {
         >
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="heading-md mb-6">
-              Discover the Magic of Papikondalu Hills
+              Papikondalu, Maredumilli, Bhadrachalam & East Godavari Tourism
             </h3>
             <p className="text-body mb-8">
-              Our boat tours Papikondalu take you through the breathtaking Godavari river cruise routes, 
-              showcasing the natural beauty of Papikondalu hills, ancient temples, and cultural heritage sites. 
-              Experience the best Godavari river cruise with expert guides, comfortable boats, and unforgettable memories.
+              Discover Papikondalu scenic beauty, Maredumilli dense forests, Bhadrachalam spiritual heritage, 
+              and East Godavari tourism attractions. Explore Gudisa hill station and Rampa waterfalls with 
+              our comprehensive tour packages designed for authentic Andhra Pradesh experiences.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>
-                <h4 className="font-semibold text-primary-700 mb-2">Scenic Routes</h4>
+                <h4 className="font-semibold text-primary-700 mb-2">Papikondalu & Maredumilli</h4>
                 <p className="text-sm text-neutral-600">
-                  Navigate through the most beautiful sections of the Godavari river with stunning views of Papikondalu hills
+                  Experience Papikondalu hills and Maredumilli waterfalls with scenic boat rides and forest treks
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-primary-700 mb-2">Cultural Heritage</h4>
+                <h4 className="font-semibold text-primary-700 mb-2">Bhadrachalam & East Godavari</h4>
                 <p className="text-sm text-neutral-600">
-                  Visit ancient temples and heritage sites along the Godavari river cruise route
+                  Visit Bhadrachalam temples and explore East Godavari tourism attractions with cultural insights
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold text-primary-700 mb-2">Expert Guides</h4>
+                <h4 className="font-semibold text-primary-700 mb-2">Gudisa & Rampa Waterfalls</h4>
                 <p className="text-sm text-neutral-600">
-                  Learn about local history, culture, and nature from our experienced tour guides
+                  Discover Gudisa hills and Rampa waterfalls for adventure and nature photography experiences
                 </p>
               </div>
             </div>

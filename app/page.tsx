@@ -9,13 +9,13 @@ import Script from 'next/script'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
-  description: 'Book top-rated Papikondalu tours and East Godavari river cruises with the No.1 operator. Explore Bhadradri temples, Maredumalli waterfalls, heritage sites, and adventure packages—trusted by 7 lakh customers for 20+ years. Reserve your ultimate tour today!',
+  title: 'Papikondalu | Maredumilli | Bhadrachalam | East Godavari Tourism | Gudisa | Rampa Waterfalls',
+  description: 'Papikondalu tours, Maredumilli waterfalls, Bhadrachalam temple visits, East Godavari tourism, Gudisa hills, and Rampa waterfalls. Book authentic experiences with local experts. Best rates guaranteed!',
   keywords: [
-    'Papikondalu tourism', 'Bhadrachalam temple tours', 'Rajahmundry boat tours', 'Maredumalli waterfalls',
-    'Rampachodavaram tours', 'East Godavari tourism', 'Papikondalu from Rajahmundry', 'Bhadradri temple packages',
-    'Godavari river cruise', 'Papikondalu hills', 'Andhra Pradesh tourism', 'weekend getaway packages',
-    'family tour packages', 'adventure tours East Godavari', 'temple tours Andhra Pradesh', 'river tourism India'
+    'Papikondalu', 'Maredumilli', 'Bhadrachalam', 'East Godavari tourism', 'Gudisa', 'Rampa waterfalls',
+    'Papikondalu tours', 'Maredumilli waterfalls', 'Bhadrachalam temple', 'East Godavari', 'Gudisa hills',
+    'Rampachodavaram', 'Godavari river cruise', 'Andhra Pradesh tourism', 'Papikondalu hills',
+    'Bhadradri temple', 'Maredumilli forest', 'East Godavari attractions', 'Gudisa trekking'
   ],
   openGraph: {
     title: 'Papikondalu Tours | Bhadradri Temple | East Godavari & Maredumalli Tourism Packages',
