@@ -13,7 +13,8 @@ const attractions = [
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_400,q_auto,f_auto/v1755980788/PAPI-KONDALU_wswdud.jpg',
     duration: '4-6 hours',
     rating: 4.9,
-    highlight: 'Most Popular'
+    highlight: 'Most Popular',
+    link: '/papikondalu'
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ const attractions = [
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_400,q_auto,f_auto/v1755980906/BhadrachalamTemple-1068x421_heh1o2.png',
     duration: '2-3 hours',
     rating: 4.8,
-    highlight: 'Spiritual'
+    highlight: 'Spiritual',
+    link: '/bhadrachalam'
   },
   {
     id: 3,
@@ -31,7 +33,8 @@ const attractions = [
     image: 'https://res.cloudinary.com/djmcbqzqt/image/upload/c_scale,w_400,q_auto,f_auto/v1755978851/MAREDUMILLI_-_waterfalls_kmuppt.jpg',
     duration: '3-4 hours',
     rating: 4.7,
-    highlight: 'Adventure'
+    highlight: 'Adventure',
+    link: '/maredumilli'
   },
   {
     id: 4,
@@ -40,7 +43,8 @@ const attractions = [
     image: 'https://res.cloudinary.com/dnz1dmnmb/image/upload/c_scale,w_400,q_auto,f_auto/v1755979312/dev_parnasala_pfvan7.jpg',
     duration: '2-3 hours',
     rating: 4.6,
-    highlight: 'Heritage'
+    highlight: 'Heritage',
+    link: '/attractions/7'
   }
 ]
 
@@ -118,7 +122,7 @@ const FeaturedAttractions = () => {
                   {attraction.description}
                 </p>
                 <Link 
-                  href="/attractions"
+                  href={attraction.link}
                   className="inline-flex items-center text-primary-600 hover:text-primary-700 font-semibold group/link transition-colors"
                 >
                   Explore Details

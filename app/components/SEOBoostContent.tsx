@@ -37,7 +37,7 @@ const SEOBoostContent = () => {
                 <Star className="text-yellow-500 mr-1" size={16} />
                 <span>4.9/5 Rating • 2000+ Reviews</span>
               </div>
-              <Link href="/attractions/papikondalu" className="text-primary-600 font-semibold hover:text-primary-700">
+              <Link href="/papikondalu" className="text-primary-600 font-semibold hover:text-primary-700">
                 Explore Papikondalu Tours →
               </Link>
             </div>
@@ -56,7 +56,7 @@ const SEOBoostContent = () => {
                 <Star className="text-yellow-500 mr-1" size={16} />
                 <span>4.8/5 Rating • 1500+ Reviews</span>
               </div>
-              <Link href="/attractions/bhadrachalam-temple" className="text-secondary-600 font-semibold hover:text-secondary-700">
+              <Link href="/bhadrachalam" className="text-secondary-600 font-semibold hover:text-secondary-700">
                 Book Badrachalam Tours →
               </Link>
             </div>
@@ -113,7 +113,7 @@ const SEOBoostContent = () => {
                 <Star className="text-yellow-500 mr-1" size={16} />
                 <span>4.7/5 Rating • 1200+ Reviews</span>
               </div>
-              <Link href="/attractions/maredumalli" className="text-emerald-600 font-semibold hover:text-emerald-700">
+              <Link href="/maredumilli" className="text-emerald-600 font-semibold hover:text-emerald-700">
                 Explore Maredumilli →
               </Link>
             </div>
@@ -132,7 +132,7 @@ const SEOBoostContent = () => {
                 <Star className="text-yellow-500 mr-1" size={16} />
                 <span>4.6/5 Rating • 800+ Reviews</span>
               </div>
-              <Link href="/packages" className="text-purple-600 font-semibold hover:text-purple-700">
+              <Link href="/rampa-waterfalls" className="text-purple-600 font-semibold hover:text-purple-700">
                 Book Rampachodavaram →
               </Link>
             </div>
